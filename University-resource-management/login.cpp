@@ -1,6 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
-#include "QString"
+
 #include "QMessageBox"
 
 Login::Login(QWidget *parent) :
@@ -8,33 +8,41 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
+    mydb=QSqlDatabase::addDatabase("QSQLITE");
+    mydb.setDatabaseName("information.db");
+    if(mydb.open()){
+        ui->label_status->setText("connecting");
+    }
+    else
+        ui->label_status->setText("can not connect");
 }
+
 
 Login::~Login()
 {
     delete ui;
 }
-QString user;
-QString pass;
+
 
 void Login::on_pushButton_clicked()
 {
-    user = ui->lineEdit->text();
-    pass = ui ->lineEdit_2->text();
-    QMessageBox ms;
+    QString username;
+    QString password;
+    username = ui->lineEdit_user->text();
+    password = ui->lineEdit_pass->text();
 
-    if (user == "")
-        ms.setText("First Enter the username");
-    if (pass == "")
-        ms.setText("First Select a password");
+    QSqlQuery qry;
+    if(qry.exec("select * from students where username='"+username+"'and password='"+password+"'")){
+        int count=0;
+        while(qry.next()){
+            count++;
+        }
+        if (count==1){
+            ui->label_status->setText("username & password is correct");
+        }
+        if(count<1)
+            ui->label_status->setText("user & password is'not correct");
 
-    if (user !="" && pass != "")
-        ms.setText("your account created successfuly :)");
-    if (user =="" && pass == "")
-    {
-        ms.setText("First select user and password !");
-        //ms.set
-        //set icon later
     }
-    ms.exec();
+
 }

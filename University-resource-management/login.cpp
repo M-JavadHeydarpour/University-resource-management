@@ -15,6 +15,7 @@ Login::Login(QWidget *parent) :
     }
     else
         ui->label_status->setText("can not connect");
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 
@@ -45,4 +46,9 @@ void Login::on_pushButton_clicked()
 
     }
 
+}
+
+void Login::on_pushButton_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }

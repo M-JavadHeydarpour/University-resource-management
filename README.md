@@ -11,3 +11,6 @@ https://www.youtube.com/watch?v=rjp2msIfalE  //mute teacher
 
 https://www.youtube.com/watch?v=_u7TcjIDNzw //persion teacher
 
+QSqlQuery Class
+
+https://doc.qt.io/qt-5/qsqlquery.html

@@ -114,7 +114,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="label_title">
       <property name="geometry">
        <rect>
         <x>160</x>
@@ -141,14 +141,14 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pushButton_login">
          <property name="text">
           <string>ورود</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pushButton_signup">
          <property name="text">
           <string>ایجاد حساب کاربری جدید</string>
          </property>
@@ -237,7 +237,7 @@
      <x>0</x>
      <y>0</y>
      <width>577</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

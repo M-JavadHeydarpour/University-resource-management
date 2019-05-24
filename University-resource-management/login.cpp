@@ -25,7 +25,7 @@ Login::~Login()
 }
 
 
-void Login::on_pushButton_clicked()
+void Login::on_pushButton_login_clicked()
 {
     QString username;
     QString password;
@@ -48,7 +48,7 @@ void Login::on_pushButton_clicked()
 
 }
 
-void Login::on_pushButton_2_clicked()
+void Login::on_pushButton_signup_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }

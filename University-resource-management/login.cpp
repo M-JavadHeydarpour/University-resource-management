@@ -1,6 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
-
+#include "userpanel.h"
 #include "QMessageBox"
 
 Login::Login(QWidget *parent) :
@@ -39,7 +39,8 @@ void Login::on_pushButton_login_clicked()
             count++;
         }
         if (count==1){
-            ui->label_status->setText("username & password is correct");
+            userpanel *panel=new userpanel;
+            panel->show();
         }
         if(count<1)
             ui->label_status->setText("user & password is'not correct");

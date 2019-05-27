@@ -40,7 +40,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image:url(&quot;C:/Users/sharif/Desktop/project/University-resource-management/University-resource-management/sha.jpg&quot;);
+       <string notr="true">background-image:url(&quot;sha.jpg&quot;);
 border-radius:80px;</string>
       </property>
      </widget>
@@ -160,7 +160,7 @@ border-radius:80px;</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

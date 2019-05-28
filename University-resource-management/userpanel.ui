@@ -118,44 +118,10 @@ border-radius:80px;</string>
        <string>ویرایش حساب</string>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>240</y>
-        <width>741</width>
-        <height>141</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>739</width>
-         <height>139</height>
-        </rect>
-       </property>
-       <widget class="QWidget" name="verticalLayoutWidget_2">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>741</width>
-          <height>241</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_2"/>
-       </widget>
-      </widget>
-     </widget>
      <widget class="QPushButton" name="PB_newreq">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>450</x>
         <y>382</y>
         <width>281</width>
         <height>41</height>
@@ -163,6 +129,29 @@ border-radius:80px;</string>
       </property>
       <property name="text">
        <string>ثبت درخواست جدید</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView">
+      <property name="geometry">
+       <rect>
+        <x>95</x>
+        <y>240</y>
+        <width>641</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>81</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>بررسی وضعیت</string>
       </property>
      </widget>
     </widget>

@@ -24,32 +24,3 @@ Login::~Login()
     delete ui;
 }
 
-
-void Login::on_pushButton_login_clicked()
-{
-   /* QString username;
-    QString password;
-    username = ui->lineEdit_user->text();
-    password = ui->lineEdit_pass->text();
-
-    QSqlQuery qry;
-    if(qry.exec("select * from students where username='"+username+"'and password='"+password+"'")){
-        int count=0;
-        while(qry.next()){
-            count++;
-        }
-        if (count==1){
-            userpanel *panel=new userpanel;
-            panel->show();
-        }
-        if(count<1)
-            ui->label_status->setText("user & password is'not correct");
-
-    }
-*/
-}
-
-void Login::on_pushButton_signup_clicked()
-{
-   // ui->stackedWidget->setCurrentIndex(1);
-}

@@ -14,3 +14,7 @@ https://www.youtube.com/watch?v=_u7TcjIDNzw //persion teacher
 QSqlQuery Class
 
 https://doc.qt.io/qt-5/qsqlquery.html
+
+Dynamic pushbotton
+
+https://www.youtube.com/watch?v=l8mh2D_t5sY

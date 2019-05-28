@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         login.cpp \
-    userpanel.cpp
+    userpanel.cpp \
+    expertspanel.cpp
 
 HEADERS += \
         login.h \
-    userpanel.h
+    userpanel.h \
+    expertspanel.h
 
 FORMS += \
         login.ui \
-    userpanel.ui
+    userpanel.ui \
+    expertspanel.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

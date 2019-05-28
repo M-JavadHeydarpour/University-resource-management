@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>797</width>
+    <height>491</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,11 +20,14 @@
       <x>30</x>
       <y>10</y>
       <width>741</width>
-      <height>481</height>
+      <height>531</height>
      </rect>
     </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="layoutDirection">
@@ -49,7 +52,7 @@ border-radius:80px;</string>
        <rect>
         <x>469</x>
         <y>10</y>
-        <width>231</width>
+        <width>261</width>
         <height>191</height>
        </rect>
       </property>
@@ -127,8 +130,8 @@ border-radius:80px;</string>
        <widget class="QWidget" name="verticalLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>-1</x>
-          <y>-1</y>
+          <x>0</x>
+          <y>0</y>
           <width>741</width>
           <height>241</height>
          </rect>
@@ -137,21 +140,772 @@ border-radius:80px;</string>
        </widget>
       </widget>
      </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>490</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ثبت درخواست جدید</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="page_2"/>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>502</y>
-      <width>211</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ثبت درخواست جدید</string>
-    </property>
+    <widget class="QWidget" name="set_req">
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <widget class="QStackedWidget" name="departments">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>651</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tarbiat">
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>50</y>
+          <width>211</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="tarbiat_2">
+           <property name="text">
+            <string>اداره تربیت بدنی</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_2">
+           <property name="text">
+            <string>تربیت بدنی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_3">
+           <property name="text">
+            <string>سالن  بدنسازی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>سالن فوتسال</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>50</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>تاریخ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="dateEdit"/>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>300</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QCheckBox" name="checkBox_4">
+           <property name="text">
+            <string>3:30-5</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_3">
+           <property name="text">
+            <string>1:30-3</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_2">
+           <property name="text">
+            <string>10:30-12</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox">
+           <property name="text">
+            <string>8:30-10</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>160</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>سانس:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>240</y>
+          <width>161</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ثبت درخواست</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="azmaieshgah">
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>30</y>
+          <width>211</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="tarbiat_4">
+           <property name="text">
+            <string>اداره آزمایشگاه مرکزی</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_10">
+           <property name="text">
+            <string>آزمایشگاه تحقیقاتی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_11">
+           <property name="text">
+            <string>آزمایشگاه گیاه شناسی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_12">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>آزمایشگاه خواص مکانیکی</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QStackedWidget" name="equipments">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>30</y>
+          <width>361</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tahghighat">
+         <widget class="QWidget" name="verticalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>20</y>
+            <width>194</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QRadioButton" name="radioButton_13">
+             <property name="text">
+              <string>تلسکوپ انعکاسی کاسگرین 8 اینچی</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_14">
+             <property name="text">
+              <string>پمپ خلاء</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_15">
+             <property name="text">
+              <string>میز اپتیکی</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="text">
+              <string>در تاریخ:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_4"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>به مدت</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>ساعت</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>111</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>تعرفه:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>140</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ثبت درخواست</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="giah">
+         <widget class="QWidget" name="verticalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>20</y>
+            <width>194</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QRadioButton" name="radioButton_22">
+             <property name="text">
+              <string>Rotary دستگاه</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_23">
+             <property name="text">
+              <string>همزن التراسونیک هموژنایزر</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>به مدت</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_4"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>ساعت</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>در تاریخ:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_7"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>111</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>تعرفه:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ثبت درخواست</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="khavas">
+         <widget class="QWidget" name="verticalLayoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>20</y>
+            <width>194</width>
+            <height>65</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QRadioButton" name="radioButton_25">
+             <property name="text">
+              <string>تست ضربه</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radioButton_26">
+             <property name="text">
+              <string>تست سایش ترکیبی</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>به مدت</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinBox_5"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>ساعت</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_11">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>100</y>
+            <width>160</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>در تاریخ:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDateEdit" name="dateEdit_8"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>111</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>تعرفه:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>140</y>
+            <width>161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>ثبت درخواست</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="refah">
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>50</y>
+          <width>211</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="tarbiat_3">
+           <property name="text">
+            <string>اداره رفاه</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_4">
+           <property name="text">
+            <string>مهمانسرای انزلی</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_5">
+           <property name="text">
+            <string>هتل تهران</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_6">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string>خوابگاه شقایق</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>50</y>
+          <width>81</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>نوع اتاق</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_9">
+           <property name="text">
+            <string>یک تخته</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_8">
+           <property name="text">
+            <string>دو تخته</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_7">
+           <property name="text">
+            <string>چهار تخته</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>50</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="dateEdit_2"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDateEdit" name="dateEdit_3"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>از تاریخ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>تا تاریخ</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>204</x>
+          <y>230</y>
+          <width>211</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ثبت درخواست</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>60</y>
+        <width>311</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>اداره مورد نظر را انتخاب کنید:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>&lt;انتخاب اداره&gt;</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>تربیت بدنی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>آزمایشگاه مرکزی</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>رفاه</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -159,8 +913,8 @@ border-radius:80px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>26</height>
+     <width>797</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>

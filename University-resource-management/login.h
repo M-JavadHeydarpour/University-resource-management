@@ -21,6 +21,8 @@ public:
 
 private slots:
 
+    void on_PB_login_clicked();
+
 private:
     Ui::Login *ui;
     QSqlDatabase mydb;

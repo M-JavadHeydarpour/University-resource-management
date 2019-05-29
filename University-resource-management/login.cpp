@@ -24,3 +24,8 @@ Login::~Login()
     delete ui;
 }
 
+
+void Login::on_PB_login_clicked()
+{
+
+}

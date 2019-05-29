@@ -27,7 +27,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="layoutDirection">
@@ -244,7 +244,7 @@ border-radius:80px;</string>
          <rect>
           <x>20</x>
           <y>140</y>
-          <width>300</width>
+          <width>312</width>
           <height>80</height>
          </rect>
         </property>
@@ -371,8 +371,8 @@ border-radius:80px;</string>
            <rect>
             <x>150</x>
             <y>20</y>
-            <width>194</width>
-            <height>65</height>
+            <width>234</width>
+            <height>82</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -405,7 +405,7 @@ border-radius:80px;</string>
             <x>180</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
@@ -427,7 +427,7 @@ border-radius:80px;</string>
             <x>10</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -523,7 +523,7 @@ border-radius:80px;</string>
             <x>0</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_13">
@@ -552,7 +552,7 @@ border-radius:80px;</string>
             <x>170</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_14">
@@ -641,7 +641,7 @@ border-radius:80px;</string>
             <x>0</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_16">
@@ -670,7 +670,7 @@ border-radius:80px;</string>
             <x>170</x>
             <y>100</y>
             <width>160</width>
-            <height>22</height>
+            <height>27</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_17">
@@ -780,8 +780,8 @@ border-radius:80px;</string>
          <rect>
           <x>300</x>
           <y>50</y>
-          <width>81</width>
-          <height>91</height>
+          <width>85</width>
+          <height>105</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -868,7 +868,7 @@ border-radius:80px;</string>
         <x>390</x>
         <y>60</y>
         <width>311</width>
-        <height>22</height>
+        <height>26</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -914,7 +914,7 @@ border-radius:80px;</string>
      <x>0</x>
      <y>0</y>
      <width>797</width>
-     <height>21</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

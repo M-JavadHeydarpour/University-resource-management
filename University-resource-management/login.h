@@ -5,6 +5,7 @@
 #include <QFileInfo>
 #include <QDebug>
 #include <QString>
+#include <database/database.h>
 
 namespace Ui {
 class Login;

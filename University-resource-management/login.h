@@ -2,11 +2,10 @@
 #define LOGIN_H
 
 #include <QMainWindow>
-#include <QtSql>
 #include <QFileInfo>
 #include <QDebug>
 #include <QString>
-
+#include <database.h>
 namespace Ui {
 class Login;
 }
@@ -21,9 +20,11 @@ public:
 
 private slots:
 
+
+
 private:
     Ui::Login *ui;
-    QSqlDatabase mydb;
+
 
 };
 

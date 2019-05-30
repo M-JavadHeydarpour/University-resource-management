@@ -1,15 +1,14 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-05-19T11:30:25
+# Project created by QtCreator 2019-05-28T17:08:23
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       -= gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
-TARGET = University-resource-management
-TEMPLATE = app
+TARGET = database
+TEMPLATE = lib
+CONFIG += staticlib
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -22,27 +21,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++11
-INCLUDEPATH +="../database"
-LIBS += "../build-database-Desktop_Qt_5_12_0_MSVC2017_32bit-Debug/debug/database.lib"
-
 SOURCES += \
-        main.cpp \
-        login.cpp \
-    userpanel.cpp \
-    expertspanel.cpp
+        database.cpp
 
 HEADERS += \
-        login.h \
-    userpanel.h \
-    expertspanel.h
-
-FORMS += \
-        login.ui \
-    userpanel.ui \
-    expertspanel.ui
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+        database.h
+unix {
+    target.path = /usr/lib
+    INSTALLS += target
+}

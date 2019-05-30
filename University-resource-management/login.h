@@ -5,7 +5,7 @@
 #include <QFileInfo>
 #include <QDebug>
 #include <QString>
-#include <database.h>
+
 namespace Ui {
 class Login;
 }
@@ -19,7 +19,6 @@ public:
     ~Login();
 
 private slots:
-
 
 
 private:

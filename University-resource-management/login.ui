@@ -73,7 +73,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget">
@@ -259,6 +259,19 @@
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="PB_back">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>بازگشت</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -268,7 +281,7 @@
      <x>0</x>
      <y>0</y>
      <width>577</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

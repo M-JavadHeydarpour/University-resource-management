@@ -49,7 +49,7 @@ public:
     void Set_email(QString email);
     void Set_username(QString username);
     void Set_password(QString password );
-    void Set_imgurl(QString imgur);
+    void Set_imgurl(QString imgurl);
     void Set_role(QString role);
 
     QString Get_ID();

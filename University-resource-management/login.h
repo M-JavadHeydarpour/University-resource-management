@@ -22,6 +22,8 @@ public:
 private slots:
 
 
+
+
 private:
     Ui::Login *ui;
 

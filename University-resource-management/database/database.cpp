@@ -1,9 +1,8 @@
 #include "database.h"
 
 
-Database::Database(QString URL)
+Database::Database()
 {
-    this->URL = URL;
 }
 
 void Database::Set_URL(QString URL)

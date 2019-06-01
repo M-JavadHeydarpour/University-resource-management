@@ -34,7 +34,8 @@ void Login::on_PB_back_clicked()
 void Login::on_pb_getinfo_clicked()
 {
     User sign;
-    Database sign2("info.txt");
+    Database sign2;
+    sign2.Set_URL("info.txt");
     // pich info from ui and storge on ram
     sign.Set_name(ui->LE_name->text());
     sign.Set_family(ui->LE_family->text());
@@ -44,6 +45,7 @@ void Login::on_pb_getinfo_clicked()
     sign.Set_username(ui->LE_user_2->text());
 
     //insert info to file.
+
     sign2.Insert(sign);
 
 

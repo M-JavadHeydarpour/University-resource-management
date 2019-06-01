@@ -13,7 +13,7 @@ class Database
 private:
     QString URL;
 public:
-    Database(QString URL);
+    Database();
     void Set_URL(QString URL);
 
     void Add_Table();//make a new file with a certain headers.

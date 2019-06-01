@@ -28,6 +28,8 @@ private slots:
 
     void on_PB_back_clicked();
 
+    void on_pb_getinfo_clicked();
+
 private:
     Ui::Login *ui;
 

@@ -1,8 +1,9 @@
 #include "database.h"
 
 
-Database::Database()
+Database::Database(QString URL)
 {
+    this->URL = URL;
 }
 
 void Database::Set_URL(QString URL)
@@ -22,12 +23,24 @@ void Database::Add_Table()
     file.close();
 }
 
-void Database::Insert(QString qury)
+void Database::Insert(User row)
 {
     QFile file(URL);
     file.open(QIODevice::Append);
     QTextStream out(&file);
-    out <<qury<<endl;
+
+    //write user info on file
+    out <<row.Get_ID()<<';';
+    out <<row.Get_name()<<';';
+    out <<row.Get_family()<<';';
+    out <<row.Get_phonenum()<<';';
+    out <<row.Get_email()<<';';
+    out <<row.Get_username()<<';';
+    out <<row.Get_password()<<';';
+    out <<row.Get_name()<<';';
+    out <<row.Get_imgurl()<<';';
+    out <<row.Get_role();
+
     file.close();
 }
 

@@ -251,7 +251,7 @@
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="pb_getinfo">
          <property name="text">
           <string>ثبت نام</string>
          </property>
@@ -281,7 +281,7 @@
      <x>0</x>
      <y>0</y>
      <width>577</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

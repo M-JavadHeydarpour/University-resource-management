@@ -8,6 +8,7 @@ Login::Login(QWidget *parent) :
     ui(new Ui::Login)
 {
     ui->setupUi(this);
+    ui->stackedWidget->setCurrentIndex(0);
 
 }
 

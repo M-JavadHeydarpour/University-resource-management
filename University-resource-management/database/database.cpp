@@ -30,15 +30,16 @@ void Database::Insert(User row)
 
     //write user info on file
 
-    (row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
+    //(row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
     (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
     (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
     (row.Get_phonenum()!="")?out <<row.Get_phonenum()<<';':out<<"#"<<";";
     (row.Get_email()!="")?out <<row.Get_email()<<';':out<<"#"<<";";
     (row.Get_username()!="")?out <<row.Get_username()<<';':out<<"#"<<";";
     (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
-    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<';':out<<"#"<<";";
-    (row.Get_role()!="")?out <<row.Get_role():out<<"#"<<";";
+    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U';
+
+    out<<'\n';
 
     file.close();
 }

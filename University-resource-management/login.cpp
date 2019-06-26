@@ -2,7 +2,7 @@
 #include "ui_login.h"
 #include "userpanel.h"
 #include "QMessageBox"
-
+#include "expertspanel.h"
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Login)
@@ -43,12 +43,26 @@ void Login::on_pb_getinfo_clicked()
     sign.Set_family(ui->LE_family->text());
     sign.Set_email(ui->LE_email->text());
     sign.Set_phonenum(ui->LE_phone->text());
-    sign.Set_password(ui->LE_pass->text());
+    sign.Set_password(ui->LE_pass_2->text());
     sign.Set_username(ui->LE_user_2->text());
-
+    ui->stackedWidget->setCurrentIndex(0);
     //insert info to file.
 
     sign2.Insert(sign);
 
 
+}
+
+void Login::on_PB_login_clicked()
+{
+    if(ui->LE_user->text()=="habib"&&ui->LE_pass->text()=="123456")
+    {
+        Login up;
+        up.show();
+    }
+    else if (ui->LE_user->text()=="khosravi"&&ui->LE_pass->text()=="hadi") {
+        ExpertsPanel ep;
+      //  ep=new ExpertsPanel
+        ep.show();
+    }
 }

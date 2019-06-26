@@ -210,7 +210,7 @@ border-radius:80px;</string>
           <x>200</x>
           <y>50</y>
           <width>191</width>
-          <height>201</height>
+          <height>206</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -322,7 +322,7 @@ border-radius:80px;</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tarbiat">
        <widget class="QWidget" name="verticalLayoutWidget_3">
@@ -538,7 +538,7 @@ border-radius:80px;</string>
          </rect>
         </property>
         <property name="currentIndex">
-         <number>1</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="tahghighat">
          <widget class="QWidget" name="verticalLayoutWidget_7">
@@ -1113,7 +1113,7 @@ background-repeat:none;</string>
      <x>0</x>
      <y>0</y>
      <width>797</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

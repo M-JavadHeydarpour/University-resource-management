@@ -30,6 +30,7 @@ void Database::Insert(User row)
 
     //write user info on file
 
+    out<<"\r\n";
     //(row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
     (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
     (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
@@ -39,7 +40,7 @@ void Database::Insert(User row)
     (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
     (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U';
 
-    out<<'\n';
+    //out<<'\n';
 
     file.close();
 }

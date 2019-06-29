@@ -38,7 +38,7 @@ void Database::Insert(User row)
     (row.Get_email()!="")?out <<row.Get_email()<<';':out<<"#"<<";";
     (row.Get_username()!="")?out <<row.Get_username()<<';':out<<"#"<<";";
     (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
-    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U';
+    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U'<<';';
 
     //out<<'\n';
 
@@ -51,40 +51,42 @@ void Database::Update()
 }
 QString Database::Select(int row)
 {
+    //open file
     QFile file(URL);
     file.open(QIODevice::ReadOnly);
 
-    int counter=0;
+    int counter=0;// use for arrive to requst line.
     QString line;
     while(!file.atEnd()){
 
         line=file.readLine();
         if(row==counter){
-            //qDebug()<<line;
             break;
         }
 
         counter++;
     }
     file.close();
-    qDebug()<<row;
+
 
     return line;
 
 }
 QString Database::Select_obj(int row, int column)
 {
+
     QString line;
     QString result="";
     line =Select(row);
-    int pos_semi_1=0,pos_semi_2=0;
+    int pos_semi_1=0,pos_semi_2=0;//position of semicolons(;).firs one and second.
     for (int i=0;line[i]!='\x0'&&column>=0;i++){
-        if(line[i]==';'){
+        if(line[i]==';'){//save position of semis.
             pos_semi_1=pos_semi_2;
             pos_semi_2=i;
             column--;
         }
     }
+    //for first column.
     if (pos_semi_1==0)
         pos_semi_1--;
     for (int i=pos_semi_1+1;i<pos_semi_2;i++){

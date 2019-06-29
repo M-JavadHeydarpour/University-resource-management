@@ -55,16 +55,21 @@ void Login::on_pb_getinfo_clicked()
 
 void Login::on_PB_login_clicked()
 {
+    //create a Database obj for use moduls and Extraction data.
     Database check;
     check.Set_URL("info.txt");
-    //qDebug()<<check.Number_of_row();
 
-    QString dataline;
+    QString dataline;//each row of database.
 
-    //dataline=check.Select(1);
+    bool flag=false;//for check input lineEdit is true or not
+
+    //chek username & password
     for (int i=0;i<check.Number_of_row();i++){
-        if(check.Select_obj(i,4)==ui->LE_user->text()&& check.Select_obj(i,5)==ui->LE_pass->text())
+        if(check.Select_obj(i,4)==ui->LE_user->text()&& check.Select_obj(i,5)==ui->LE_pass->text()){
+            flag=true;
             qDebug()<<"Welcome!!";
-    //qDebug()<<check.Select_obj(1,3);
+            }
     }
+    if (!flag)
+        qDebug()<<"username or password incorrect!!";
 }

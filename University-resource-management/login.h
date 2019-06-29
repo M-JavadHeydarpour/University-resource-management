@@ -6,6 +6,7 @@
 #include <QDebug>
 #include <QString>
 #include <database/database.h>
+#include <brain/brain.h>
 
 namespace Ui {
 class Login;

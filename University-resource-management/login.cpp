@@ -55,14 +55,16 @@ void Login::on_pb_getinfo_clicked()
 
 void Login::on_PB_login_clicked()
 {
-    if(ui->LE_user->text()=="habib"&&ui->LE_pass->text()=="123456")
-    {
-        Login up;
-        up.show();
-    }
-    else if (ui->LE_user->text()=="khosravi"&&ui->LE_pass->text()=="hadi") {
-        ExpertsPanel ep;
-      //  ep=new ExpertsPanel
-        ep.show();
+    Database check;
+    check.Set_URL("info.txt");
+    //qDebug()<<check.Number_of_row();
+
+    QString dataline;
+
+    //dataline=check.Select(1);
+    for (int i=0;i<check.Number_of_row();i++){
+        if(check.Select_obj(i,4)==ui->LE_user->text()&& check.Select_obj(i,5)==ui->LE_pass->text())
+            qDebug()<<"Welcome!!";
+    //qDebug()<<check.Select_obj(1,3);
     }
 }

@@ -23,6 +23,9 @@ public:
     void show_column(QString col);//show a certain coumn.
     QString Search(QString col,QString thing);//find and return id of things that you search.
     QString Select(int row );//return a row by id
+    QString Select_obj(int row,int column);//return a column from a certain row
+    int Number_of_row();//return number of data rows.
+
 
 
 

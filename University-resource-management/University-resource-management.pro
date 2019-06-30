@@ -25,19 +25,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 
-INCLUDEPATH +="../database" "../brain"
-LIBS += "../build-database-Desktop_Qt_5_12_0_MSVC2017_32bit-Debug/debug/database.lib" "../build-brain-Desktop_Qt_5_12_0_MSVC2017_32bit-Debug/debug/brain.lib"
+
+
 
 SOURCES += \
         main.cpp \
         login.cpp \
     userpanel.cpp \
-    expertspanel.cpp
+    expertspanel.cpp \
+    dataset.cpp
 
 HEADERS += \
         login.h \
     userpanel.h \
-    expertspanel.h
+    expertspanel.h \
+    dataset.h
 
 FORMS += \
         login.ui \

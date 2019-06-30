@@ -3,6 +3,7 @@
 #include "userpanel.h"
 #include "QMessageBox"
 #include "expertspanel.h"
+
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Login)
@@ -70,6 +71,15 @@ void Login::on_PB_login_clicked()
             qDebug()<<"Welcome!!";
             }
     }
-    if (!flag)
+    if(flag){
+        this->hide();
+        userpanel userpanel;
+
+
+
+
+    }
+
+    else
         qDebug()<<"username or password incorrect!!";
 }

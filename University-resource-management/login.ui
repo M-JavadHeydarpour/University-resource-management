@@ -297,22 +297,5 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>PB_login</sender>
-   <signal>clicked()</signal>
-   <receiver>Login</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>295</x>
-     <y>239</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>288</x>
-     <y>179</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

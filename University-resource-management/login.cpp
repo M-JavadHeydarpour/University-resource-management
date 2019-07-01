@@ -47,7 +47,6 @@ void Login::on_pb_getinfo_clicked()
     sign.Set_password(ui->LE_pass_2->text());
     sign.Set_username(ui->LE_user_2->text());
     sign.Set_address(ui->LE_address->text());
-    sign.change_available("t");
     sign.Set_office_ID("U");
 
     ui->stackedWidget->setCurrentIndex(0);

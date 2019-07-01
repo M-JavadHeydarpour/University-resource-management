@@ -63,7 +63,6 @@ public:
     void Set_imgurl(QString imgurl);
     void Set_role(QString role);
     void Set_address(QString add);
-    void change_available(QString ava);
     void Set_office_ID(QString office_ID);
 
     QString Get_ID();
@@ -77,8 +76,6 @@ public:
     QString Get_role();
     QString Get_address();
     QString Get_office_ID();
-    QString Get_available();
-
 
 
 

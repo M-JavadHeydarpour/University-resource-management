@@ -30,6 +30,7 @@ void Persons_database::Insert(User row)
     //write user info on file
 
     row.Rand_ID();
+
     out<<"\r\n";
 
     out <<row.Get_ID()<<';';
@@ -41,7 +42,6 @@ void Persons_database::Insert(User row)
     out <<row.Get_address()<<';';
     out <<row.Get_phonenum()<<';';
     out<<"#";//image url
-    out<<row.Get_available()<<';';
     out<<'U'<<';';
     out<<'#'<<';';//for office ID
 
@@ -164,9 +164,6 @@ void User::Set_role(QString role){
 }
 void User::Set_address(QString add){
     this->address=add;
-}
-void User::change_available(QString ava){
-    this->available=ava;
 }
 void User::Set_office_ID(QString office_ID){
     this->office_ID=office_ID;

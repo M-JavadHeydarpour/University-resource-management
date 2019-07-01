@@ -79,7 +79,10 @@ public:
     QString Get_role();
     QString Get_address();
     QString Get_office_ID();
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3906d58788bcf749480741a3728d115719523e0
 
 
 

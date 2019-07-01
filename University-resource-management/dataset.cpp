@@ -21,8 +21,8 @@ void Persons_database::Insert(User row)
     //write user info on file
 
     row.Rand_ID();
-    out<<"\r\n";
 
+<<<<<<< HEAD
     (row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
     (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
     (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
@@ -34,6 +34,22 @@ void Persons_database::Insert(User row)
     counter++;
     total++;
     //out<<'\n';
+=======
+    out<<"\r\n";
+    out<<"1";
+    out <<row.Get_ID()<<';';
+    out <<row.Get_username()<<';';
+    out <<row.Get_password()<<';';
+    out <<row.Get_name()<<';';
+    out <<row.Get_family()<<';';
+    out <<row.Get_email()<<';';
+    out <<row.Get_address()<<';';
+    out <<row.Get_phonenum()<<';';
+    out<<"#";//image url
+    out<<'U'<<';';
+    out<<'#'<<';';//for office ID
+
+>>>>>>> b3906d58788bcf749480741a3728d115719523e0
 
     file.close();
 }

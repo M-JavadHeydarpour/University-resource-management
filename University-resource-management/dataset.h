@@ -8,34 +8,30 @@
 #include <ctime>
 
 class User;//base information of persons
-class Database;//work with every file
+class Persons_database;//work with every file
 class Office;
 
 
 
 
 
-class Database
+class Persons_database
 {
 private:
     QString URL;
 public:
-    Database();
+    Persons_database();
     void Set_URL(QString URL);
 
     void Add_Table();//make a new file with a certain headers.
     void Insert(User row);//give a line and add to the end of file.
     void Update();//change data in filevoid
-    void show_database();// just show data base.
+    void show_Persons_database();// just show data base.
     void show_column(QString col);//show a certain coumn.
     QString Search(QString col,QString thing);//find and return id of things that you search.
     QString Select(int row );//return a row by id
     QString Select_obj(int row,int column);//return a column from a certain row
     int Number_of_row();//return number of data rows.
-
-
-
-
 };
 
 class User

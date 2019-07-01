@@ -37,7 +37,7 @@ void Login::on_pb_getinfo_clicked()
 {
     User sign;
     Database sign2;
-    sign2.Set_URL("info.txt");
+    sign2.Set_URL("person.txt");
     // pich info from ui and storge on RAM
 
     sign.Set_name(ui->LE_name->text());
@@ -58,7 +58,7 @@ void Login::on_PB_login_clicked()
 {
     //create a Database obj for use moduls and Extraction data.
     Database check;
-    check.Set_URL("info.txt");
+    check.Set_URL("person.txt");
 
     QString dataline;//each row of database.
 
@@ -66,20 +66,13 @@ void Login::on_PB_login_clicked()
 
     //chek username & password
     for (int i=0;i<check.Number_of_row();i++){
-        if(check.Select_obj(i,4)==ui->LE_user->text()&& check.Select_obj(i,5)==ui->LE_pass->text()){
+        if(check.Select_obj(i,5)==ui->LE_user->text()&& check.Select_obj(i,6)==ui->LE_pass->text()){
             flag=true;
             qDebug()<<"Welcome!!";
             }
     }
-    if(flag){
-        this->hide();
-        userpanel userpanel;
 
 
-
-
-    }
-
-    else
+    if (!flag)
         qDebug()<<"username or password incorrect!!";
 }

@@ -5,9 +5,14 @@
 #include <QDebug>
 #include <QFile>
 #include <QString>
+#include <ctime>
 
 class User;
-class Database;
+class Database;//work with every file
+
+
+
+
 class Database
 {
 private:
@@ -45,6 +50,8 @@ private:
     role;
 
 public:
+    void Rand_ID();
+
     void Set_ID(QString ID);
     void Set_name(QString name);
     void Set_family(QString family);
@@ -64,6 +71,8 @@ public:
     QString Get_password();
     QString Get_imgurl();
     QString Get_role();
+
+
 
 };
 #endif // DATASET_H

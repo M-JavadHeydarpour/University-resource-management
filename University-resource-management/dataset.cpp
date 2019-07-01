@@ -29,8 +29,10 @@ void Database::Insert(User row)
 
     //write user info on file
 
+    row.Rand_ID();
     out<<"\r\n";
-    //(row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
+
+    (row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
     (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
     (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
     (row.Get_phonenum()!="")?out <<row.Get_phonenum()<<';':out<<"#"<<";";
@@ -108,6 +110,24 @@ int Database::Number_of_row()
     file.close();
     return counter;
 }
+
+//------------------------------------------------------------
+
+
+
+void User::Rand_ID()
+{
+    srand((unsigned)time(NULL));
+    QString m_id="";
+    char rnum;
+    for (int i=0;i<6;i++){
+        rnum =(rand() % 10)+48;
+        m_id.append(rnum);
+    }
+    ID = m_id;
+}
+
+
 
 
 void User::Set_ID(QString ID)

@@ -73,7 +73,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget">
@@ -163,8 +163,8 @@
        <rect>
         <x>150</x>
         <y>40</y>
-        <width>191</width>
-        <height>227</height>
+        <width>222</width>
+        <height>235</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -180,6 +180,16 @@
            </property>
           </widget>
          </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="LE_name"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="LE_pass_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
          <item row="3" column="0">
           <widget class="QLabel" name="label">
            <property name="text">
@@ -190,37 +200,8 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>نام:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLineEdit" name="LE_email"/>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_4">
-           <property name="text">
-            <string>نام کاربری:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="LE_user_2"/>
-         </item>
          <item row="1" column="1">
           <widget class="QLineEdit" name="LE_family"/>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="LE_name"/>
          </item>
          <item row="4" column="0">
           <widget class="QLabel" name="label_6">
@@ -242,11 +223,51 @@
            </property>
           </widget>
          </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>نام کاربری:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>نام:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="LE_email"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="LE_user_2"/>
+         </item>
          <item row="3" column="1">
           <widget class="QLineEdit" name="LE_phone"/>
          </item>
-         <item row="5" column="1">
-          <widget class="QLineEdit" name="LE_pass_2"/>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="LE_address">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>آدرس</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>

@@ -7,8 +7,10 @@
 #include <QString>
 #include <ctime>
 
-class User;
+class User;//base information of persons
 class Database;//work with every file
+class Office;
+
 
 
 
@@ -46,8 +48,11 @@ private:
     email,
     username,
     password,
+    address,
     imgurl,
-    role;
+    role,
+    available,
+    office_ID;
 
 public:
     void Rand_ID();//rand id for new user(6 digit number)
@@ -61,6 +66,9 @@ public:
     void Set_password(QString password );
     void Set_imgurl(QString imgurl);
     void Set_role(QString role);
+    void Set_address(QString add);
+    void change_available();
+    void Set_office_ID(QString office_ID);
 
     QString Get_ID();
     QString Get_name();
@@ -75,4 +83,14 @@ public:
 
 
 };
+
+class Office
+{
+private:
+    QString name;
+    QString boss;
+
+
+};
+
 #endif // DATASET_H

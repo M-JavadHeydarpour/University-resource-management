@@ -1,15 +1,15 @@
 #include "dataset.h"
 
-Database::Database()
+Persons_database::Persons_database()
 {
 }
 
-void Database::Set_URL(QString URL)
+void Persons_database::Set_URL(QString URL)
 {
     this->URL =URL;
 }
 
-void Database::Add_Table()
+void Persons_database::Add_Table()
 {
 
     QFile file(URL);
@@ -21,7 +21,7 @@ void Database::Add_Table()
     file.close();
 }
 
-void Database::Insert(User row)
+void Persons_database::Insert(User row)
 {
     QFile file(URL);
     file.open(QIODevice::Append);
@@ -46,11 +46,11 @@ void Database::Insert(User row)
     file.close();
 }
 
-void Database::Update()
+void Persons_database::Update()
 {
 
 }
-QString Database::Select(int row)
+QString Persons_database::Select(int row)
 {
     //open file
     QFile file(URL);
@@ -73,7 +73,7 @@ QString Database::Select(int row)
     return line;
 
 }
-QString Database::Select_obj(int row, int column)
+QString Persons_database::Select_obj(int row, int column)
 {
 
     QString line;
@@ -96,7 +96,7 @@ QString Database::Select_obj(int row, int column)
     return result;
 }
 
-int Database::Number_of_row()
+int Persons_database::Number_of_row()
 {
     QFile file(URL);
     file.open(QIODevice::ReadOnly);

@@ -1,7 +1,8 @@
 #include "dataset.h"
-
 Persons_database::Persons_database()
 {
+    counter=1000;
+    total=0;
 }
 
 void Persons_database::Set_URL(QString URL)
@@ -9,17 +10,7 @@ void Persons_database::Set_URL(QString URL)
     this->URL =URL;
 }
 
-void Persons_database::Add_Table()
-{
 
-    QFile file(URL);
-    file.open(QIODevice::Append);
-
-
-    QTextStream out(&file);
-    out << "id;ID;name;family;phonenum;email;username;password;imgurl;role"<<endl;
-    file.close();
-}
 
 void Persons_database::Insert(User row)
 {
@@ -40,7 +31,8 @@ void Persons_database::Insert(User row)
     (row.Get_username()!="")?out <<row.Get_username()<<';':out<<"#"<<";";
     (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
     (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U'<<';';
-
+    counter++;
+    total++;
     //out<<'\n';
 
     file.close();
@@ -110,7 +102,14 @@ int Persons_database::Number_of_row()
     file.close();
     return counter;
 }
+//void Persons_database::Search()
+//{
 
+//}
+void Persons_database::Delete(QString ID)
+{
+
+}
 //------------------------------------------------------------
 
 
@@ -161,9 +160,6 @@ void User::Set_role(QString role){
 }
 void User::Set_address(QString add){
     this->address=add;
-}
-void User::change_available(QString ava){
-    this->available=ava;
 }
 void User::Set_office_ID(QString office_ID){
     this->office_ID=office_ID;

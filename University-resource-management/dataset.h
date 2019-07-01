@@ -19,19 +19,23 @@ class Persons_database
 {
 private:
     QString URL;
+    static int counter;
+    static int total;
 public:
     Persons_database();
     void Set_URL(QString URL);
-
-    void Add_Table();//make a new file with a certain headers.
     void Insert(User row);//give a line and add to the end of file.
+    void Delete(QString ID);//disactives an id
     void Update();//change data in filevoid
     void show_Persons_database();// just show data base.
     void show_column(QString col);//show a certain coumn.
-    QString Search(QString col,QString thing);//find and return id of things that you search.
+    QString Search(QString component);//find and return id of things that you search.
     QString Select(int row );//return a row by id
     QString Select_obj(int row,int column);//return a column from a certain row
     int Number_of_row();//return number of data rows.
+    int get_counter();//counter for id
+    int get_total();//number of lines
+
 };
 
 class User
@@ -47,7 +51,6 @@ private:
     address,
     imgurl,
     role,
-    available,
     office_ID;
 
 public:
@@ -63,7 +66,6 @@ public:
     void Set_imgurl(QString imgurl);
     void Set_role(QString role);
     void Set_address(QString add);
-    void change_available(QString ava);
     void Set_office_ID(QString office_ID);
 
     QString Get_ID();
@@ -77,7 +79,6 @@ public:
     QString Get_role();
     QString Get_address();
     QString Get_office_ID();
-    QString Get_available();
 
 
 

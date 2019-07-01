@@ -36,7 +36,7 @@ void Login::on_PB_back_clicked()
 void Login::on_pb_getinfo_clicked()
 {
     User sign;
-    Database sign2;
+    Persons_database sign2;
     sign2.Set_URL("person.txt");
     // pich info from ui and storge on RAM
 
@@ -47,7 +47,7 @@ void Login::on_pb_getinfo_clicked()
     sign.Set_password(ui->LE_pass_2->text());
     sign.Set_username(ui->LE_user_2->text());
     sign.Set_address(ui->LE_address->text());
-    sign.change_available("t");
+
     sign.Set_office_ID("U");
 
     ui->stackedWidget->setCurrentIndex(0);
@@ -61,7 +61,7 @@ void Login::on_pb_getinfo_clicked()
 void Login::on_PB_login_clicked()
 {
     //create a Database obj for use moduls and Extraction data.
-    Database check;
+    Persons_database check;
     check.Set_URL("person.txt");
 
     QString dataline;//each row of database.

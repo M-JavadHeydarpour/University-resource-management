@@ -34,14 +34,16 @@ SOURCES += \
     userpanel.cpp \
     expertspanel.cpp \
     dataset.cpp \
-    brain.cpp
+    brain.cpp \
+    test.cpp
 
 HEADERS += \
         login.h \
     userpanel.h \
     expertspanel.h \
     dataset.h \
-    brain.h
+    brain.h \
+    test.h
 
 FORMS += \
         login.ui \

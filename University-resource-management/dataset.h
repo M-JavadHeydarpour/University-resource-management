@@ -50,7 +50,7 @@ private:
     role;
 
 public:
-    void Rand_ID();
+    void Rand_ID();//rand id for new user(6 digit number)
 
     void Set_ID(QString ID);
     void Set_name(QString name);

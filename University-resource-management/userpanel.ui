@@ -39,7 +39,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="userp">
      <property name="layoutDirection">
@@ -322,7 +322,7 @@ border-radius:80px;</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tarbiat">
        <widget class="QWidget" name="verticalLayoutWidget_3">

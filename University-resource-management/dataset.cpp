@@ -118,13 +118,13 @@ int Database::Number_of_row()
 void User::Rand_ID()
 {
     srand((unsigned)time(NULL));
-    QString m_id="";
-    char rnum;
+    QString m_id="";//rand charactor added into it
+    char rnum;//rand charactor
     for (int i=0;i<6;i++){
         rnum =(rand() % 10)+48;
         m_id.append(rnum);
     }
-    ID = m_id;
+    ID = m_id;//set id
 }
 
 

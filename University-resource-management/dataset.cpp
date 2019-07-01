@@ -195,3 +195,13 @@ QString User::Get_imgurl(){
 QString User::Get_role(){
     return role;
 }
+
+QString User::Get_address()
+{
+    return address;
+}
+
+QString User::Get_office_ID()
+{
+    return office_ID;
+}

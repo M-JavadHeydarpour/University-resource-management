@@ -79,6 +79,10 @@ public:
     QString Get_password();
     QString Get_imgurl();
     QString Get_role();
+    QString Get_address();
+    QString Get_office_ID();
+    QString Get_available();
+
 
 
 

@@ -32,16 +32,19 @@ void Persons_database::Insert(User row)
     row.Rand_ID();
     out<<"\r\n";
 
-    (row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
-    (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
-    (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
-    (row.Get_phonenum()!="")?out <<row.Get_phonenum()<<';':out<<"#"<<";";
-    (row.Get_email()!="")?out <<row.Get_email()<<';':out<<"#"<<";";
-    (row.Get_username()!="")?out <<row.Get_username()<<';':out<<"#"<<";";
-    (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
-    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U'<<';';
+    out <<row.Get_ID()<<';';
+    out <<row.Get_username()<<';';
+    out <<row.Get_password()<<';';
+    out <<row.Get_name()<<';';
+    out <<row.Get_family()<<';';
+    out <<row.Get_email()<<';';
+    out <<row.Get_address()<<';';
+    out <<row.Get_phonenum()<<';';
+    out<<"#";//image url
+    out<<row.Get_available()<<';';
+    out<<'U'<<';';
+    out<<'#'<<';';//for office ID
 
-    //out<<'\n';
 
     file.close();
 }

@@ -33,7 +33,7 @@ public:
     QString Search_UserName(QString component);//find and return id of things that you search.
     QString Search_Name(QString component);//find and return id of things that you search.
     QString Search_Family(QString component);//find and return id of things that you search.
-    QString Search_Office_ID(QString component);//find and return id of things that you search.
+    QString earch_Office_ID(QString component);//find and return id of things that you search.
 
     int Number_of_row();//return number of data rows.
     int get_counter();//counter for id

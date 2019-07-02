@@ -133,7 +133,7 @@ User Persons_database::extarct_data(QString line)
     mouse.Set_office_ID(Select_obj(line,10));
     return mouse;
 }
-QString Persons_database::Search_ID(QString component)
+bool Persons_database::Search_ID(QString component)
 {
     QFile file(URL);
     file.open(QIODevice::ReadOnly);
@@ -141,9 +141,10 @@ QString Persons_database::Search_ID(QString component)
     while(!file.atEnd())
     {
         if(extarct_data(Select(i)).Get_ID()==component)
-            Select(i).append("0");
-            return extarct_data(Select(i)).Get_ID();
+            return true;
         i++;
+        if(i>=Number_of_row())
+            return false;
     }
 }
 QString Persons_database::Search_UserName(QString component)
@@ -215,37 +216,46 @@ QString Persons_database::Search_Office_ID(QString component)
     }
     return names;
 }
-void Persons_database::Delete(QString ID)
+void Persons_database::Delete(QString id)
 {
+    int len=Number_of_row();
     QFile file(URL);
     file.open(QIODevice::ReadOnly);
     QString *KIM;
-    KIM=new QString[total];
+    KIM=new QString[len];
     int i=0;
     while(! file.atEnd())
     {
-        if(Select_obj(Select(i),0)!=ID)
-        {
-            KIM[i]=Select(i);
-        }
+        KIM[i]=Select(i);
+        KIM[i].remove(KIM[i].lastIndexOf('\r'),2);
+
         i++;
+        if(i>=Number_of_row())
+            break;
     }
     file.close();
+
+    for (int i=0;i<len;i++)
+        qDebug()<<KIM[i];
+
     file.open(QIODevice::WriteOnly);
     QTextStream out(&file);
     out<<"";
     file.close();
+
     file.open(QIODevice::Append);
     QTextStream out1(&file);
-    for(int j=0;j<total-1;j++)
+    for(int j=0;j<len;j++)
     {
-        out1<<KIM[j]<<'\r\n';
+        if(Select_obj( KIM[j],0)!=id)
+        out1<<KIM[j]<<"\r\n";
     }
 }
 void Persons_database::Update(User UTD)
 {
     Delete(UTD.Get_ID());
     Insert(UTD);
+
 }
 
 

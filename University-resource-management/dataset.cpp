@@ -20,8 +20,7 @@ void Persons_database::Insert(User row)
 
 
     out<<"\r\n";
-    out<<"1";
-    out <<counter_ID<<';';
+    out <<Number_of_row()+1000<<';';
     out <<row.Get_username()<<';';
     out <<row.Get_password()<<';';
     out <<row.Get_name()<<';';
@@ -29,7 +28,7 @@ void Persons_database::Insert(User row)
     out <<row.Get_email()<<';';
     out <<row.Get_address()<<';';
     out <<row.Get_phonenum()<<';';
-    out<<"#";//image url
+    out<<"#"<<";";//image url
     out<<'U'<<';';
     out<<'#'<<';';//for office ID
     counter_ID++;
@@ -108,30 +107,30 @@ int Persons_database::Number_of_row()
     file.open(QIODevice::ReadOnly);
 
     int counter=0;
-    QString line;
     while(!file.atEnd()){
         file.readLine();
         counter++;
     }
+
     file.close();
+    //qDebug()<<counter;
     return counter;
 }
 User Persons_database::extarct_data(QString line)
 {
     User mouse;
-    if (line[0]==1){
-    mouse.Set_ID(Select_obj(line,1));
-    mouse.Set_username( Select_obj(line,2));
-    mouse.Set_password( Select_obj(line,3));
-    mouse.Set_name (Select_obj(line,4));
-    mouse.Set_family(Select_obj(line,5));
-    mouse.Set_email(Select_obj(line,6));
-    mouse.Set_address(Select_obj(line,7));
-    mouse.Set_phonenum(Select_obj(line,8));
-    mouse.Set_imgurl(Select_obj(line,9));
-    mouse.Set_role(Select_obj(line,10));
-    mouse.Set_office_ID(Select_obj(line,11));
-}
+    mouse.Set_ID(Select_obj(line,0));
+    mouse.Set_username( Select_obj(line,1));
+    mouse.Set_password( Select_obj(line,2));
+    mouse.Set_name (Select_obj(line,3));
+    mouse.Set_family(Select_obj(line,4));
+    mouse.Set_email(Select_obj(line,5));
+    mouse.Set_address(Select_obj(line,6));
+    mouse.Set_phonenum(Select_obj(line,7));
+    mouse.Set_imgurl(Select_obj(line,8));
+    mouse.Set_role(Select_obj(line,9));
+    mouse.Set_office_ID(Select_obj(line,10));
+    return mouse;
 }
 QString Persons_database::Search_ID(QString component)
 {
@@ -154,9 +153,12 @@ QString Persons_database::Search_UserName(QString component)
     while(!file.atEnd())
     {
         if(extarct_data(Select(i)).Get_username()==component)
-            return extarct_data(Select(i)).Get_username();
+            return extarct_data(Select(i)).Get_ID();
         i++;
+        if(i>=Number_of_row())
+            break;
     }
+    return "";
 }
 QString Persons_database::Search_Name(QString component)
 {
@@ -171,6 +173,8 @@ QString Persons_database::Search_Name(QString component)
             names.append(";");
         }
         i++;
+        if(i>=Number_of_row())
+            break;
     }
     return names;
 }
@@ -187,6 +191,8 @@ QString Persons_database::Search_Family(QString component)
             names.append(";");
         }
         i++;
+        if(i>=Number_of_row())
+            break;
     }
     return names;
 }
@@ -203,6 +209,8 @@ QString Persons_database::Search_Office_ID(QString component)
             names.append(";");
         }
         i++;
+        if(i>=Number_of_row())
+            break;
     }
     return names;
 }

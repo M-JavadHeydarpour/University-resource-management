@@ -83,3 +83,26 @@ void Login::on_PB_login_clicked()
     if (!flag)
         qDebug()<<"username or password incorrect!!";
 }
+
+void Login::on_PB_test_clicked()
+{
+    Persons_database test;
+    test.Set_URL("person.txt");
+    /*
+    User t;
+    t=test.extarct_data("1004;radikal;seji;sadjad;mohammadi;cactus@gmail.com;khorzogh;09139797;#;U;#;");
+    qDebug()<<t.Get_ID();
+    qDebug()<<t.Get_username();
+    qDebug() <<t.Get_password();
+    qDebug() <<t.Get_name();
+    qDebug() <<t.Get_family();
+    qDebug() <<t.Get_email();
+    qDebug() <<t.Get_address();
+    qDebug() <<t.Get_phonenum();
+    qDebug() <<t.Get_imgurl();
+    qDebug() <<t.Get_role();
+    qDebug() <<t.Get_office_ID();
+    */
+    qDebug()<<test.Search_Family("fathi");
+
+}

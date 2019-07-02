@@ -18,17 +18,24 @@ public:
 class office
 {
 private:
+    QString name;
     Unit units[10];
 public:
-
+    void Set_name(QString);
+    QString Get_name();
 };
 
 class organ
 {
-    private:
-        QString ID;
-        QString name;
-        office offices[10];
+private:
+    QString ID;
+    QString name;
+    office offices[10];
+public:
+    void Set_ID(QString);
+    void Set_name(QString);
+    QString Get_ID();
+    QString Get_name();
 };
 
 #endif // ORGANISATION_H

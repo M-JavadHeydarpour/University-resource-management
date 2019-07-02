@@ -1,5 +1,4 @@
 #include "organisation.h"
-<<<<<<< HEAD
 void Unit::Set_cost(QString cost)
 {
     this->cost = cost;
@@ -24,7 +23,6 @@ QString Unit::Get_reqtype()
 {
     return reqtype;
 }
-=======
 void organ::Set_ID(QString ID)
 {
     this->ID=ID;
@@ -42,5 +40,3 @@ QString organ::Get_name()
     return name;
 }
 
-
->>>>>>> e69be12954141d168b186128f832d33976e5b699

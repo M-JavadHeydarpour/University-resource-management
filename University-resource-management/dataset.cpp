@@ -161,39 +161,51 @@ void User::Set_password(QString password ){
 void User::Set_imgurl(QString imgurl){
     this->imgurl=imgurl;
 }
+
 void User::Set_role(QString role){
     this->role=role;
 }
+
 void User::Set_address(QString add){
     this->address=add;
 }
+
 void User::Set_office_ID(QString office_ID){
     this->office_ID=office_ID;
 }
+
 QString User::Get_ID(){
     return ID;
 }
+
 QString User::Get_name(){
     return name;
 }
+
 QString User::Get_family(){
     return family;
 }
+
 QString User::Get_phonenum(){
     return phonenum;
 }
+
 QString User::Get_email(){
     return email;
 }
+
 QString User::Get_username(){
     return username;
 }
+
 QString User::Get_password(){
     return password;
 }
+
 QString User::Get_imgurl(){
     return imgurl;
 }
+
 QString User::Get_role(){
     return role;
 }

@@ -35,7 +35,9 @@ SOURCES += \
     expertspanel.cpp \
     dataset.cpp \
     brain.cpp \
-    test.cpp
+    test.cpp \
+    user.cpp \
+    persons_database.cpp
 
 HEADERS += \
         login.h \
@@ -43,7 +45,9 @@ HEADERS += \
     expertspanel.h \
     dataset.h \
     brain.h \
-    test.h
+    test.h \
+    user.h \
+    persons_database.h
 
 FORMS += \
         login.ui \

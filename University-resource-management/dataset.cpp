@@ -1,6 +1,7 @@
 #include "dataset.h"
 //---------------------------------------PERSONS DATABASE----------------------------------------------
 
+/*
 int Persons_database::counter_ID=1000;
 int Persons_database::total=0;
 Persons_database::Persons_database()
@@ -357,6 +358,7 @@ QString User::Get_office_ID()
 {
     return office_ID;
 }
+*/
 //---------------------------------------OFFICE DATABASE----------------------------------------------
 
 

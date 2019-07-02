@@ -1,7 +1,9 @@
 #ifndef USER_H
 #define USER_H
+
 #include "QString"
 #include <ctime>
+
 class User
 {
 private:

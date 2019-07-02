@@ -18,7 +18,7 @@ void Persons_database::Insert(User row)
     //write user info on file
 
 
-    out<<"\r\n";
+
     out <<Number_of_row()+1000<<';';
     out <<row.Get_username()<<';';
     out <<row.Get_password()<<';';
@@ -30,6 +30,7 @@ void Persons_database::Insert(User row)
     out<<"#"<<";";//image url
     out<<'U'<<';';
     out<<'#'<<';';//for office ID
+    out<<"\r\n";
     counter_ID++;
     total++;
 

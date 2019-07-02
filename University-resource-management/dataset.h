@@ -6,7 +6,7 @@
 #include <QFile>
 #include <QString>
 #include <ctime>
-
+#include "user.h"
 
 
 
@@ -40,7 +40,7 @@ public:
     int get_total();//number of lines
     User extarct_data(QString line);
 };
-
+/*
 class User
 {
 private:
@@ -86,7 +86,7 @@ public:
 
 
 };
-
+*/
 class Office_database:Persons_database
 {
     public:

@@ -2,8 +2,6 @@
 #define USER_H
 #include "QString"
 #include <ctime>
-class User;//base information of persons
-
 class User
 {
 private:

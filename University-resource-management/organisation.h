@@ -22,6 +22,8 @@ private:
     Unit units[10];
 public:
     void Set_name(QString);
+    void Set_unit(int ,Unit);
+    Unit Get_unit(int);
     QString Get_name();
 };
 
@@ -34,8 +36,11 @@ private:
 public:
     void Set_ID(QString);
     void Set_name(QString);
+    void Set_office(int , office);
+    office Get_office(int);
     QString Get_ID();
     QString Get_name();
+
 };
 
 #endif // ORGANISATION_H

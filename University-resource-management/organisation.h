@@ -39,11 +39,4 @@ public:
 };
 
 #endif // ORGANISATION_H
-void office::Set_name(QString name)
-{
-    this->name = name;
-}
-QString office::Get_name()
-{
-    return name;
-}
+

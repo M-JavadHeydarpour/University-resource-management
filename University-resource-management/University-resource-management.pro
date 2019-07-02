@@ -38,7 +38,8 @@ SOURCES += \
     test.cpp \
     user.cpp \
     persons_database.cpp \
-    organisation.cpp
+    organisation.cpp \
+    office_database.cpp
 
 HEADERS += \
         login.h \
@@ -49,7 +50,8 @@ HEADERS += \
     test.h \
     user.h \
     persons_database.h \
-    organisation.h
+    organisation.h \
+    office_database.h
 
 FORMS += \
         login.ui \

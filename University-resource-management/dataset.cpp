@@ -32,7 +32,7 @@ void Persons_database::Insert(User row)
     row.Rand_ID();
 
     out<<"\r\n";
-
+    out<<"1";
     out <<row.Get_ID()<<';';
     out <<row.Get_username()<<';';
     out <<row.Get_password()<<';';

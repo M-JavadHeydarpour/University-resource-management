@@ -23,6 +23,14 @@ QString Unit::Get_reqtype()
 {
     return reqtype;
 }
+void office::Set_name(QString name)
+{
+    this->name = name;
+}
+QString office::Get_name()
+{
+    return name;
+}
 void organ::Set_ID(QString ID)
 {
     this->ID=ID;

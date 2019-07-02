@@ -1,8 +1,10 @@
 #include "dataset.h"
+
+int Persons_database::counter_ID=1000;
+int Persons_database::total=0;
 Persons_database::Persons_database()
 {
-    counter=1000;
-    total=0;
+
 }
 
 void Persons_database::Set_URL(QString URL)
@@ -20,24 +22,10 @@ void Persons_database::Insert(User row)
 
     //write user info on file
 
-    row.Rand_ID();
 
-<<<<<<< HEAD
-    (row.Get_ID()!="")?out <<row.Get_ID()<<';':out<<"#"<<";";
-    (row.Get_name()!="")?out <<row.Get_name()<<';':out<<"#"<<";";
-    (row.Get_family()!="")?out <<row.Get_family()<<';':out<<"#"<<";";
-    (row.Get_phonenum()!="")?out <<row.Get_phonenum()<<';':out<<"#"<<";";
-    (row.Get_email()!="")?out <<row.Get_email()<<';':out<<"#"<<";";
-    (row.Get_username()!="")?out <<row.Get_username()<<';':out<<"#"<<";";
-    (row.Get_password()!="")?out <<row.Get_password()<<';':out<<"#"<<";";
-    (row.Get_imgurl()!="")?out <<row.Get_imgurl()<<'U'<<';':out<<"#"<<';'<<'U'<<';';
-    counter++;
-    total++;
-    //out<<'\n';
-=======
     out<<"\r\n";
     out<<"1";
-    out <<row.Get_ID()<<';';
+    out <<counter_ID<<';';
     out <<row.Get_username()<<';';
     out <<row.Get_password()<<';';
     out <<row.Get_name()<<';';
@@ -48,8 +36,10 @@ void Persons_database::Insert(User row)
     out<<"#";//image url
     out<<'U'<<';';
     out<<'#'<<';';//for office ID
+    counter_ID++;
+    total++;
 
->>>>>>> b3906d58788bcf749480741a3728d115719523e0
+
 
     file.close();
 }
@@ -126,7 +116,7 @@ void Persons_database::Delete(QString ID)
 {
 
 }
-//------------------------------------------------------------
+
 
 
 

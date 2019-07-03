@@ -30,10 +30,9 @@ void office::Set_name(QString name)
 
 void office::Set_unit(int loc, Unit u)
 {
-    units[loc].Set_cost(u.Get_cost());
-    units[loc].Set_name(u.Get_name());
-    units[loc].Set_reqtype(u.Get_reqtype());
-}
+    units[loc]=u;
+    COU++;
+  }
 
 Unit office::Get_unit(int loc)
 {
@@ -42,6 +41,11 @@ Unit office::Get_unit(int loc)
 QString office::Get_name()
 {
     return name;
+}
+
+int office::Get_COU()
+{
+    return COU;
 }
 void organ::Set_ID(QString ID)
 {
@@ -55,6 +59,7 @@ void organ::Set_name(QString name)
 void organ::Set_office(int loc, office of)
 {
     offices[loc] = of;
+    COO++;
     /*offices[loc].Set_name(of.Get_name());
     offices[loc].Set_unit(of.Get_unit());*/
     //if obj = obj not work use this code (a few bug )
@@ -71,5 +76,10 @@ QString organ::Get_ID()
 QString organ::Get_name()
 {
     return name;
+}
+
+int organ::Get_COO()
+{
+    return COO;
 }
 

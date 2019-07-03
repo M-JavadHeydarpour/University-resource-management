@@ -25,11 +25,13 @@ class office
 private:
     QString name;
     Unit units[10];//keke karii
+    int COU=0;
 public:
     void Set_name(QString);
     void Set_unit(int ,Unit);
     Unit Get_unit(int);
     QString Get_name();
+    int Get_COU();
 };
 
 
@@ -39,6 +41,7 @@ private:
     QString ID;
     QString name;
     office offices[10];//bazam :|
+    int COO=0;//Count Of Offices
 public:
     void Set_ID(QString);
     void Set_name(QString);
@@ -46,6 +49,7 @@ public:
     office Get_office(int);
     QString Get_ID();
     QString Get_name();
+    int Get_COO();
 
 };
 

@@ -4,6 +4,7 @@
 #include "QString"
 #include "organisation.h"
 
+
 class Office_database {
 private:
     QString URL;

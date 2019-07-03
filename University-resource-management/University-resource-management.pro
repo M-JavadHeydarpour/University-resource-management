@@ -24,15 +24,41 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+
+
+
+
 SOURCES += \
         main.cpp \
-        login.cpp
+        login.cpp \
+    userpanel.cpp \
+    expertspanel.cpp \
+    dataset.cpp \
+    brain.cpp \
+    test.cpp \
+    user.cpp \
+    persons_database.cpp \
+    organisation.cpp \
+    office_database.cpp \
+    wwf.cpp
 
 HEADERS += \
-        login.h
+        login.h \
+    userpanel.h \
+    expertspanel.h \
+    dataset.h \
+    brain.h \
+    test.h \
+    user.h \
+    persons_database.h \
+    organisation.h \
+    office_database.h \
+    wwf.h
 
 FORMS += \
-        login.ui
+        login.ui \
+    userpanel.ui \
+    expertspanel.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -51,7 +51,7 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>40</x>
       <y>10</y>
       <width>500</width>
       <height>300</height>
@@ -87,10 +87,10 @@
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_pass"/>
+        <widget class="QLineEdit" name="LE_pass"/>
        </item>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit_user"/>
+        <widget class="QLineEdit" name="LE_user"/>
        </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label_user">
@@ -141,7 +141,7 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton_login">
+        <widget class="QPushButton" name="PB_login">
          <property name="text">
           <string>ورود</string>
          </property>
@@ -156,77 +156,155 @@
        </item>
       </layout>
      </widget>
-    </widget>
-    <widget class="QWidget" name="page_2">
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="PB_test">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>170</y>
-        <width>80</width>
-        <height>25</height>
+        <x>50</x>
+        <y>50</y>
+        <width>93</width>
+        <height>28</height>
        </rect>
       </property>
       <property name="text">
-       <string>Submit</string>
+       <string>test</string>
       </property>
      </widget>
-     <widget class="QSplitter" name="splitter">
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QWidget" name="verticalLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>50</y>
-        <width>140</width>
-        <height>26</height>
+        <x>150</x>
+        <y>40</y>
+        <width>222</width>
+        <height>235</height>
        </rect>
       </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>name</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit"/>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>کلمه عبور:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="LE_name"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="LE_pass_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>تلفن:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="LE_family"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>ایمیل:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>نام خانوادگی:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>نام کاربری:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>نام:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="LE_email"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="LE_user_2"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="LE_phone"/>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="LE_address">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>آدرس</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_getinfo">
+         <property name="text">
+          <string>ثبت نام</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
-     <widget class="QSplitter" name="splitter_2">
+     <widget class="QPushButton" name="PB_back">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>80</y>
-        <width>131</width>
-        <height>26</height>
+        <x>30</x>
+        <y>250</y>
+        <width>75</width>
+        <height>23</height>
        </rect>
       </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+      <property name="text">
+       <string>بازگشت</string>
       </property>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Mail</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_2"/>
-     </widget>
-     <widget class="QSplitter" name="splitter_3">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>110</y>
-        <width>163</width>
-        <height>26</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Password</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="lineEdit_3"/>
      </widget>
     </widget>
    </widget>

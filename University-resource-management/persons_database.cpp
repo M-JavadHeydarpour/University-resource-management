@@ -101,21 +101,7 @@ QString Persons_database::Select_obj(int row ,int column)
     }
     return result;
 }
-int Persons_database::Number_of_row()
-{
-    QFile file(URL);
-    file.open(QIODevice::ReadOnly);
 
-    int counter=0;
-    while(!file.atEnd()){
-        file.readLine();
-        counter++;
-    }
-
-    file.close();
-    //qDebug()<<counter;
-    return counter;
-}
 User Persons_database::extarct_data(QString line)
 {
     User mouse;

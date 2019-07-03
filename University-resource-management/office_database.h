@@ -3,6 +3,11 @@
 
 #include "QString"
 #include "organisation.h"
+#include "QFile"
+#include "QString"
+#include "QDebug"
+#include "ctime"
+
 
 
 class Office_database {

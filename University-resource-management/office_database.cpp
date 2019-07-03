@@ -71,4 +71,21 @@ QString Office_database::Select_office(QString organ,int column)
 
 }
 
+office Office_database::extract_office(QString content)
+{
+    office result;
+    QString temp;
+    int i=0;
+    while(content[i]!="{")
+        temp[i]=content[i];
+    result.Set_name(temp);
+    int counter=0;
+    while(content[i]!="}")
+        if(content[i]=="*")
+            counter++;
+
+
+
+}
+
 

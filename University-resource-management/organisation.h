@@ -2,6 +2,9 @@
 #define ORGANISATION_H
 
 #include "QString"
+
+
+
 class Unit{
 private:
     QString name;
@@ -15,22 +18,25 @@ public:
     QString Get_reqtype ();
     QString Get_cost ();
 };
+
+
 class office
 {
 private:
     QString name;
-    Unit units[10];
+    Unit units[10];//keke karii
 public:
     void Set_name(QString);
     QString Get_name();
 };
+
 
 class organ
 {
 private:
     QString ID;
     QString name;
-    office offices[10];
+    office offices[10];//bazam :|
 public:
     void Set_ID(QString);
     void Set_name(QString);

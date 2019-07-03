@@ -26,7 +26,7 @@ public:
     QString Select_obj(QString line ,int column);//return a column from a certain row
     QString Select_obj(int row ,int column);//return a column from a certain row
     QString Select_office();
-    QString Select_Unit();
+    QString Select_Unit(QString office , int position);
 
     bool Search_ID(QString component);//find and return id of things that you search.
     QString Search_UserName(QString component);//find and return id of things that you search.

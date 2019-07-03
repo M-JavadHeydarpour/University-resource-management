@@ -42,3 +42,8 @@ QString Office_database::Select_obj(QString line ,int column)
     return result;
 }
 
+QString Office_database::Select_Unit(QString office,int position)
+{
+    QStringList result_array = office.split('*');
+    return result_array[position];
+}

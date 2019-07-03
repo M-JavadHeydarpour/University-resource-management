@@ -322,7 +322,7 @@ border-radius:80px;</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tarbiat">
        <widget class="QWidget" name="verticalLayoutWidget_3">
@@ -479,6 +479,19 @@ border-radius:80px;</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
+        <widget class="QPushButton" name="pushButton_9">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>80</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
        </widget>
       </widget>
       <widget class="QWidget" name="azmaieshgah">
@@ -1113,7 +1126,8 @@ background-repeat:none;</string>
      <x>0</x>
      <y>0</y>
      <width>797</width>
-     <height>21</height>
+
+     <height>20</height>
     </rect>
    </property>
   </widget>

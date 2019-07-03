@@ -89,14 +89,41 @@ office Office_database::extract_office(QString content)
     QString temp;
     int i=0;
     while(content[i]!="{")
-        temp[i]=content[i];
+        temp.append(content[i]);
     result.Set_name(temp);
     int counter=0;
     while(content[i]!="}")
         if(content[i]=="*")
             counter++;
+    while(counter!=0)
+    {
+        result.Set_unit(counter-1,extract_unit(Select_Unit(content,counter-1)));
+    }
 
 
+}
+Unit Office_database::extract_unit(QString content)
+{
+    Unit result;
+    QString name_extracted="";
+    QString reqtype_extract="";
+    QString cost_extract="";
+
+    int i;
+    for (i=0;content[i]!='[';i++)
+        name_extracted.append(content[i]);
+    i+=2;
+    for (i;content[i]!=')';i++)
+        reqtype_extract.append(content[i]);
+    i+=2;
+    for (i;content[i]!='$';i++)
+        cost_extract.append(content[i]);
+
+    result.Set_name(name_extracted);
+    result.Set_reqtype(reqtype_extract);
+    result.Set_cost(cost_extract);
+
+    return result;
 
 }
 

@@ -103,7 +103,10 @@ void Login::on_PB_test_clicked()
     qDebug() <<t.Get_role();
     qDebug() <<t.Get_office_ID();
     */
+
     //test.Delete("1003");
+
+
     User t;
     t=test.extarct_data("1002;bibbib;9632;habib;sharif;ibib@gmail.com;shahin shahr;09130078;#;U;#;");
     t.Set_name("khar");

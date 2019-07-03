@@ -42,8 +42,33 @@ QString Office_database::Select_obj(QString line ,int column)
     return result;
 }
 
+<<<<<<< HEAD
 QString Office_database::Select_Unit(QString office,int position)
 {
     QStringList result_array = office.split('*');
     return result_array[position];
 }
+=======
+QString Office_database::Select_office(QString organ,int column)
+{
+    QString result="";
+    int pos_comma_1=0,pos_comma_2=0;//position of semicolons(;).firs one and second.
+    for (int i=0;organ[i]!="\x0"&&column>=0;i++){
+        if(organ[i]==','){//save position of semis.
+            pos_comma_1=pos_comma_2;
+            pos_comma_2=i;
+            column--;
+        }
+    }
+
+    //for first column.
+    if (pos_comma_1==0)
+        pos_comma_1--;
+    for (int i=pos_comma_1+1;i<pos_comma_2;i++){
+        result.append(organ[i]);
+    }
+    return result;
+
+}
+
+>>>>>>> 04960cc180eb601d26f5641437e08fc629ccaf19

@@ -116,6 +116,6 @@ void Login::on_PB_test_clicked()
 
     Office_database test;
     test.Set_URL("office.txt");
-    qDebug()<<test.Select_obj("100;Refah;anzali{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},tehran{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},shaghayegh{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},;\r\n",3);
+    qDebug()<<test.Select_office("anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},tehran{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},shaghayegh{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},",1);
 
 }

@@ -39,7 +39,8 @@ SOURCES += \
     user.cpp \
     persons_database.cpp \
     organisation.cpp \
-    office_database.cpp
+    office_database.cpp \
+    wwf.cpp
 
 HEADERS += \
         login.h \
@@ -51,7 +52,8 @@ HEADERS += \
     user.h \
     persons_database.h \
     organisation.h \
-    office_database.h
+    office_database.h \
+    wwf.h
 
 FORMS += \
         login.ui \

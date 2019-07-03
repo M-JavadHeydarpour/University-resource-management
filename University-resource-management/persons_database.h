@@ -5,11 +5,11 @@
 #include <QString>
 #include <ctime>
 #include <QDebug>
+#include "wwf.h"
 
-class Persons_database
+class Persons_database:public WWF
 {
 private:
-    QString URL;
     static int counter_ID;
     static int total;
 public:
@@ -29,7 +29,6 @@ public:
     QString Search_Family(QString component);//find and return id of things that you search.
     QString Search_Office_ID(QString component);//find and return id of things that you search.
 
-    int Number_of_row();//return number of data rows.
     int get_counter();//counter for id
     int get_total();//number of lines
     User extarct_data(QString line);

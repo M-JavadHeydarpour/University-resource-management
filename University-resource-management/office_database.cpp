@@ -25,5 +25,23 @@ void Office_database::Insert(organ row)
     }
     out<<";"<<'\r\n';
 }
-
+QString Office_database::Select_obj(QString line ,int column)
+{
+    QString result="";
+    int pos_semi_1=0,pos_semi_2=0;//position of semicolons(;).firs one and second.
+    for (int i=0;line[i]!='\x0'&&column>=0;i++){
+        if(line[i]==';'){//save position of semis.
+            pos_semi_1=pos_semi_2;
+            pos_semi_2=i;
+            column--;
+        }
+    }
+    //for first column.
+    if (pos_semi_1==0)
+        pos_semi_1--;
+    for (int i=pos_semi_1+1;i<pos_semi_2;i++){
+        result.append(line[i]);
+    }
+    return result;
+}
 

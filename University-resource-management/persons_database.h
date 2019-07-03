@@ -20,7 +20,6 @@ public:
     void Update(User UTD);//change data in filevoid
     void show_Persons_database();// just show data base.
     void show_column(QString col);//show a certain coumn.
-    QString Select(int row );//return a row by id
     QString Select_obj(QString line ,int column);//return a column from a certain row
     QString Select_obj(int row ,int column);//return a column from a certain row
     bool Search_ID(QString component);//find and return id of things that you search.

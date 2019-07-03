@@ -3,6 +3,7 @@
 #include "userpanel.h"
 #include "QMessageBox"
 #include "expertspanel.h"
+#include "office_database.h"
 
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
@@ -86,8 +87,8 @@ void Login::on_PB_login_clicked()
 
 void Login::on_PB_test_clicked()
 {
-    Persons_database test;
-    test.Set_URL("person.txt");
+    //Persons_database test;
+    //test.Set_URL("person.txt");
     /*
     User t;
     t=test.extarct_data("1004;radikal;seji;sadjad;mohammadi;cactus@gmail.com;khorzogh;09139797;#;U;#;");
@@ -106,10 +107,15 @@ void Login::on_PB_test_clicked()
 
     //test.Delete("1003");
 
-
+    /*
     User t;
     t=test.extarct_data("1002;bibbib;9632;habib;sharif;ibib@gmail.com;shahin shahr;09130078;#;U;#;");
     t.Set_name("khar");
     test.Update(t);
+    */
+
+    Office_database test;
+    test.Set_URL("office.txt");
+    qDebug()<<test.Select_obj("100;Refah;anzali{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},tehran{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},shaghayegh{1t[(C)$500$],2t[(C)$1000$],4t[(C)$2000$],},;\r\n",3);
 
 }

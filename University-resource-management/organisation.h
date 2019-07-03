@@ -25,7 +25,7 @@ class office
 private:
     QString name;
     Unit units[10];//keke karii
-    int COU=0;
+    int COU=0;//count of units
 public:
     void Set_name(QString);
     void Set_unit(int ,Unit);
@@ -52,6 +52,7 @@ public:
     int Get_COO();
 
 };
+
 
 #endif // ORGANISATION_H
 

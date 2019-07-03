@@ -14,7 +14,7 @@ private:
     static int total;
 public:
     Persons_database();
-    void Set_URL(QString URL);
+    //void Set_URL(QString URL);
     void Insert(User row);//give a line and add to the end of file.
     void Delete(QString ID);//disactives an id
     void Update(User UTD);//change data in filevoid

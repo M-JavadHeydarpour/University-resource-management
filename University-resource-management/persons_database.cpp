@@ -5,10 +5,7 @@ Persons_database::Persons_database()
 {
 
 }
-void Persons_database::Set_URL(QString URL)
-{
-    this->URL =URL;
-}
+
 void Persons_database::Insert(User row)
 {
     QFile file(URL);

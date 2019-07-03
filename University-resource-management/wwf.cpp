@@ -1,5 +1,9 @@
 #include "wwf.h"
 
+void WWF::Set_URL(QString URL)
+{
+    this->URL=URL;
+}
 
 int WWF::Number_of_row()
 {

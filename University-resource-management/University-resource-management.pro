@@ -37,7 +37,8 @@ SOURCES += \
     brain.cpp \
     test.cpp \
     user.cpp \
-    persons_database.cpp
+    persons_database.cpp \
+    organisation.cpp
 
 HEADERS += \
         login.h \
@@ -47,7 +48,8 @@ HEADERS += \
     brain.h \
     test.h \
     user.h \
-    persons_database.h
+    persons_database.h \
+    organisation.h
 
 FORMS += \
         login.ui \

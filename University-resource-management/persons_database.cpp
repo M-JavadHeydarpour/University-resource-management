@@ -92,7 +92,9 @@ User Persons_database::extarct_data(QString line)
     mouse.Set_office_ID(Select_obj(line,10));
     return mouse;
 }
+
 User Persons_database::Search_ID(QString component)
+
 {
     User error;
     error.Set_name("error");

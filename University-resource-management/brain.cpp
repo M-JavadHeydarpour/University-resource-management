@@ -4,7 +4,6 @@
 
 brain::brain()
 {
-
 }
 
 QString brain::autenticate(QString username, QString pass)
@@ -14,4 +13,9 @@ QString brain::autenticate(QString username, QString pass)
     else {
         return "no";
     }
+}
+
+void brain::signup(User add)
+{
+    users.Insert(add);
 }

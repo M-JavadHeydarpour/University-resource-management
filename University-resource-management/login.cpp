@@ -37,11 +37,8 @@ void Login::on_PB_back_clicked()
 
 void Login::on_pb_getinfo_clicked()
 {
+    brain bll;
     User sign;
-    Persons_database sign2;
-    sign2.Set_URL("person.txt");
-    // pich info from ui and storge on RAM
-
     sign.Set_name(ui->LE_name->text());
     sign.Set_family(ui->LE_family->text());
     sign.Set_email(ui->LE_email->text());
@@ -49,16 +46,12 @@ void Login::on_pb_getinfo_clicked()
     sign.Set_password(ui->LE_pass_2->text());
     sign.Set_username(ui->LE_user_2->text());
     sign.Set_address(ui->LE_address->text());
-
-
-
-
     sign.Set_office_ID("U");
 
     ui->stackedWidget->setCurrentIndex(0);
     //insert info to file.
 
-    sign2.Insert(sign);
+    bll.signup(sign);
 
 
 }

@@ -13,6 +13,7 @@ private:
 public:
     brain();
     QString autenticate (QString user,QString pass);
+    void signup(User add);
 
 };
 

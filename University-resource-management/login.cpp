@@ -65,7 +65,12 @@ void Login::on_PB_login_clicked()
         msg.setText("riiidiii");
         msg.exec();
     }
-
+    else if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="U"){
+        userpanel *up;
+        up=new userpanel();
+        up->show();
+        this->close();
+}
     /*
     //create a Database obj for use moduls and Extraction data.
     Persons_database check;

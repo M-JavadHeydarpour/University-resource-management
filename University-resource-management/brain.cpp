@@ -5,7 +5,6 @@
 brain::brain()
 {
 }
-
 QString brain::autenticate(QString username, QString pass)
 {
     User s=users.Search_ID(users.Search_UserName(username));

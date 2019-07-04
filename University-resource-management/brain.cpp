@@ -31,3 +31,8 @@ QString brain::Get_ID()
 {
     return ID;
 }
+
+void brain::Edit(User user)
+{
+    users.Update(user);
+}

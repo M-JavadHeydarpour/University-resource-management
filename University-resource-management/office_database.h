@@ -42,6 +42,7 @@ public:
 
     int get_counter();//counter for id
     int get_total();//number of lines
+
     Unit extract_unit(QString content);
     office extract_office(QString content);
     organ extarct_data(QString line);

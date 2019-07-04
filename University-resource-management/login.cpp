@@ -116,6 +116,10 @@ void Login::on_PB_test_clicked()
 
     Office_database test;
     test.Set_URL("office.txt");
-    qDebug()<<test.Select_office("anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},tehran{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},shaghayegh{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},",1);
+    Unit t;
+    t=test.extract_unit("2t[(C)$1000$]");
+    qDebug()<<t.Get_name();
+    qDebug()<<t.Get_reqtype();
+    qDebug()<<t.Get_cost();
 
 }

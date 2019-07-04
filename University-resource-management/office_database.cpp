@@ -71,4 +71,28 @@ QString Office_database::Select_office(QString organ,int column)
 
 }
 
+Unit Office_database::extract_unit(QString content)
+{
+    Unit result;
+    QString name_extracted="";
+    QString reqtype_extract="";
+    QString cost_extract="";
+
+    int i;
+    for (i=0;content[i]!='[';i++)
+        name_extracted.append(content[i]);
+    i+=2;
+    for (i;content[i]!=')';i++)
+        reqtype_extract.append(content[i]);
+    i+=2;
+    for (i;content[i]!='$';i++)
+        cost_extract.append(content[i]);
+
+    result.Set_name(name_extracted);
+    result.Set_reqtype(reqtype_extract);
+    result.Set_cost(cost_extract);
+
+    return result;
+}
+
 

@@ -122,4 +122,5 @@ void Login::on_PB_test_clicked()
     qDebug()<<t.Get_reqtype();
     qDebug()<<t.Get_cost();
 
+
 }

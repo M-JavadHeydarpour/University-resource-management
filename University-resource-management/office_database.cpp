@@ -42,13 +42,13 @@ QString Office_database::Select_obj(QString line ,int column)
     return result;
 }
 
-<<<<<<< HEAD
-QString Office_database::Select_Unit(QString office,int position)
+
+QString Office_database::Select_Unit(QString office,int column)
 {
     QStringList result_array = office.split('*');
-    return result_array[position];
+    return result_array[column];
 }
-=======
+
 QString Office_database::Select_office(QString organ,int column)
 {
     QString result="";
@@ -71,4 +71,4 @@ QString Office_database::Select_office(QString organ,int column)
 
 }
 
->>>>>>> 04960cc180eb601d26f5641437e08fc629ccaf19
+

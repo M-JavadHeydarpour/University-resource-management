@@ -1,7 +1,7 @@
 #include "brain.h"
 #include "dataset.h"
 
-
+QString brain::ID="";
 brain::brain()
 {
 }
@@ -23,7 +23,8 @@ void brain::signup(User add)
 
 User brain::Load_user(QString ID)
 {
-    users.Search_ID(ID);
+    return users.Search_ID(ID);
+
 }
 
 QString brain::Get_ID()

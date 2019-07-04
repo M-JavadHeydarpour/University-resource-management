@@ -34,7 +34,7 @@ private slots:
 
     void on_PB_login_clicked();
 
-    void on_PB_test_clicked();
+    //void on_PB_test_clicked();
 
 private:
     Ui::Login *ui;

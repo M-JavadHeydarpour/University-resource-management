@@ -156,19 +156,6 @@
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="PB_test">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>50</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>test</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -315,7 +302,7 @@
      <x>0</x>
      <y>0</y>
      <width>577</width>
-     <height>26</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>

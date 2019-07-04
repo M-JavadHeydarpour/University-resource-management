@@ -39,7 +39,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="userp">
      <property name="layoutDirection">
@@ -95,9 +95,9 @@ border-radius:80px;</string>
      <widget class="Line" name="line">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>-30</x>
         <y>232</y>
-        <width>741</width>
+        <width>771</width>
         <height>20</height>
        </rect>
       </property>
@@ -1126,7 +1126,6 @@ background-repeat:none;</string>
      <x>0</x>
      <y>0</y>
      <width>797</width>
-
      <height>20</height>
     </rect>
    </property>

@@ -14,15 +14,10 @@ Login::Login(QWidget *parent) :
 
 }
 
-
 Login::~Login()
 {
     delete ui;
 }
-
-
-
-
 
 void Login::on_pushButton_signup_clicked()
 {
@@ -36,7 +31,7 @@ void Login::on_PB_back_clicked()
 
 void Login::on_pb_getinfo_clicked()
 {
-    User sign;
+    /*User sign;
     Persons_database sign2;
     sign2.Set_URL("person.txt");
     // pich info from ui and storge on RAM
@@ -58,14 +53,14 @@ void Login::on_pb_getinfo_clicked()
     //insert info to file.
 
     sign2.Insert(sign);
-
+    */
 
 }
 
 void Login::on_PB_login_clicked()
 {
     //create a Database obj for use moduls and Extraction data.
-    Persons_database check;
+    /*Persons_database check;
     check.Set_URL("person.txt");
 
     QString dataline;//each row of database.
@@ -83,10 +78,16 @@ void Login::on_PB_login_clicked()
 
     if (!flag)
         qDebug()<<"username or password incorrect!!";
+    */
+    //go to corrent page
+    //temp value
+    if(ui->LE_pass->text() == '0')
+        qDebug() << "welcone user ";
+    //if...
 }
 
-void Login::on_PB_test_clicked()
-{
+//void Login::on_PB_test_clicked()
+//{
     //Persons_database test;
     //test.Set_URL("person.txt");
     /*
@@ -113,7 +114,7 @@ void Login::on_PB_test_clicked()
     t.Set_name("khar");
     test.Update(t);
     */
-
+/*
     Office_database test;
     test.Set_URL("office.txt");
     Unit t;
@@ -124,3 +125,4 @@ void Login::on_PB_test_clicked()
 
 
 }
+*/

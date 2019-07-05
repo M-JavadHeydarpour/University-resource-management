@@ -39,19 +39,133 @@ void Login::on_pb_getinfo_clicked()
 {
     brain bll;
     User sign;
-    sign.Set_name(ui->LE_name->text());
-    sign.Set_family(ui->LE_family->text());
-    sign.Set_email(ui->LE_email->text());
-    sign.Set_phonenum(ui->LE_phone->text());
-    sign.Set_password(ui->LE_pass_2->text());
-    sign.Set_username(ui->LE_user_2->text());
-    sign.Set_address(ui->LE_address->text());
-    sign.Set_office_ID("U");
+    bool Correct_information[7];
+    QString names[7];
+    names->push_back("name ,");
+    names->push_back("password," );
+    names->push_back("username," );
+    names->push_back("email," );
+    names->push_back("phone," );
+    names->push_back("address," );
+    names->push_back("family," );
+    if(ui->LE_name->text() == "")
+    {
+        Correct_information[0] = false;
+    }
+    else
+    {
+        Correct_information[0] = true;
+    }
 
-    ui->stackedWidget->setCurrentIndex(0);
-    //insert info to file.
+    if(ui->LE_pass_2->text() == "")
+    {
+        Correct_information[1] = false;
+    }
+    else
+    {
+        Correct_information[1] = true;
+    }
 
-    bll.signup(sign);
+    if(ui->LE_user_2->text() == "")
+    {
+        Correct_information[2] = false;
+    }
+    else
+    {
+        Correct_information[2] = true;
+    }
+
+
+    if(ui->LE_email->text() == "")
+    {
+        Correct_information[3] = false;
+    }
+    else
+    {
+        Correct_information[3] = true;
+    }
+
+
+    if(ui->LE_phone->text() == "")
+    {
+        Correct_information[4] = false;
+    }
+    else
+    {
+        Correct_information[4] = true;
+    }
+
+
+    if(ui->LE_address->text() == "")
+    {
+        Correct_information[5] = false;
+    }
+    else
+    {
+        Correct_information[5] = true;
+    }
+
+
+    if(ui->LE_family->text() == "")
+    {
+        Correct_information[6] = false;
+    }
+    else
+    {
+        Correct_information[6] = true;
+    }
+
+    /*
+    recent input password and check it remember to added "
+    */
+
+    for(int i =0;i<7;i++)
+    {
+        if(Correct_information[i] == 1 )
+        {
+            sign.Set_name(ui->LE_name->text());
+            sign.Set_family(ui->LE_family->text());
+            sign.Set_email(ui->LE_email->text());
+            sign.Set_phonenum(ui->LE_phone->text());
+            sign.Set_password(ui->LE_pass_2->text());
+            sign.Set_username(ui->LE_user_2->text());
+            sign.Set_address(ui->LE_address->text());
+            sign.Set_office_ID("U");
+
+            ui->stackedWidget->setCurrentIndex(0);
+            //insert info to file.
+
+            bll.signup(sign);
+
+        }
+        else
+        {
+            QString msg = "";
+            for(int k = 0;k < 7 ;k++)
+            {
+                if (Correct_information[k] == 0)
+                {
+                    //msg = msg + " , ";
+                    /*QString empty_info;
+                    empty_info = names[k];*/
+                    msg += names[k];
+
+                }
+                else {
+                    continue;
+                }
+
+
+            }
+            msg += " fildes has empty ,please complete it and try again";
+            QMessageBox msg_warning;
+            msg_warning.setText(msg);
+            msg_warning.exec();
+            break;
+        }
+    }
+
+
 
 
 }

@@ -22,7 +22,8 @@ public:
     void show_column(QString col);//show a certain coumn.
     QString Select_obj(QString line ,int column);//return a column from a certain row
     QString Select_obj(int row ,int column);//return a column from a certain row
-    bool Search_ID(QString component);//find and return id of things that you search.
+
+    QString Search_ID(QString component);//find and return line of id that you search.
     QString Search_UserName(QString component);//find and return id of things that you search.
     QString Search_Name(QString component);//find and return id of things that you search.
     QString Search_Family(QString component);//find and return id of things that you search.

@@ -92,7 +92,7 @@ User Persons_database::extarct_data(QString line)
     mouse.Set_office_ID(Select_obj(line,10));
     return mouse;
 }
-bool Persons_database::Search_ID(QString component)
+QString Persons_database::Search_ID(QString component)
 {
     QFile file(URL);
     file.open(QIODevice::ReadOnly);
@@ -100,11 +100,12 @@ bool Persons_database::Search_ID(QString component)
     while(!file.atEnd())
     {
         if(extarct_data(Select(i)).Get_ID()==component)
-            return true;
+            return Select(i);
         i++;
         if(i>=Number_of_row())
-            return false;
-    }
+            break;
+        }
+    return "";
 }
 QString Persons_database::Search_UserName(QString component)
 {

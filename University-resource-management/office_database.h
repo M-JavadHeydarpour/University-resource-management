@@ -16,7 +16,7 @@ class Office_database:public WWF {
 
 public:
 
-    //Office_database();
+    Office_database();
     //void Set_URL (QString);
     void Insert(organ row);//give a line and add to the end of file.
     void Delete(QString ID);//disactives an id

@@ -3,7 +3,7 @@ int Persons_database::counter_ID=1000;
 int Persons_database::total=0;
 Persons_database::Persons_database()
 {
-
+    URL="users.txt";
 }
 
 void Persons_database::Insert(User row)
@@ -92,20 +92,23 @@ User Persons_database::extarct_data(QString line)
     mouse.Set_office_ID(Select_obj(line,10));
     return mouse;
 }
-QString Persons_database::Search_ID(QString component)
+
+User Persons_database::Search_ID(QString component)
+
 {
+    User error;
+    error.Set_name("error");
     QFile file(URL);
     file.open(QIODevice::ReadOnly);
     int i=0;
     while(!file.atEnd())
     {
         if(extarct_data(Select(i)).Get_ID()==component)
-            return Select(i);
+            return extarct_data(Select(i));
         i++;
         if(i>=Number_of_row())
-            break;
-        }
-    return "";
+            return error;
+    }
 }
 QString Persons_database::Search_UserName(QString component)
 {

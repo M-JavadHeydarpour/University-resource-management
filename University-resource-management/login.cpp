@@ -4,6 +4,7 @@
 #include "QMessageBox"
 #include "expertspanel.h"
 #include "office_database.h"
+#include "brain.h"
 
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
@@ -64,6 +65,15 @@ void Login::on_pb_getinfo_clicked()
 
 void Login::on_PB_login_clicked()
 {
+    brain bll;
+    if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="no")
+    {
+        QMessageBox msg;
+        msg.setText("riiidiii");
+        msg.exec();
+    }
+
+    /*
     //create a Database obj for use moduls and Extraction data.
     Persons_database check;
     check.Set_URL("person.txt");
@@ -82,7 +92,7 @@ void Login::on_PB_login_clicked()
 
 
     if (!flag)
-        qDebug()<<"username or password incorrect!!";
+        qDebug()<<"username or password incorrect!!";*/
 }
 
 void Login::on_PB_test_clicked()

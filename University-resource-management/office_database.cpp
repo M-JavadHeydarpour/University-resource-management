@@ -2,6 +2,11 @@
 
 
 
+Office_database::Office_database()
+{
+    URL="organs.txt";
+}
+
 void Office_database::Insert(organ row)
 {
     QFile file(URL);
@@ -99,6 +104,7 @@ office Office_database::extract_office(QString content)
     {
         result.Set_unit(counter-1,extract_unit(Select_Unit(content,counter-1)));
     }
+
     return result;
 
 }

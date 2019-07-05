@@ -17,6 +17,7 @@ public:
     void signup(User add);
     User Load_user(QString ID);
     QString Get_ID();
+    void Edit(User user);
 
 };
 

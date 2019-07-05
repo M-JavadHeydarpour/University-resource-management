@@ -5,7 +5,6 @@ QString brain::ID="";
 brain::brain()
 {
 }
-
 QString brain::autenticate(QString username, QString pass)
 {
     User s=users.Search_ID(users.Search_UserName(username));
@@ -31,4 +30,9 @@ User brain::Load_user(QString ID)
 QString brain::Get_ID()
 {
     return ID;
+}
+
+void brain::Edit(User user)
+{
+    users.Update(user);
 }

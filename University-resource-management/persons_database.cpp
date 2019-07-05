@@ -15,8 +15,11 @@ void Persons_database::Insert(User row)
     //write user info on file
 
 
-
+    if(row.Get_ID()=="new")
     out <<Number_of_row()+1000<<';';
+    else {
+        out<<row.Get_ID()<<';';
+    }
     out <<row.Get_username()<<';';
     out <<row.Get_password()<<';';
     out <<row.Get_name()<<';';

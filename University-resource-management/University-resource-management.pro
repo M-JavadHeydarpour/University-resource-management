@@ -40,7 +40,8 @@ SOURCES += \
     persons_database.cpp \
     organisation.cpp \
     office_database.cpp \
-    wwf.cpp
+    wwf.cpp \
+    edit_profile.cpp
 
 HEADERS += \
         login.h \
@@ -53,12 +54,14 @@ HEADERS += \
     persons_database.h \
     organisation.h \
     office_database.h \
-    wwf.h
+    wwf.h \
+    edit_profile.h
 
 FORMS += \
         login.ui \
     userpanel.ui \
-    expertspanel.ui
+    expertspanel.ui \
+    edit_profile.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

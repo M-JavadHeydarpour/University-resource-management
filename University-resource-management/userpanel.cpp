@@ -1,6 +1,7 @@
 #include "userpanel.h"
 #include "ui_userpanel.h"
 #include "brain.h"
+#include "edit_profile.h"
 
 userpanel::userpanel(QWidget *parent) :
     QMainWindow(parent),
@@ -18,4 +19,12 @@ userpanel::userpanel(QWidget *parent) :
 userpanel::~userpanel()
 {
     delete ui;
+}
+
+void userpanel::on_PB_editprof_clicked()
+{
+   edit_profile *w=new edit_profile();
+
+   w->show();
+   this->close();
 }

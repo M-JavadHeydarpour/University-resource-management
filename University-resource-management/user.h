@@ -7,7 +7,7 @@
 class User
 {
 private:
-    QString ID,
+    QString ID="new",
     name,
     family,
     phonenum,

@@ -99,7 +99,7 @@ office Office_database::extract_office(QString content)
     {
         result.Set_unit(counter-1,extract_unit(Select_Unit(content,counter-1)));
     }
-
+    return result;
 
 }
 Unit Office_database::extract_unit(QString content)

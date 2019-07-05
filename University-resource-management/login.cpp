@@ -74,7 +74,7 @@ void Login::on_PB_login_clicked()
 
     //chek username & password
     for (int i=0;i<check.Number_of_row();i++){
-        if(check.Select_obj(i,5)==ui->LE_user->text()&& check.Select_obj(i,6)==ui->LE_pass->text()){
+        if(check.Select_obj(i,1)==ui->LE_user->text()&& check.Select_obj(i,2)==ui->LE_pass->text()){
             flag=true;
             qDebug()<<"Welcome!!";
             }

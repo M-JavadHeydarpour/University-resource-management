@@ -102,11 +102,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page"/>
     <widget class="QWidget" name="page_2">
-     <widget class="QDateEdit" name="dateEdit">
+     <widget class="QDateEdit" name="date_fom">
       <property name="geometry">
        <rect>
         <x>39</x>
@@ -116,7 +116,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QDateEdit" name="dateEdit_2">
+     <widget class="QDateEdit" name="date_to">
       <property name="geometry">
        <rect>
         <x>40</x>

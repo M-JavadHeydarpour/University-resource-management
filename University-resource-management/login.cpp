@@ -62,7 +62,7 @@ void Login::on_PB_login_clicked()
     if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="no")
     {
         QMessageBox msg;
-        msg.setText("riiidiii");
+        msg.setText("incorrect username or password!!");
         msg.exec();
     }
     else if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="U"){

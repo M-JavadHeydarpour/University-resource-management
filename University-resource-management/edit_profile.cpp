@@ -41,3 +41,10 @@ void edit_profile::on_pb_getinfo_clicked()
     userpanel *u=new userpanel();
     u->show();
 }
+
+void edit_profile::on_PB_back_clicked()
+{
+    this->close();
+    userpanel *u=new userpanel();
+    u->show();
+}

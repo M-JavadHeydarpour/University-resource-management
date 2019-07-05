@@ -18,6 +18,8 @@ public:
 private slots:
     void on_pb_getinfo_clicked();
 
+    void on_PB_back_clicked();
+
 private:
     Ui::edit_profile *ui;
 };

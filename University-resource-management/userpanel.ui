@@ -39,7 +39,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="userp">
      <property name="layoutDirection">
@@ -1126,8 +1126,7 @@ background-repeat:none;</string>
      <x>0</x>
      <y>0</y>
      <width>797</width>
-
-     <height>20</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

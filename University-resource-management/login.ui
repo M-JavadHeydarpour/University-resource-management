@@ -73,7 +73,7 @@
      <enum>Qt::RightToLeft</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget">
@@ -315,7 +315,7 @@
      <x>0</x>
      <y>0</y>
      <width>577</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

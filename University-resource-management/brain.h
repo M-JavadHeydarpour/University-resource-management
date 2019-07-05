@@ -11,6 +11,7 @@ private:
     Office_database organs;
     Persons_database users;
     static QString ID;
+    organ *Organs_arry;
 public:
     brain();
     QString autenticate (QString user,QString pass);
@@ -19,6 +20,9 @@ public:
     QString Get_ID();
     void Edit(User user);
     organ Get_organ(int line);
+
+    organ Get_Organs_arry();//return organ arry
+
 
 };
 

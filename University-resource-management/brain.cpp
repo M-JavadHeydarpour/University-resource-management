@@ -4,6 +4,8 @@
 QString brain::ID="";
 brain::brain()
 {
+     Organs_arry=new organ [organs.Number_of_row()];
+
 }
 QString brain::autenticate(QString username, QString pass)
 {

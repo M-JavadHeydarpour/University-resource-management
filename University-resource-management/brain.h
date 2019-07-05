@@ -18,6 +18,7 @@ public:
     User Load_user(QString ID);
     QString Get_ID();
     void Edit(User user);
+    organ Get_organ(int line);
 
 };
 

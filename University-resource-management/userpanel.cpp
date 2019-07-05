@@ -2,6 +2,7 @@
 #include "ui_userpanel.h"
 #include "brain.h"
 #include "edit_profile.h"
+#include "commit_request.h"
 
 userpanel::userpanel(QWidget *parent) :
     QMainWindow(parent),
@@ -27,4 +28,12 @@ void userpanel::on_PB_editprof_clicked()
 
    w->show();
    this->close();
+}
+
+void userpanel::on_PB_newreq_clicked()
+{
+    commit_request *cr;
+    cr=new commit_request();
+    cr->show();
+    this->close();
 }

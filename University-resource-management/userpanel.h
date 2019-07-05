@@ -18,6 +18,8 @@ public:
 private slots:
     void on_PB_editprof_clicked();
 
+    void on_PB_newreq_clicked();
+
 private:
     Ui::userpanel *ui;
 };

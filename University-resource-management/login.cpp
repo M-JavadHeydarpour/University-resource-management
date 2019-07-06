@@ -37,7 +37,7 @@ void Login::on_PB_back_clicked()
 
 void Login::on_pb_getinfo_clicked()
 {
-    brain bll;
+    /*brain bll;
     User sign;
     bool Correct_information[7];
     QString names[7];
@@ -114,12 +114,12 @@ void Login::on_pb_getinfo_clicked()
     {
         Correct_information[6] = true;
     }
-
+*/
     /*
     recent input password and check it remember to added "
     */
 
-    for(int i =0;i<7;i++)
+ /*   for(int i =0;i<7;i++)
     {
         if(Correct_information[i] == 1 )
         {
@@ -145,10 +145,10 @@ void Login::on_pb_getinfo_clicked()
             {
                 if (Correct_information[k] == 0)
                 {
-                    //msg = msg + " , ";
+                    //msg = msg + " , ";*/
                     /*QString empty_info;
                     empty_info = names[k];*/
-                    msg += names[k];
+                   /* msg += names[k];
 
                 }
                 else {
@@ -166,7 +166,7 @@ void Login::on_pb_getinfo_clicked()
     }
 
 
-
+*/
 
 }
 

@@ -15,6 +15,11 @@ public:
     explicit commit_request(QWidget *parent = nullptr);
     ~commit_request();
 
+private slots:
+    void on_date_fom_userDateChanged(const QDate &date);
+
+    void on_date_to_userDateChanged(const QDate &date);
+
 private:
     Ui::commit_request *ui;
 };

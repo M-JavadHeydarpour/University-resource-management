@@ -212,11 +212,26 @@
            <height>30</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI</family>
+           <pointsize>10</pointsize>
+           <weight>8</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::PreventContextMenu</enum>
+         </property>
          <property name="styleSheet">
           <string notr="true">font: 70 10pt &quot;Yu Gothic UI&quot;;</string>
          </property>
          <property name="text">
           <string>ورود</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
@@ -586,6 +601,9 @@
       <property name="text">
        <string>ورود به سیستم </string>
       </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QPushButton" name="PB_register">
       <property name="geometry">
@@ -613,6 +631,9 @@
       </property>
       <property name="text">
        <string>ثبت اطلاعات </string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_head">

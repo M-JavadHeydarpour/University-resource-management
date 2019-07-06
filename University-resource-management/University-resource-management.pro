@@ -43,7 +43,8 @@ SOURCES += \
     wwf.cpp \
     edit_profile.cpp \
     commit_request.cpp \
-    request.cpp
+    request.cpp \
+    request_database.cpp
 
 HEADERS += \
         login.h \
@@ -59,7 +60,8 @@ HEADERS += \
     wwf.h \
     edit_profile.h \
     commit_request.h \
-    request.h
+    request.h \
+    request_database.h
 
 FORMS += \
         login.ui \

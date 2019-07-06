@@ -14,6 +14,8 @@ private:
     int total_cost;
 
 public:
+    QString Get_content();
+    int Get_mount();
     void C_generate(int start_month,int start_day,int end_month,int end_day);
     void S_generate(int month,int day,int S_code);
     void H_generate(int month,int day,int start_hour,int end_hour);

@@ -98,7 +98,7 @@ QString request::Get_time_in_use()
 
 QString request::Get_content()
 {
-    return req_content.Get_contet();
+    return req_content.Get_content();
 }
 
 QString request::Get_ET_ID()
@@ -111,7 +111,7 @@ int request::Get_total_cost()
     return cost_unit * req_content.Get_mount();
 }
 
-QString content::Get_contet()
+QString content::Get_content()
 {
     return content;
 }

@@ -24,6 +24,7 @@ public:
     organ Get_Organs_arry();//return organ arry
 
 
+
 };
 
 #endif // BRAIN_H

@@ -42,7 +42,8 @@ SOURCES += \
     office_database.cpp \
     wwf.cpp \
     edit_profile.cpp \
-    commit_request.cpp
+    commit_request.cpp \
+    request.cpp
 
 HEADERS += \
         login.h \
@@ -57,7 +58,8 @@ HEADERS += \
     office_database.h \
     wwf.h \
     edit_profile.h \
-    commit_request.h
+    commit_request.h \
+    request.h
 
 FORMS += \
         login.ui \

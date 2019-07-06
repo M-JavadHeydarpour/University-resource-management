@@ -73,7 +73,7 @@
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>60</y>
+        <y>110</y>
         <width>191</width>
         <height>101</height>
        </rect>
@@ -168,16 +168,28 @@
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>170</y>
-        <width>191</width>
-        <height>51</height>
+        <y>220</y>
+        <width>192</width>
+        <height>63</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QPushButton" name="PB_login">
+         <property name="minimumSize">
+          <size>
+           <width>190</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>190</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="styleSheet">
-          <string notr="true">border:4px-solid-red;</string>
+          <string notr="true">font: 70 10pt &quot;Yu Gothic UI&quot;;</string>
          </property>
          <property name="text">
           <string>ورود</string>
@@ -186,6 +198,21 @@
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_signup">
+         <property name="minimumSize">
+          <size>
+           <width>190</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>190</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 60 9pt &quot;Yu Gothic UI&quot;;</string>
+         </property>
          <property name="text">
           <string>ایجاد حساب کاربری جدید</string>
          </property>

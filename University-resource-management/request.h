@@ -20,6 +20,7 @@ private:
     QString time_in_use;
     QString level;
 public:
+
     request();
 
     void Set_Req_ID(QString ID);

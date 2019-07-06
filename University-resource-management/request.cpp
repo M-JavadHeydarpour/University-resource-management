@@ -1,6 +1,8 @@
 #include "request.h"
 
 
+
+
 request::request()
 {
 
@@ -40,6 +42,11 @@ void request::Set_type(QString type)
 void request::Set_time_in_use(QString time)
 {
     time_in_use=time;
+}
+
+void request::Set_content(content content)
+{
+    req_content=content;
 }
 
 void request::Set_ET_ID(QString ID)
@@ -89,6 +96,11 @@ QString request::Get_time_in_use()
     return time_in_use;
 }
 
+QString request::Get_content()
+{
+    return req_content.Get_contet();
+}
+
 QString request::Get_ET_ID()
 {
     return ET_ID;
@@ -96,7 +108,17 @@ QString request::Get_ET_ID()
 
 int request::Get_total_cost()
 {
-    return cost_unit * mount;
+    return cost_unit * req_content.Get_mount();
+}
+
+QString content::Get_contet()
+{
+    return content;
+}
+
+int content::Get_mount()
+{
+    return total_cost;
 }
 
 void content::C_generate(int start_month, int start_day, int end_month, int end_day)

@@ -19,7 +19,7 @@ void request::Set_App_ID(QString ID)
 
 void request::Set_Organ_name(QString name)
 {
-    Organ_name=name
+    Organ_name=name;
 }
 
 void request::Set_Office_name(QString name)
@@ -45,6 +45,11 @@ void request::Set_time_in_use(QString time)
 void request::Set_ET_ID(QString ID)
 {
     ET_ID=ID;
+}
+
+void request::Set_cost_unit(int cost)
+{
+    cost_unit=cost;
 }
 
 
@@ -88,3 +93,79 @@ QString request::Get_ET_ID()
 {
     return ET_ID;
 }
+
+int request::Get_total_cost()
+{
+    return cost_unit * mount;
+}
+
+void content::C_generate(int start_month, int start_day, int end_month, int end_day)
+{
+    QString generated="";
+    int mount=0;
+    if(start_month==end_month)
+    for (int i=start_day;i<=end_day;i++)
+    {
+        generated.append("_");
+        generated.append(start_month);
+        generated.append("*");
+        generated.append(i);
+        mount++;
+    }
+    else
+        {
+        for (int i=start_day;i<=30;i++){
+            generated.append("_");
+            generated.append(start_month);
+            generated.append("*");
+            generated.append(i);
+            mount++;
+        }
+        for (int i=1;i<=end_day;i++){
+        generated.append("_");
+        generated.append(end_month);
+        generated.append("*");
+        generated.append(i);
+        mount++;
+        }
+
+   }
+    total_cost=mount ;
+    content= generated;
+
+}
+
+void content::S_generate(int month, int day, int S_code)
+{
+    QString generated="";
+    generated.append("+");
+    generated.append(month);
+    generated.append("/");
+    generated.append(day);
+    generated.append("_");
+    generated.append(S_code);
+
+    content= generated;
+}
+
+void content::H_generate(int month, int day, int start_hour, int end_hour)
+{
+    QString generated="";
+    int mount=0;
+
+    generated.append("+");
+    generated.append(month);
+    generated.append("/");
+    generated.append(day);
+
+    for(int i=start_hour;i<=end_hour;i++){
+        generated.append("@");
+        generated.append(i);
+        mount++;
+    }
+
+    total_cost=mount;
+    content= generated;
+}
+
+

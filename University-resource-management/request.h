@@ -11,7 +11,7 @@
 class request
 {
 private:
-    QString URL;//organ file
+
     QString Req_ID;
     QString App_ID;
     QString Office_name;
@@ -19,6 +19,8 @@ private:
     QString type;
     QString time_in_use;
     QString level;
+    QString req_content;
+    QString AP_ID;
 public:
 
     request();
@@ -29,7 +31,7 @@ public:
     void Set_Unit_name(QString  name);
     void Set_type(QString type);
     void Set_time_in_use(QString time);
-
+    void Set_AP_ID(QString ID);
 
     QString Get_Req_ID();
     QString Get_App_ID();
@@ -37,8 +39,9 @@ public:
     QString Get_Unit_name();
     QString Get_type();
     QString Get_time_in_use();
-
+    QString Get_AP_ID();
 
 };
+
 
 #endif // REQUEST_H

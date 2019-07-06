@@ -19,7 +19,7 @@ void request::Set_App_ID(QString ID)
 
 void request::Set_Organ_name(QString name)
 {
-    Organ_name=name
+    Organ_name=name;
 }
 
 void request::Set_Office_name(QString name)

@@ -28,13 +28,17 @@ private slots:
 
     void on_pushButton_signup_clicked();
 
-    void on_PB_back_clicked();
+    //void on_PB_back_clicked();
 
-    void on_pb_getinfo_clicked();
+    //void on_pb_getinfo_clicked();
 
     void on_PB_login_clicked();
 
-    void on_PB_test_clicked();
+    //void on_PB_test_clicked();
+
+    void on_PB_back_to_login_clicked();
+
+    void on_PB_register_clicked();
 
 private:
     Ui::Login *ui;

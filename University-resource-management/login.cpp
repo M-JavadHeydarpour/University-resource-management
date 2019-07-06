@@ -119,15 +119,7 @@ void Login::on_PB_register_clicked()
     recent input password and check it remember to added "
     */
 
-    if (ui->LE_pass_2->text() != ui->LE_pass_correct->text())
-    {
-        QMessageBox warning;
-        //warning.setToolTip("");
-        warning.setWindowTitle("هشدار !");
-        warning.setText("کلمه عبور وارد شده تطابق ندارد ! لطفا دوباره امتحان کنید");
-        warning.setIcon(QMessageBox::Warning);
-        warning.exec();
-    }
+
 
     int check = 0;
     for(int i =0;i<7;i++)
@@ -137,7 +129,19 @@ void Login::on_PB_register_clicked()
             check++;
         }
     }
-    if(check == 7){
+
+    if (ui->LE_pass_2->text() != ui->LE_pass_correct->text())
+    {
+        QMessageBox warning;
+        //warning.setToolTip("");
+        warning.setWindowTitle("هشدار !");
+        warning.setText("کلمه عبور وارد شده تطابق ندارد ! لطفا دوباره امتحان کنید");
+        warning.setIcon(QMessageBox::Warning);
+        ui->LE_pass->clear();
+        ui->LE_pass_correct->clear();
+        warning.exec();
+    }
+    else if(check == 7){
             sign.Set_name(ui->LE_name->text());
             sign.Set_family(ui->LE_family->text());
             sign.Set_email(ui->LE_email->text());
@@ -157,9 +161,22 @@ void Login::on_PB_register_clicked()
             msg.setWindowTitle("تایید حساب کاربری");
             msg.setText("حساب کاربری جديد با موفقيت ايجاد شد. لطفا ایمیل خود را  جهت تایید حساب چک کنید ");
             msg.setIcon(QMessageBox::Information);
-            msg.show();
+            //msg.show();
+            ui->LE_user->setText(ui->LE_user_2->text());
+            ui->LE_pass->setText(ui->LE_pass_2->text());
+            ui->LE_email->clear();
+            ui->LE_phone->clear();
+            ui->LE_family->clear();
+            ui->LE_pass_2->clear();
+            ui->LE_pass_correct->clear();
+            ui->LE_user_2->clear();
+            ui->LE_phone98->clear();
+            //ui->LE_phone->clear();
+            ui->LE_address->clear();
+            ui->LE_name->clear();
             msg.exec();
             ui->stackedWidget->setCurrentIndex(0);
+            /*send email to this user code here */
     }
     else
     {

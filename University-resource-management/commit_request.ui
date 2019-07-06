@@ -102,35 +102,15 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page"/>
     <widget class="QWidget" name="page_2">
-     <widget class="QDateEdit" name="date_fom">
-      <property name="geometry">
-       <rect>
-        <x>39</x>
-        <y>30</y>
-        <width>111</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QDateEdit" name="date_to">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>70</y>
-        <width>110</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>30</y>
+        <x>200</x>
+        <y>40</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -142,14 +122,78 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>80</y>
+        <x>200</x>
+        <y>100</y>
         <width>47</width>
         <height>13</height>
        </rect>
       </property>
       <property name="text">
        <string>تا تاریخ:</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_month_from">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>12</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spin_day_from">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>31</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_day_to">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>31</number>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_month_to">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>42</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>12</number>
       </property>
      </widget>
     </widget>

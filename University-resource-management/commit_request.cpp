@@ -3,8 +3,7 @@
 #include "brain.h"
 #include "QTime"
 
-QString start="";
-QString end="";
+
 commit_request::commit_request(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::commit_request)
@@ -19,13 +18,11 @@ commit_request::~commit_request()
     delete ui;
 }
 
-void commit_request::on_date_fom_userDateChanged(const QDate &date)
-{
-   start=date.toString();
 
-}
-
-void commit_request::on_date_to_userDateChanged(const QDate &date)
+void commit_request::on_send_req_clicked()
 {
-    end=date.toString();
+    int start_month=ui->spinBox_month_from->value();
+    int start_day=ui->spin_day_from->value();
+    int end_month=ui->spinBox_month_to->value();
+    int end_day=ui->spinBox_day_to->value();
 }

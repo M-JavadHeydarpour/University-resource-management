@@ -17,6 +17,11 @@ void request::Set_App_ID(QString ID)
     App_ID =ID;
 }
 
+void request::Set_Organ_name(QString name)
+{
+    Organ_name=name
+}
+
 void request::Set_Office_name(QString name)
 {
     Office_name=name;
@@ -37,9 +42,9 @@ void request::Set_time_in_use(QString time)
     time_in_use=time;
 }
 
-void request::Set_AP_ID(QString ID)
+void request::Set_ET_ID(QString ID)
 {
-    AP_ID=ID;
+    ET_ID=ID;
 }
 
 
@@ -52,6 +57,11 @@ QString request::Get_Req_ID()
 QString request::Get_App_ID()
 {
     return  App_ID;
+}
+
+QString request::Get_Organ_name()
+{
+    return Organ_name;
 }
 
 QString request::Get_Office_name()
@@ -74,7 +84,7 @@ QString request::Get_time_in_use()
     return time_in_use;
 }
 
-QString request::Get_AP_ID()
+QString request::Get_ET_ID()
 {
-    return AP_ID;
+    return ET_ID;
 }

@@ -16,9 +16,9 @@ public:
     ~commit_request();
 
 private slots:
-    void on_date_fom_userDateChanged(const QDate &date);
 
-    void on_date_to_userDateChanged(const QDate &date);
+
+    void on_send_req_clicked();
 
 private:
     Ui::commit_request *ui;

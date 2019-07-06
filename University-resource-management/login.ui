@@ -66,7 +66,7 @@
      <string notr="true">background-image: url(../Images/background.png);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget">
@@ -103,7 +103,7 @@
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_8">
+        <widget class="QLabel" name="user">
          <property name="minimumSize">
           <size>
            <width>32</width>
@@ -125,7 +125,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="pass">
          <property name="minimumSize">
           <size>
            <width>32</width>
@@ -286,14 +286,14 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="LE_name">
          <property name="placeholderText">
           <string>نام</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="LE_family">
          <property name="placeholderText">
           <string>نام خانوادگی</string>
          </property>
@@ -301,7 +301,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="LE_email">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -325,14 +325,14 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLineEdit" name="lineEdit_4">
+        <widget class="QLineEdit" name="LE_pass_2">
          <property name="placeholderText">
           <string>کلمه عبور</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5">
+        <widget class="QLineEdit" name="LE_pass_correct">
          <property name="placeholderText">
           <string>تایید کلمه عبور</string>
          </property>
@@ -340,7 +340,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="LE_user_2">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -364,14 +364,14 @@
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLineEdit" name="lineEdit_7">
+        <widget class="QLineEdit" name="LE_phone">
          <property name="placeholderText">
           <string>  912 1234 478</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_8">
+        <widget class="QLineEdit" name="LE_phone98">
          <property name="maximumSize">
           <size>
            <width>40</width>
@@ -388,7 +388,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_9">
+     <widget class="QLineEdit" name="LE_address">
       <property name="geometry">
        <rect>
         <x>100</x>
@@ -401,7 +401,7 @@
        <string>نشانی کامل </string>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="label_person">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -429,7 +429,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="label_username">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -457,7 +457,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="Label_email">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -485,7 +485,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="label_password">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -513,7 +513,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="head">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -541,7 +541,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="label_ad">
       <property name="geometry">
        <rect>
         <x>370</x>
@@ -569,7 +569,7 @@
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PB_back_to_login">
       <property name="geometry">
        <rect>
         <x>140</x>
@@ -594,7 +594,7 @@
        <string>ورود به سیستم </string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="PB_register">
       <property name="geometry">
        <rect>
         <x>240</x>
@@ -622,7 +622,7 @@
        <string>ثبت اطلاعات </string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="label_head">
       <property name="geometry">
        <rect>
         <x>210</x>
@@ -643,23 +643,7 @@
        <string>ثبت اطلاعات </string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_10">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>21</y>
-        <width>113</width>
-        <height>0</height>
-       </rect>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>0</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_11">
+     <widget class="QLineEdit" name="underline">
       <property name="geometry">
        <rect>
         <x>100</x>

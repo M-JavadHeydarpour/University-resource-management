@@ -64,6 +64,7 @@ See also the list of [contributors](https://github.com/mrrblack/University-resou
 
 This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
 
+<!--
 <b>Model/View Programming<b/>
 
 
@@ -130,3 +131,4 @@ A very usefull repository
 
 https://github.com/prakhargvp/CPP
 
+-->

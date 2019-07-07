@@ -42,7 +42,9 @@ private:
     QString name;
     office offices[10];//bazam :|
     int COO=0;//Count Of Offices
+
 public:
+    organ();
     void Set_ID(QString);
     void Set_name(QString);
     void Set_office(int , office);
@@ -50,6 +52,7 @@ public:
     QString Get_ID();
     QString Get_name();
     int Get_COO();
+
 
 };
 

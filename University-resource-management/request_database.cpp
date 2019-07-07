@@ -18,6 +18,9 @@ void request_database::Insert(request row)
     out <<row.Get_type()<<';';
     out<<row.Get_content()<<';';
     out <<row.Get_total_cost()<<';';
+    out<<"#"<<';';
+    out<<row.Get_result()<<';';
+    out<<"\r\n";
 
 }
 

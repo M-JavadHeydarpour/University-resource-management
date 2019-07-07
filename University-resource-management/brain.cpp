@@ -4,7 +4,6 @@
 QString brain::ID="";
 brain::brain()
 {
-     Organs_arry=new organ [organs.Number_of_row()];
 
 }
 QString brain::autenticate(QString username, QString pass)
@@ -38,3 +37,31 @@ void brain::Edit(User user)
 {
     users.Update(user);
 }
+
+/*QString brain::Get_organ_name(int i)
+{
+    return organs.Get_organ(i);
+}*/
+/*
+QString brain::Get_organs(int i)
+{
+    return organs.Select_obj(i,1);
+}*/
+
+int brain::Number_of_organs()
+{
+    return organs.Number_of_row();
+}
+
+Office_database brain::Get_organs()
+{
+    return organs;
+}
+
+
+
+
+
+
+
+

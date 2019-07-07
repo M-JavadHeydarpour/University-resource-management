@@ -59,6 +59,11 @@ void request::Set_cost_unit(int cost)
     cost_unit=cost;
 }
 
+void request::Set_result(QString re)
+{
+    result=re;
+}
+
 
 
 QString request::Get_Req_ID()
@@ -111,9 +116,14 @@ int request::Get_total_cost()
     return cost_unit * req_content.Get_mount();
 }
 
+QString request::Get_result()
+{
+    return result;
+}
+
 QString content::Get_content()
 {
-    return content;
+    return Content;
 }
 
 int content::Get_mount()
@@ -153,7 +163,7 @@ void content::C_generate(int start_month, int start_day, int end_month, int end_
 
    }
     total_cost=mount ;
-    content= generated;
+    Content= generated;
 
 }
 
@@ -167,7 +177,7 @@ void content::S_generate(int month, int day, int S_code)
     generated.append("_");
     generated.append(S_code);
 
-    content= generated;
+    Content= generated;
 }
 
 void content::H_generate(int month, int day, int start_hour, int end_hour)
@@ -187,7 +197,7 @@ void content::H_generate(int month, int day, int start_hour, int end_hour)
     }
 
     total_cost=mount;
-    content= generated;
+    Content= generated;
 }
 
 

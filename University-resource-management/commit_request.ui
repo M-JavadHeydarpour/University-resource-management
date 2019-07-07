@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QComboBox" name="organ">
+   <widget class="QComboBox" name="cmb_organ">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -40,7 +40,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QComboBox" name="office">
+   <widget class="QComboBox" name="cmb_office">
     <property name="geometry">
      <rect>
       <x>248</x>
@@ -66,7 +66,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QComboBox" name="unit">
+   <widget class="QComboBox" name="cmb_unit">
     <property name="geometry">
      <rect>
       <x>250</x>

@@ -5,6 +5,11 @@ void WWF::Set_URL(QString URL)
     this->URL=URL;
 }
 
+QString WWF::Get_URL()
+{
+    return  URL;
+}
+
 int WWF::Number_of_row()
 {
     QFile file(URL);

@@ -10,7 +10,7 @@
 class content
 {
 private:
-    QString content;
+    QString Content;
     int total_cost;
 
 public:
@@ -40,6 +40,8 @@ private:
     content req_content;//ramz
     QString ET_ID;
     QString log;
+    QString result;
+
 public:
 
     request();
@@ -52,11 +54,11 @@ public:
     void Set_type(QString type);
     void Set_time_in_use(QString time);
     void Set_content(content content);
-
     void Set_ET_ID(QString ID);
-
     void Add_log(QString ET_ID , QString level);
     void Set_cost_unit(int cost);
+    void Set_result(QString re);
+
 
     QString Get_Req_ID();
     QString Get_App_ID();
@@ -70,6 +72,7 @@ public:
 
     QString Get_ET_ID();
     int Get_total_cost();
+    QString Get_result();
 };
 
 #endif // REQUEST_H

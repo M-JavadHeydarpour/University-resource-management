@@ -84,5 +84,18 @@ void commit_request::on_cmb_office_currentIndexChanged(const QString &arg1)
 
 void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
 {
+    brain bll;
+    Unit unit_loaded;
+    unit_loaded=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
     ui->stackedWidget->setCurrentIndex(1);
+    if(ui->cmb_unit->currentText()!="")
+    {
+        if(unit_loaded.Get_reqtype()=='C')
+            ui->stackedWidget->setCurrentIndex(1);
+        else if(unit_loaded.Get_reqtype()=='H')
+            ui->stackedWidget->setCurrentIndex(2);
+        else if(unit_loaded.Get_reqtype()=='S')
+            ui->stackedWidget->setCurrentIndex(3);
+    }
 }
+

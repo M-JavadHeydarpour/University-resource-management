@@ -64,7 +64,7 @@ void request::Set_result(QString re)
     result=re;
 }
 
-void request::Set_cost(QString TC)
+void request::Set_cost(int TC)
 {
     T_cost=TC;
 }

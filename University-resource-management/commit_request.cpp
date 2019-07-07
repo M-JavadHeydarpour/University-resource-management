@@ -10,15 +10,12 @@ commit_request::commit_request(QWidget *parent) :
     ui(new Ui::commit_request)
 {
     ui->setupUi(this);
-    /*ui->cmb_organ->setCurrentText("bib");
-    ui->cmb_organ->setItemText(0,"salam");*/
-    /*ui->cmb_organ->setEditText("sss");
-    ui->cmb_unit->*/
-    ui->cmb_organ->addItem("سلام");
-    ui->cmb_organ->addItem("bye");
+
     brain bll;
     for(int i=0;i<bll.Number_of_organs();i++)
-        ui->cmb_organ->addItem(bll.Get_organs().Select_obj(i,1));
+    //for(int i=0;i<2;i++)
+      //  ui->cmb_organ->addItem("##");
+      ui->cmb_organ->addItem(bll.Get_organs().Select_obj(i,1));
 
 }
 
@@ -42,17 +39,45 @@ void commit_request::on_send_req_clicked()
 
 void commit_request::on_cmb_organ_currentIndexChanged(const QString &arg1)
 {
+    ui->cmb_office->clear();
+    ui->cmb_unit->clear();
+
     brain bll;
     organ organ_loaded;
-    //qDebug()<<ui->cmb_organ->currentText();
+
+
 
     organ_loaded=bll.Get_organs().Search_Organ_Name(ui->cmb_organ->currentText());
-    //for(int i=0;i<organ_loaded.Get_COO();i++){
+
     for(int i=0;i<organ_loaded.Get_COO();i++){
        ui->cmb_office->addItem( organ_loaded.Get_office(i).Get_name());
-        //ui->cmb_office->addItem(ui->cmb_organ->currentText());
+
 
     }
-    //ui->cmb_office->addItem("ssssssssssssss");
 
+
+}
+
+void commit_request::on_cmb_office_currentIndexChanged(const QString &arg1)
+{
+    ui->cmb_unit->clear();
+
+       brain bll;
+       organ organ_loaded;
+       office office_loaded;
+
+       organ_loaded=bll.Get_organs().Search_Organ_Name(ui->cmb_organ->currentText());
+       office_loaded= bll.Get_organs().Search_Office_Name(ui->cmb_office->currentText());
+
+       //qDebug()<<ui->cmb_office->currentIndex()*-1;
+
+       for (int i=0;i<office_loaded.Get_COU();i++){
+           ui->cmb_unit->addItem(office_loaded.Get_unit(i).Get_name());
+       }
+      //for(int i=0;i<organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_COU();i++){
+  //        ui->cmb_unit->addItem( organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name());
+
+       /*}  ui->cmb_unit->addItem( "organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name()");
+       ui->cmb_unit->addItem( "organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name()");
+       */
 }

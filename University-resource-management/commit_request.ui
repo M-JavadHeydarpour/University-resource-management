@@ -32,10 +32,10 @@
    <widget class="QStackedWidget" name="stackedWidget_2">
     <property name="geometry">
      <rect>
-      <x>-1</x>
-      <y>0</y>
-      <width>821</width>
-      <height>511</height>
+      <x>29</x>
+      <y>10</y>
+      <width>751</width>
+      <height>451</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -52,9 +52,9 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>182</x>
-        <y>170</y>
-        <width>181</width>
+        <x>580</x>
+        <y>120</y>
+        <width>161</width>
         <height>20</height>
        </rect>
       </property>
@@ -68,9 +68,9 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>182</x>
-        <y>250</y>
-        <width>181</width>
+        <x>590</x>
+        <y>200</y>
+        <width>151</width>
         <height>20</height>
        </rect>
       </property>
@@ -84,8 +84,8 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>172</x>
-        <y>90</y>
+        <x>560</x>
+        <y>40</y>
         <width>201</width>
         <height>20</height>
        </rect>
@@ -100,20 +100,23 @@
      <widget class="QComboBox" name="cmb_unit">
       <property name="geometry">
        <rect>
-        <x>132</x>
-        <y>280</y>
-        <width>281</width>
-        <height>22</height>
+        <x>510</x>
+        <y>230</y>
+        <width>231</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
       </property>
      </widget>
      <widget class="QComboBox" name="cmb_organ">
       <property name="geometry">
        <rect>
-        <x>132</x>
-        <y>120</y>
-        <width>281</width>
-        <height>22</height>
+        <x>510</x>
+        <y>70</y>
+        <width>231</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="maximumSize">
@@ -128,7 +131,9 @@
         <pointsize>10</pointsize>
         <weight>50</weight>
         <bold>false</bold>
+        <strikeout>false</strikeout>
         <stylestrategy>PreferAntialias</stylestrategy>
+        <kerning>true</kerning>
        </font>
       </property>
       <property name="cursor">
@@ -137,14 +142,21 @@
       <property name="mouseTracking">
        <bool>true</bool>
       </property>
+      <property name="tabletTracking">
+       <bool>false</bool>
+      </property>
       <property name="contextMenuPolicy">
        <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string extracomment="Organ"/>
       </property>
       <property name="layoutDirection">
        <enum>Qt::RightToLeft</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">backfround-image:None;</string>
+       <string notr="true">backfround-image:None;
+</string>
       </property>
       <property name="locale">
        <locale language="Persian" country="Iran"/>
@@ -153,7 +165,10 @@
        <number>200</number>
       </property>
       <property name="insertPolicy">
-       <enum>QComboBox::InsertAtCurrent</enum>
+       <enum>QComboBox::InsertAtBottom</enum>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
       </property>
       <item>
        <property name="text">
@@ -164,10 +179,10 @@
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
        <rect>
-        <x>131</x>
-        <y>270</y>
-        <width>281</width>
-        <height>151</height>
+        <x>60</x>
+        <y>70</y>
+        <width>321</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -483,11 +498,23 @@
      <widget class="QPushButton" name="send_req">
       <property name="geometry">
        <rect>
-        <x>162</x>
-        <y>440</y>
-        <width>211</width>
-        <height>23</height>
+        <x>160</x>
+        <y>400</y>
+        <width>200</width>
+        <height>30</height>
        </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
       </property>
       <property name="text">
        <string>ثبت درخواست</string>
@@ -496,11 +523,39 @@
      <widget class="QComboBox" name="cmb_office">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>200</y>
-        <width>281</width>
-        <height>22</height>
+        <x>510</x>
+        <y>150</y>
+        <width>231</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>400</y>
+        <width>91</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>بازگشت </string>
       </property>
      </widget>
     </widget>
@@ -512,7 +567,7 @@
      <x>0</x>
      <y>0</y>
      <width>820</width>
-     <height>26</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>

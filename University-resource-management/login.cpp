@@ -5,7 +5,7 @@
 #include "expertspanel.h"
 #include "office_database.h"
 #include "brain.h"
-
+#include "commit_request.h"
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Login)
@@ -312,4 +312,8 @@ void Login::on_pushButton_clicked()
    organ organ_loaded;
    organ_loaded=test.Search_Organ_Name("Refah");
    qDebug()<<organ_loaded.Get_office(0).Get_name();
+   commit_request *cr;
+   cr=new commit_request();
+   cr->show();
+   this->close();
 }

@@ -53,8 +53,8 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>530</x>
-        <y>120</y>
+        <x>510</x>
+        <y>140</y>
         <width>161</width>
         <height>20</height>
        </rect>
@@ -69,8 +69,8 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>540</x>
-        <y>200</y>
+        <x>520</x>
+        <y>220</y>
         <width>151</width>
         <height>20</height>
        </rect>
@@ -85,8 +85,8 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>510</x>
-        <y>40</y>
+        <x>490</x>
+        <y>60</y>
         <width>181</width>
         <height>20</height>
        </rect>
@@ -104,8 +104,8 @@
      <widget class="QComboBox" name="cmb_unit">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>230</y>
+        <x>460</x>
+        <y>250</y>
         <width>231</width>
         <height>31</height>
        </rect>
@@ -117,8 +117,8 @@
      <widget class="QComboBox" name="cmb_organ">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>70</y>
+        <x>460</x>
+        <y>90</y>
         <width>231</width>
         <height>31</height>
        </rect>
@@ -183,8 +183,8 @@
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>70</y>
+        <x>70</x>
+        <y>60</y>
         <width>321</width>
         <height>211</height>
        </rect>
@@ -757,7 +757,7 @@
      <widget class="QPushButton" name="send_req">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>180</x>
         <y>400</y>
         <width>200</width>
         <height>30</height>
@@ -782,8 +782,8 @@
      <widget class="QComboBox" name="cmb_office">
       <property name="geometry">
        <rect>
-        <x>480</x>
-        <y>150</y>
+        <x>460</x>
+        <y>170</y>
         <width>231</width>
         <height>31</height>
        </rect>
@@ -795,7 +795,7 @@
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>70</x>
         <y>400</y>
         <width>91</width>
         <height>30</height>

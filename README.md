@@ -1,5 +1,5 @@
 # University Resource Management
-![build](https://travis-ci.org/mrrblack/University-resource-management.svg?branch=signup)
+[![Travis Test](https://img.shields.io/travis/orangehrm/orangehrm/master.svg)](https://travis-ci.org/orangehrm/orangehrm)
 
 The goal of this project is to automate university resources and better manage it
 
@@ -11,88 +11,60 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
 
+*Windows*
+```
+Download and install Qt 5.1 or more ,then set compiler to Microsoft Visual Studio 2017 *86 or *64 
+```
+*Linux*
+```
+I will also put the command to install the Qt on the Linux operating system later.
+```
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+After installing Qt Creator open Uni*.pro using Qt Creator and run it .
 ```
 
-And repeat
+And then
 
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+Enjoy it 
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+KingOfSku team developed the project .
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
+* [Qt](http://www.qt.io/) - The CPlusPlus framework used
+* [Database](https://www.mysql.com//) - Data Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
+Communicate with this [email](email@heidarpoor.ir) to collaborate on the project.
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [Git](https://git-scm.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/mrrblack/University-resource-management/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Habib Sharif** - *Bussiness Logic Layer* -[Habibax](https://github.com/habibax) 
+* **Mohammad Fathi** - *Data Access Layer* -[Mfathi1999](https://github.com/mfathi1999) 
+* **Mohammad Javad Heidarpoor** - *User interface Layer* -[Mrrblack](http://www.heidarpoor.ir/)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+See also the list of [contributors](https://github.com/mrrblack/University-resource-management/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License - see the [LICENSE](https://github.com/mrrblack/University-resource-management/blob/master/LICENSE) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-
-
-
-# 
-
+<!--
 <b>Model/View Programming<b/>
 
 
@@ -159,3 +131,4 @@ A very usefull repository
 
 https://github.com/prakhargvp/CPP
 
+-->

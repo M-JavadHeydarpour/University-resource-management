@@ -58,6 +58,11 @@ Office_database brain::Get_organs()
     return organs;
 }
 
+request_database brain::Load_reqs()
+{
+    return reqs;
+}
+
 
 
 

@@ -29,7 +29,7 @@ class request
 private:
 
     int cost_unit;
-    QString T_cost;
+    int T_cost;
 
     QString Req_ID="new";
     QString App_ID;
@@ -60,7 +60,7 @@ public:
     void Add_log(QString ET_ID , QString level);
     void Set_cost_unit(int cost);
     void Set_result(QString re);
-    void Set_cost(QString TC);
+    void Set_cost(int TC);
 
 
     QString Get_Req_ID();

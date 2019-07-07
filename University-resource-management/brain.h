@@ -26,7 +26,7 @@ public:
    // QString Get_organ_name(int i);
     int Number_of_organs();
     Office_database Get_organs();
-
+    request_database Load_reqs();
 
 
 };

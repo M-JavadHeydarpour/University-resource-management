@@ -195,7 +195,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_9"/>
       <widget class="QWidget" name="page_10">
@@ -830,8 +830,6 @@
     </widget>
    </widget>
   </widget>
-
-
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -842,9 +840,6 @@
     </rect>
    </property>
   </widget>
-
-
-
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>

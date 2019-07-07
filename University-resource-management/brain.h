@@ -23,7 +23,7 @@ public:
  //   organ Get_organ(int line);
    // QString Get_organ_name(int i);
     int Number_of_organs();
-Office_database Get_organs();
+    Office_database Get_organs();
 
 
 

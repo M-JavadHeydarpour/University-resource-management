@@ -10,13 +10,11 @@ commit_request::commit_request(QWidget *parent) :
     ui(new Ui::commit_request)
 {
     ui->setupUi(this);
+
     brain bll;
 
-    bll.Get_organs();
-
-    ui->cmb_organ->addItem(bll.Get_organs().extract_data(bll.Get_organs().Select(0)).Get_name());
-    //    ui->cmb_organ->addItem(bll.Get_organs(i));
-   // ui->cmb_organ->addItem("salam");
+    for(int i=0;i<bll.Get_organs().Number_of_row();i++)
+        ui->cmb_organ->addItem(bll.Get_organs().extract_data(bll.Get_organs().Select(i)).Get_name());
 
 }
 

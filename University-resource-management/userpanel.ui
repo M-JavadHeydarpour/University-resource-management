@@ -360,17 +360,82 @@ background-image:url();</string>
      <string/>
     </property>
    </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+<<<<<<< HEAD
+      <x>30</x>
+      <y>430</y>
+      <width>291</width>
+=======
+      <x>340</x>
+      <y>440</y>
+      <width>301</width>
+>>>>>>> 59d5b22e4b2da9a8e277bb04fc2a1cb5db080d6a
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>301</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(105, 63, 153);
+background-color:rgb(200, 200, 255);
+background-image:url();</string>
+      </property>
+      <property name="text">
+       <string>انتخاب کارشناس </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
    <widget class="QStackedWidget" name="stackedWidget_2">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>430</y>
+      <y>440</y>
       <width>291</width>
       <height>41</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_3">
      <widget class="QPushButton" name="pushButton_5">
@@ -387,31 +452,7 @@ background-image:url();</string>
         <pointsize>10</pointsize>
        </font>
       </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(105, 63, 153);
-background-color:rgb(200, 200, 255);
-background-image:url();</string>
-      </property>
-      <property name="text">
-       <string>درخواست ورودی</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="page_4">
-     <widget class="QStackedWidget" name="stackedWidget">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>291</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <stylestrategy>PreferDefault</stylestrategy>
-       </font>
-      </property>
+<<<<<<< HEAD
       <property name="contextMenuPolicy">
        <enum>Qt::ActionsContextMenu</enum>
       </property>
@@ -447,17 +488,19 @@ background-image:url();</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color:rgb(105, 63, 153);
+=======
+      <property name="styleSheet">
+       <string notr="true">color:rgb(105, 63, 153);
+>>>>>>> 59d5b22e4b2da9a8e277bb04fc2a1cb5db080d6a
 background-color:rgb(200, 200, 255);
 background-image:url();</string>
-        </property>
-        <property name="text">
-         <string>انتخاب کارشناس </string>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="page_2"/>
+      </property>
+      <property name="text">
+       <string>درخواست ورودی</string>
+      </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="page_4"/>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

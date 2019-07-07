@@ -159,7 +159,7 @@
        <enum>Qt::RightToLeft</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">backfround-image:None;
+       <string notr="true">background-image:None;
 </string>
       </property>
       <property name="locale">

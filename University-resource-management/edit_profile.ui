@@ -26,7 +26,8 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(../Images/b2.png);</string>
+   <string notr="true">/*background-image: url(../Images/b2.png);*/
+background-image: url(../Images/back.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="PB_back">
@@ -37,6 +38,9 @@
       <width>81</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url();</string>
     </property>
     <property name="text">
      <string>بازگشت</string>
@@ -50,6 +54,9 @@
       <width>181</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url();</string>
     </property>
     <property name="text">
      <string>ثبت تغییرات</string>
@@ -67,6 +74,9 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QLineEdit" name="LE_family_2">
+       <property name="styleSheet">
+        <string notr="true">background-image:url();</string>
+       </property>
        <property name="placeholderText">
         <string>نام خانوادگی</string>
        </property>
@@ -75,7 +85,8 @@
      <item>
       <widget class="QLineEdit" name="LE_name_2">
        <property name="styleSheet">
-        <string notr="true">background-image:transparent;</string>
+        <string notr="true">background-image:transparent;
+background-image:url();</string>
        </property>
        <property name="placeholderText">
         <string>نام</string>
@@ -124,6 +135,9 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <widget class="QLineEdit" name="LE_pass_3">
+       <property name="styleSheet">
+        <string notr="true">background-image:url();</string>
+       </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
        </property>
@@ -152,6 +166,9 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string notr="true">background-image:url();</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -162,6 +179,9 @@
      </item>
      <item>
       <widget class="QLineEdit" name="LE_phone_2">
+       <property name="styleSheet">
+        <string notr="true">background-image:url();</string>
+       </property>
        <property name="placeholderText">
         <string>  912 1234 478</string>
        </property>
@@ -212,7 +232,8 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(8, 23, 120)</string>
+     <string notr="true">color:rgb(8, 23, 120);
+background-image: url(../Images/back.png);</string>
     </property>
     <property name="text">
      <string>ویرایش اطلاعات </string>
@@ -226,6 +247,9 @@
       <width>261</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url();</string>
     </property>
     <property name="placeholderText">
      <string>نشانی کامل </string>
@@ -290,6 +314,9 @@
       <height>21</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url();</string>
+    </property>
     <property name="placeholderText">
      <string>پست الکترونیک</string>
     </property>
@@ -302,6 +329,9 @@
       <width>261</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url();</string>
     </property>
     <property name="placeholderText">
      <string>نام کاربری</string>

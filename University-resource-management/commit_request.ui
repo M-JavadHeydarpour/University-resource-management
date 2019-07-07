@@ -815,7 +815,6 @@
     </widget>
    </widget>
   </widget>
-<<<<<<< HEAD
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -826,8 +825,7 @@
     </rect>
    </property>
   </widget>
-=======
->>>>>>> b7427c545fee27bdb3171220061918a653dbe91b
+
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>

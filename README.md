@@ -11,12 +11,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-For using Windows users:
-firts download and install Qt 5.1 or more
-then set compiler to Microsoft Visual Studio 2017 *86 or *64 
 
+*Windows
 ```
+Download and install Qt 5.1 or more ,then set compiler to Microsoft Visual Studio 2017 *86 or *64 
+```
+*Linux
 ```
 I will also put the command to install the Qt on the Linux operating system later.
 ```

@@ -23,6 +23,9 @@ Login::~Login()
 
 
 void Login::on_pushButton_login_clicked()
+{
+
+}
 
 
 

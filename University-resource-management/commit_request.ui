@@ -174,11 +174,6 @@
       <property name="frame">
        <bool>true</bool>
       </property>
-      <item>
-       <property name="text">
-        <string/>
-       </property>
-      </item>
      </widget>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
@@ -820,6 +815,19 @@
     </widget>
    </widget>
   </widget>
+<<<<<<< HEAD
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>820</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+=======
+>>>>>>> b7427c545fee27bdb3171220061918a653dbe91b
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>

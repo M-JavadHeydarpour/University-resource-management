@@ -1,4 +1,0 @@
-1000;mf200;5522;mohammad;fathi;fathi@gmail.com;isfahan;09132519;#;U;#;
-1001;mjh2000;@@##125;javad;heidarpour;kno3@gmail.com;isfahan;09131111;#;U;#;
-1002;bibbib;9632;habib;sharif;ibib@gmail.com;shahin shahr;09130078;#;U;#;
-1003;cactus;7414;sadjad;mohammadi;radikall@gmail.com;khorzogh;091304587;#;U;#;1004;1;1;b;bbb;bb@bbb.com;chalghozabad;9868548863;#;U;#;

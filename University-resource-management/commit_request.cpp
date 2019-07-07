@@ -3,7 +3,7 @@
 #include "QTime"
 #include "QComboBox"
 #include "brain.h"
-
+#include "userpanel.h"
 
 commit_request::commit_request(QWidget *parent) :
     QMainWindow(parent),
@@ -99,3 +99,13 @@ void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
     }
 }
 
+
+void commit_request::on_pushButton_clicked()
+{
+    /* bug to Identification constructor userpanel */
+    /*userpanel *back_to_panel;
+    back_to_panel = new user_panel();
+    back_to_panel->show();
+    this->close();*/
+
+}

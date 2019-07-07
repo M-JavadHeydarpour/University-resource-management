@@ -26,6 +26,8 @@ private slots:
 
     void on_cmb_unit_currentIndexChanged(const QString &arg1);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::commit_request *ui;
 };

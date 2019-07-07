@@ -8,15 +8,15 @@
 
 class request_database:public   WWF
 {
-    /*
+
 private:
 
 
 public:
 
     void Insert(request row);
-    request_database();*/
-
+    request_database();
+    request extract_data(QString line);
 };
 
 #endif // REQUEST_DATABASE_H

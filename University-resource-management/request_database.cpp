@@ -1,5 +1,5 @@
 #include "request_database.h"
-/*
+
 void request_database::Insert(request row)
 {
     QFile file(URL);
@@ -7,7 +7,7 @@ void request_database::Insert(request row)
     QTextStream out(&file);
 
     if(row.Get_Req_ID()=="new")
-    out <<Number_of_row()+1000<<';';
+    out <<Number_of_row()+10000<<';';
     else {
         out<<row.Get_Req_ID()<<';';
     }
@@ -26,6 +26,23 @@ void request_database::Insert(request row)
 
 request_database::request_database()
 {
-
 }
-*/
+
+request request_database::extract_data(QString line)
+{
+
+    request result;
+    content con;
+    con.Set_content(Select_obj(line,6));
+    result.Set_Req_ID(Select_obj(line,0));
+    result.Set_App_ID(Select_obj(line,1));
+    result.Set_Organ_name(Select_obj(line,2));
+    result.Set_Office_name(Select_obj(line,3));
+    result.Set_Unit_name(Select_obj(line,4));
+    result.Set_type(Select_obj(line,5));
+    result.Set_content(con);
+    result.Set_cost(Select_obj(line,7));
+    result.Set_ET_ID(Select_obj(line,8));
+    result.Set_result(Select_obj(line,9));
+}
+

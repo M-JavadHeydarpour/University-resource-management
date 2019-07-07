@@ -111,7 +111,7 @@ int request::Get_total_cost()
     return cost_unit * req_content.Get_mount();
 }
 
-QString content::Get_contet()
+QString content::Get_content()
 {
     return content;
 }

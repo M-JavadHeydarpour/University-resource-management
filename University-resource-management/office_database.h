@@ -24,8 +24,7 @@ public:
     void show_Office_database();// just show data base.
     void show_column(QString col);//show a certain coumn.
 
-    QString Select_obj(QString line ,int column);//return a column from a certain row
-    QString Select_obj(int row ,int column);//return a column from a certain row
+
 
 
     QString Select_Unit(QString office , int column);
@@ -42,6 +41,7 @@ public:
     int get_counter();//counter for id
     int get_total();//number of lines
     int get_office_count(QString line);//input = row
+    int get_unit_count(QString line);//input=select_office()
 
 
     organ extract_data(QString line);

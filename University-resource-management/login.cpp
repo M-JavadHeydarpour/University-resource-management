@@ -307,9 +307,5 @@ void Login::on_PB_register_clicked()
 void Login::on_pushButton_clicked()
 {
     Office_database t;
-    Unit t2;
-    t2=t.extract_unit(t.Select_Unit(t.Select_office("anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},tehran{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},shaghayegh{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},;",0),0));
-    qDebug()<<t2.Get_name();
-    qDebug()<<t2.Get_reqtype();
-    qDebug()<<t2.Get_cost();
+    qDebug()<<t.get_office_count("100;Refah;anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},tehran{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},shaghayegh{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},;");
 }

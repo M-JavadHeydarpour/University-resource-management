@@ -12,9 +12,8 @@ commit_request::commit_request(QWidget *parent) :
     ui->setupUi(this);
 
     brain bll;
-
-    for(int i=0;i<bll.Get_organs().Number_of_row();i++)
-        ui->cmb_organ->addItem(bll.Get_organs().extract_data(bll.Get_organs().Select(i)).Get_name());
+    for(int i=0;i<bll.Number_of_organs();i++)
+        ui->cmb_organ->addItem(bll.Get_organs().Select_obj(i,1));
 
 }
 

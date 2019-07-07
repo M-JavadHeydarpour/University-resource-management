@@ -26,26 +26,11 @@ void Office_database::Insert(organ row)
     }
     out<<";"<<"\r\n";
 }
-QString Office_database::Select_obj(QString line ,int column)
-{
-    QString result="";
-    int pos_semi_1=0,pos_semi_2=0;//position of semicolons(;).firs one and second.
-    for (int i=0;line[i]!="\x0"&&column>=0;i++){
-        if(line[i]==';'){//save position of semis.
-            pos_semi_1=pos_semi_2;
-            pos_semi_2=i;
-            column--;
-        }
-    }
 
-    //for first column.
-    if (pos_semi_1==0)
-        pos_semi_1--;
-    for (int i=pos_semi_1+1;i<pos_semi_2;i++){
-        result.append(line[i]);
-    }
-    return result;
-}
+
+
+
+
 
 
 QString Office_database::Select_Unit(QString office,int column)
@@ -91,12 +76,20 @@ QString Office_database::Select_office(QString organ,int column)
 int Office_database::get_office_count(QString line)
 {
     int cont=0;
-    int i=0;
-    while(line[i]!="\r\n")
-    {
+    for (int i=0;line[i]!='\x0';i++)
         if(line[i]=='{')
             cont++;
-    }
+
+    return cont;
+}
+
+int Office_database::get_unit_count(QString line)
+{
+    int cont=0;
+    for (int i=0;line[i]!='\x0';i++)
+        if(line[i]=='*')
+            cont++;
+
     return cont;
 }
 
@@ -105,8 +98,22 @@ int Office_database::get_office_count(QString line)
 //    return extarct_data( Select(i)).Get_name();
 //}
 
-office Office_database::extract_office(QString content)
+office Office_database::extract_office(QString content)//anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*}
 {
+    office result;
+    QString name_extracted;
+    for (int i=0;content[i]!='{';i++)
+    {
+        name_extracted.append(content[i]);
+    }
+    result.Set_name(name_extracted);
+    for (int i=0;i<get_unit_count(content);i++){
+        result.Set_unit(i,extract_unit(Select_Unit(content,i)));
+    }
+
+    return result;
+
+    /*
     office result;
     QString temp;
     int i=0;
@@ -123,7 +130,7 @@ office Office_database::extract_office(QString content)
     }
 
     return result;
-
+*/
 }
 
 Unit Office_database::extract_unit(QString content)//1t[(C)$500$]
@@ -154,13 +161,14 @@ Unit Office_database::extract_unit(QString content)//1t[(C)$500$]
 organ Office_database::extract_data(QString line)//not complite
 {
     organ result;
-    office result_2;
+    //office result_2;
+
     result.Set_ID(Select_obj(line,0));
     result.Set_name(Select_obj(line,1));
-    for(int i=0;i<get_office_count(line);i++){
-        //result.Set_office(i,Select_obj(line,2))
+
+    for (int i=0;i<get_office_count(line);i++){
+        result.Set_office(i,extract_office(Select_office(line,i)));
     }
-    //result_2=extract_office(Select_obj(line,2));
 
     return result;
 }

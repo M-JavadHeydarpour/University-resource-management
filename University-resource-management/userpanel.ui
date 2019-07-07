@@ -363,15 +363,13 @@ background-image:url();</string>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-<<<<<<< HEAD
-      <x>30</x>
-      <y>430</y>
-      <width>291</width>
-=======
+
+
+
       <x>340</x>
       <y>440</y>
       <width>301</width>
->>>>>>> 59d5b22e4b2da9a8e277bb04fc2a1cb5db080d6a
+
       <height>41</height>
      </rect>
     </property>
@@ -452,7 +450,7 @@ background-image:url();</string>
         <pointsize>10</pointsize>
        </font>
       </property>
-<<<<<<< HEAD
+
       <property name="contextMenuPolicy">
        <enum>Qt::ActionsContextMenu</enum>
       </property>
@@ -488,10 +486,7 @@ background-image:url();</string>
         </property>
         <property name="styleSheet">
          <string notr="true">color:rgb(105, 63, 153);
-=======
-      <property name="styleSheet">
-       <string notr="true">color:rgb(105, 63, 153);
->>>>>>> 59d5b22e4b2da9a8e277bb04fc2a1cb5db080d6a
+
 background-color:rgb(200, 200, 255);
 background-image:url();</string>
       </property>

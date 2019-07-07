@@ -40,6 +40,8 @@ private slots:
 
     void on_PB_register_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Login *ui;
 

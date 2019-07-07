@@ -92,7 +92,7 @@ int Office_database::get_office_count(QString line)
 {
     int cont=0;
     int i=0;
-    while(line[i]!='\r\n')
+    while(line[i]!="\r\n")
     {
         if(line[i]=='{')
             cont++;
@@ -126,34 +126,41 @@ office Office_database::extract_office(QString content)
 
 }
 
-Unit Office_database::extract_unit(QString content)
+Unit Office_database::extract_unit(QString content)//1t[(C)$500$]
 {
     Unit result;
     QString name_extracted="";
-    QString reqtype_extract="";
-    QString cost_extract="";
+    QString reqtype_extracted="";
+    QString cost_extracted="";
 
     int i;
     for (i=0;content[i]!='[';i++)
         name_extracted.append(content[i]);
     i+=2;
     for (i;content[i]!=')';i++)
-        reqtype_extract.append(content[i]);
+        reqtype_extracted.append(content[i]);
     i+=2;
     for (i;content[i]!='$';i++)
-        cost_extract.append(content[i]);
+        cost_extracted.append(content[i]);
 
     result.Set_name(name_extracted);
-    result.Set_reqtype(reqtype_extract);
-    result.Set_cost(cost_extract);
+    result.Set_reqtype(reqtype_extracted);
+    result.Set_cost(cost_extracted);
+
 
     return result;
 
 }
-organ Office_database::extract_data(QString line)
+organ Office_database::extract_data(QString line)//not complite
 {
     organ result;
+    office result_2;
     result.Set_ID(Select_obj(line,0));
     result.Set_name(Select_obj(line,1));
+    for(int i=0;i<get_office_count(line);i++){
+        //result.Set_office(i,Select_obj(line,2))
+    }
+    //result_2=extract_office(Select_obj(line,2));
+
     return result;
 }

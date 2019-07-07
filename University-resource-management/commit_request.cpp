@@ -61,7 +61,7 @@ void commit_request::on_send_req_clicked()
     req.Set_cost(req.Get_total_cost());
     req.Set_ET_ID("1005");
     req.Set_result("F");
-
+   // req.Add_log("#","#");
     bll.Load_reqs().Insert(req);
 
 
@@ -125,7 +125,7 @@ void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
     brain bll;
     Unit unit_loaded;
     unit_loaded=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
-    ui->stackedWidget->setCurrentIndex(1);
+   // ui->stackedWidget->setCurrentIndex(1);
     if(ui->cmb_unit->currentText()!="")
     {
         if(unit_loaded.Get_reqtype()=='C')

@@ -364,7 +364,7 @@ background-image:url();</string>
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>440</y>
+      <y>430</y>
       <width>291</width>
       <height>41</height>
      </rect>
@@ -428,7 +428,7 @@ background-image:url();</string>
        <enum>QFrame::Plain</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QPushButton" name="pushButton_4">

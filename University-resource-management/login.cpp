@@ -30,14 +30,14 @@ void Login::on_pushButton_signup_clicked()
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void Login::on_PB_back_clicked()
+/*void Login::on_PB_back_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
 }
-
-void Login::on_pb_getinfo_clicked()
+*/
+void Login::on_PB_register_clicked()
 {
-    /*brain bll;
+    brain bll;
     User sign;
     bool Correct_information[7];
     QString names[7];
@@ -114,37 +114,77 @@ void Login::on_pb_getinfo_clicked()
     {
         Correct_information[6] = true;
     }
-*/
+
     /*
     recent input password and check it remember to added "
     */
 
- /*   for(int i =0;i<7;i++)
+
+
+    int check = 0;
+    for(int i =0;i<7;i++)
     {
         if(Correct_information[i] == 1 )
         {
+            check++;
+        }
+    }
+
+    if (ui->LE_pass_2->text() != ui->LE_pass_correct->text())
+    {
+        QMessageBox warning;
+        //warning.setToolTip("");
+        warning.setWindowTitle("هشدار !");
+        warning.setText("کلمه عبور وارد شده تطابق ندارد ! لطفا دوباره امتحان کنید");
+        warning.setIcon(QMessageBox::Warning);
+        ui->LE_pass->clear();
+        ui->LE_pass_correct->clear();
+        warning.exec();
+    }
+    else if(check == 7){
             sign.Set_name(ui->LE_name->text());
             sign.Set_family(ui->LE_family->text());
             sign.Set_email(ui->LE_email->text());
-            sign.Set_phonenum(ui->LE_phone->text());
+            QString phone = ui->LE_phone98->text()+ui->LE_phone->text();
+            sign.Set_phonenum(phone);
             sign.Set_password(ui->LE_pass_2->text());
             sign.Set_username(ui->LE_user_2->text());
             sign.Set_address(ui->LE_address->text());
             sign.Set_office_ID("U");
 
-            ui->stackedWidget->setCurrentIndex(0);
+            //ui->stackedWidget->setCurrentIndex(0);
             //insert info to file.
 
             bll.signup(sign);
 
-        }
-        else
-        {
-            QString msg = "";
-            for(int k = 0;k < 7 ;k++)
+            QMessageBox msg;
+            msg.setWindowTitle("تایید حساب کاربری");
+            msg.setText("حساب کاربری جديد با موفقيت ايجاد شد. لطفا ایمیل خود را  جهت تایید حساب چک کنید ");
+            msg.setIcon(QMessageBox::Information);
+            //msg.show();
+            ui->LE_user->setText(ui->LE_user_2->text());
+            ui->LE_pass->setText(ui->LE_pass_2->text());
+            ui->LE_email->clear();
+            ui->LE_phone->clear();
+            ui->LE_family->clear();
+            ui->LE_pass_2->clear();
+            ui->LE_pass_correct->clear();
+            ui->LE_user_2->clear();
+            ui->LE_phone98->clear();
+            //ui->LE_phone->clear();
+            ui->LE_address->clear();
+            ui->LE_name->clear();
+            msg.exec();
+            ui->stackedWidget->setCurrentIndex(0);
+            /*send email to this user code here */
+    }
+    else
+    {
+            QString msg;
+            /*/for(int k = 0;k < 7 ;k++)
             {
                 if (Correct_information[k] == 0)
-                {
+                {*/
                     //msg = msg + " , ";*/
                     /*QString empty_info;
                     empty_info = names[k];*/
@@ -156,17 +196,14 @@ void Login::on_pb_getinfo_clicked()
                 }
 
 
-            }
-            msg += " fildes has empty ,please complete it and try again";
+            }*/
+            msg = " اطلاعات خود را به صورت صحیح وارد نمایید";
             QMessageBox msg_warning;
             msg_warning.setText(msg);
+            msg_warning.setWindowTitle("هشدار !");
+            msg_warning.setIcon(QMessageBox::Warning);
             msg_warning.exec();
-            break;
         }
-    }
-
-
-*/
 
 }
 
@@ -176,7 +213,9 @@ void Login::on_PB_login_clicked()
     if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="no")
     {
         QMessageBox msg;
-        msg.setText("incorrect username or password!!");
+        msg.setIcon(QMessageBox::Warning);
+        msg.setWindowTitle("هشدار");
+        msg.setText("نام کاربری یا کلمه عبور صحیح نمی باشد ");
         msg.exec();
     }
     else if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="U"){
@@ -184,7 +223,7 @@ void Login::on_PB_login_clicked()
         up=new userpanel();
         up->show();
         this->close();
-}
+    }
     /*
     //create a Database obj for use moduls and Extraction data.
     Persons_database check;
@@ -206,9 +245,9 @@ void Login::on_PB_login_clicked()
     if (!flag)
         qDebug()<<"username or password incorrect!!";*/
 }
-
+/*
 void Login::on_PB_test_clicked()
-{
+{*/
     //Persons_database test;
     //test.Set_URL("person.txt");
     /*
@@ -236,7 +275,7 @@ void Login::on_PB_test_clicked()
     test.Update(t);
     */
 
-    Office_database test;
+  /*  Office_database test;
     test.Set_URL("office.txt");
     Unit t;
     t=test.extract_unit("2t[(C)$1000$]");
@@ -246,3 +285,21 @@ void Login::on_PB_test_clicked()
 
 
 }
+*/
+void Login::on_PB_back_to_login_clicked()
+{
+    //msg.setAutoClose(true);
+    //msg.setTimeout
+    /*QTime * timer;
+    QTimer::singelShot(1000,msg,SLOT(close()));*/
+
+    //msg.button(QMessageBox::Ok)->animateClick(5000);
+
+    ui->stackedWidget->setCurrentIndex(0);
+}
+/*
+void Login::on_PB_register_clicked()
+{
+
+}
+*/

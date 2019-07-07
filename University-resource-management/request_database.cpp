@@ -1,5 +1,5 @@
 #include "request_database.h"
-
+/*
 void request_database::Insert(request row)
 {
     QFile file(URL);
@@ -28,4 +28,4 @@ request_database::request_database()
 {
 
 }
-
+*/

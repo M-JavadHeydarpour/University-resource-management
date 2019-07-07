@@ -44,5 +44,7 @@ request request_database::extract_data(QString line)
     result.Set_cost(Select_obj(line,7));
     result.Set_ET_ID(Select_obj(line,8));
     result.Set_result(Select_obj(line,9));
+    /*I'm Javad and edit this code just for run program */
+    return result;
 }
 

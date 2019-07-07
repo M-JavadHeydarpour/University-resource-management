@@ -62,7 +62,7 @@ See also the list of [contributors](https://github.com/mrrblack/University-resou
 
 ## License
 
-This project is licensed under the GNU General Public License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU General Public License - see the [LICENSE](https://github.com/mrrblack/University-resource-management/blob/master/LICENSE) file for details
 
 <!--
 <b>Model/View Programming<b/>

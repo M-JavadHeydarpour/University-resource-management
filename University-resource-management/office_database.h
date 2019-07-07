@@ -32,7 +32,8 @@ public:
 
 
     bool Search_ID (QString component);//find and return id of things that you search.
-    QString Search_Organ_Name (QString component);//find and return id of things that you search.
+
+    organ Search_Organ_Name (QString component);//find and return id of things that you search.
     QString Search_Office_Name(QString component);//find and return id of things that you search.
     QString Search_Family(QString component);//find and return id of things that you search.
     QString Search_Office_ID(QString component);//find and return id of things that you search.

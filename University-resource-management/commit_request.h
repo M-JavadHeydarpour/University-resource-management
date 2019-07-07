@@ -20,6 +20,8 @@ private slots:
 
     void on_send_req_clicked();
 
+    void on_cmb_organ_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::commit_request *ui;
 };

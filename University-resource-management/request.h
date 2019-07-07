@@ -27,7 +27,7 @@ private:
 
     int cost_unit;
 
-    QString Req_ID;
+    QString Req_ID="new";
     QString App_ID;
     QString Organ_name;
     QString Office_name;

@@ -306,6 +306,9 @@ void Login::on_PB_register_clicked()
 
 void Login::on_pushButton_clicked()
 {
-    Office_database t;
-    qDebug()<<t.get_office_count("100;Refah;anzali{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},tehran{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},shaghayegh{1t[(C)$500$]*2t[(C)$1000$]*4t[(C)$2000$]*},;");
+   Office_database test;
+   qDebug()<<test.Number_of_row();
+   organ organ_loaded;
+   organ_loaded=test.Search_Organ_Name("Refah");
+   qDebug()<<organ_loaded.Get_office(0).Get_name();
 }

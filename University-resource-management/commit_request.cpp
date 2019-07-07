@@ -34,3 +34,20 @@ void commit_request::on_send_req_clicked()
 */
 
 }
+
+void commit_request::on_cmb_organ_currentIndexChanged(const QString &arg1)
+{
+    brain bll;
+    organ organ_loaded;
+    //qDebug()<<ui->cmb_organ->currentText();
+
+    organ_loaded=bll.Get_organs().Search_Organ_Name(ui->cmb_organ->currentText());
+    //for(int i=0;i<organ_loaded.Get_COO();i++){
+    for(int i=0;i<organ_loaded.Get_COO();i++){
+       ui->cmb_office->addItem( organ_loaded.Get_office(i).Get_name());
+        //ui->cmb_office->addItem(ui->cmb_organ->currentText());
+
+    }
+    //ui->cmb_office->addItem("ssssssssssssss");
+
+}

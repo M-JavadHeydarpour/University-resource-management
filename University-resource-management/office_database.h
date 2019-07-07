@@ -29,7 +29,6 @@ public:
 
 
     QString Select_Unit(QString office , int column);
-
     QString Select_office(QString organ,int column);
 
 
@@ -42,11 +41,13 @@ public:
     //QString Get_organ(int);
     int get_counter();//counter for id
     int get_total();//number of lines
-    int get_office_count(QString line);
+    int get_office_count(QString line);//input = row
 
+
+    organ extract_data(QString line);
     Unit extract_unit(QString content);
     office extract_office(QString content);
-    organ extract_data(QString line);
+
 
 };
 

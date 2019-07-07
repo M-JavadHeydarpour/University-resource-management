@@ -22,14 +22,14 @@ public:
     ~Login();
 
 private slots:
-    void on_pushButton_login_clicked();
+    //void on_pushButton_login_clicked();
 
     void on_pushButton_signup_clicked();
 
 
 
 
-    void on_pushButton_signup_clicked();
+    //void on_pushButton_signup_clicked();
 
     //void on_PB_back_clicked();
 

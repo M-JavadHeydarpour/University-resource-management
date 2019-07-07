@@ -10,7 +10,12 @@ commit_request::commit_request(QWidget *parent) :
     ui(new Ui::commit_request)
 {
     ui->setupUi(this);
-
+    /*ui->cmb_organ->setCurrentText("bib");
+    ui->cmb_organ->setItemText(0,"salam");*/
+    /*ui->cmb_organ->setEditText("sss");
+    ui->cmb_unit->*/
+    ui->cmb_organ->addItem("سلام");
+    ui->cmb_organ->addItem("bye");
     brain bll;
     for(int i=0;i<bll.Number_of_organs();i++)
         ui->cmb_organ->addItem(bll.Get_organs().Select_obj(i,1));

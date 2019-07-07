@@ -26,39 +26,28 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(../Images/theme.png);</string>
+   <string notr="true">background-image: url(../Images/panel.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget_2">
     <property name="geometry">
      <rect>
-      <x>9</x>
+      <x>-1</x>
       <y>0</y>
-      <width>811</width>
-      <height>471</height>
+      <width>821</width>
+      <height>511</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-image:url(../hbib.png);</string>
+     <string notr="true">background-image: url(../Images/background.png);</string>
     </property>
     <property name="currentIndex">
      <number>1</number>
     </property>
-    <widget class="QWidget" name="page_7">
-     <widget class="QDialogButtonBox" name="buttonBox">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>40</y>
-        <width>166</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-      </property>
-     </widget>
-    </widget>
+    <widget class="QWidget" name="page_7"/>
     <widget class="QWidget" name="page_8">
      <widget class="QLabel" name="label_2">
       <property name="geometry">
@@ -135,16 +124,24 @@
       </property>
       <property name="font">
        <font>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
         <stylestrategy>PreferAntialias</stylestrategy>
        </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>WaitCursor</cursorShape>
       </property>
       <property name="mouseTracking">
        <bool>true</bool>
       </property>
       <property name="contextMenuPolicy">
-       <enum>Qt::DefaultContextMenu</enum>
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
       </property>
       <property name="styleSheet">
        <string notr="true">backfround-image:None;</string>
@@ -153,7 +150,10 @@
        <locale language="Persian" country="Iran"/>
       </property>
       <property name="maxCount">
-       <number>40</number>
+       <number>200</number>
+      </property>
+      <property name="insertPolicy">
+       <enum>QComboBox::InsertAtCurrent</enum>
       </property>
      </widget>
      <widget class="QStackedWidget" name="stackedWidget">

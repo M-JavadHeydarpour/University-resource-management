@@ -113,6 +113,11 @@
       <property name="layoutDirection">
        <enum>Qt::RightToLeft</enum>
       </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
      </widget>
      <widget class="QComboBox" name="cmb_organ">
       <property name="geometry">
@@ -174,6 +179,11 @@
       <property name="frame">
        <bool>true</bool>
       </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
      </widget>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
@@ -185,7 +195,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_9"/>
       <widget class="QWidget" name="page_10">
@@ -786,6 +796,11 @@
       <property name="layoutDirection">
        <enum>Qt::RightToLeft</enum>
       </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
      </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
@@ -821,7 +836,7 @@
      <x>0</x>
      <y>0</y>
      <width>820</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -1,5 +1,5 @@
 # University Resource Management
-![build](https://travis-ci.org/orangehrm/orangehrm)
+[![Travis Test](https://img.shields.io/travis/orangehrm/orangehrm/master.svg)](https://travis-ci.org/orangehrm/orangehrm)
 
 The goal of this project is to automate university resources and better manage it
 

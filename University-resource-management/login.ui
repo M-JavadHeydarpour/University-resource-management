@@ -31,20 +31,10 @@
   <property name="windowTitle">
    <string>Login</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(../Images/back.png);</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_status">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>240</y>
-      <width>281</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="enabled">
      <bool>true</bool>
@@ -52,9 +42,9 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>10</y>
+      <y>20</y>
       <width>500</width>
-      <height>300</height>
+      <height>311</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -72,8 +62,11 @@
     <property name="layoutDirection">
      <enum>Qt::RightToLeft</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(../Images/background.png);</string>
+    </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget">
@@ -82,33 +75,74 @@
         <x>160</x>
         <y>80</y>
         <width>191</width>
-        <height>80</height>
+        <height>101</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="LE_pass"/>
-       </item>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="LE_user"/>
+        <widget class="QLineEdit" name="LE_user">
+         <property name="placeholderText">
+          <string>نام کاربری </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="LE_pass">
+         <property name="maxLength">
+          <number>40</number>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>کلمه عبور</string>
+         </property>
+        </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_user">
-         <property name="text">
-          <string>نام کاربری:</string>
+        <widget class="QLabel" name="user">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(../Images/username1.png);</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_pass">
-         <property name="text">
-          <string>رمز عبور:</string>
+        <widget class="QLabel" name="pass">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+         <property name="maximumSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(../Images/pass.png);</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
        </item>
@@ -118,13 +152,37 @@
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>50</y>
+        <y>20</y>
         <width>191</width>
-        <height>20</height>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei Light</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(14, 10, 130)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
       </property>
       <property name="text">
        <string>ورود به سیستم</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -134,21 +192,66 @@
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>170</y>
-        <width>191</width>
-        <height>80</height>
+        <y>210</y>
+        <width>192</width>
+        <height>63</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QPushButton" name="PB_login">
+         <property name="minimumSize">
+          <size>
+           <width>190</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>190</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI</family>
+           <pointsize>10</pointsize>
+           <weight>8</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::PreventContextMenu</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 70 10pt &quot;Yu Gothic UI&quot;;</string>
+         </property>
          <property name="text">
           <string>ورود</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="pushButton_signup">
+         <property name="minimumSize">
+          <size>
+           <width>190</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>190</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 60 9pt &quot;Yu Gothic UI&quot;;</string>
+         </property>
          <property name="text">
           <string>ایجاد حساب کاربری جدید</string>
          </property>
@@ -156,180 +259,445 @@
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="PB_test">
+     <widget class="QLineEdit" name="lineEdit_12">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>50</y>
-        <width>93</width>
-        <height>28</height>
+        <x>162</x>
+        <y>60</y>
+        <width>191</width>
+        <height>1</height>
        </rect>
       </property>
-      <property name="text">
-       <string>test</string>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>1</height>
+       </size>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QWidget" name="verticalLayoutWidget_2">
+     <widget class="QWidget" name="horizontalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>150</x>
-        <y>40</y>
-        <width>222</width>
-        <height>235</height>
+        <x>100</x>
+        <y>50</y>
+        <width>261</width>
+        <height>31</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_5">
-           <property name="text">
-            <string>کلمه عبور:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="LE_name"/>
-         </item>
-         <item row="5" column="1">
-          <widget class="QLineEdit" name="LE_pass_2">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label">
-           <property name="text">
-            <string>تلفن:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="LE_family"/>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>ایمیل:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_3">
-           <property name="text">
-            <string>نام خانوادگی:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_4">
-           <property name="text">
-            <string>نام کاربری:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_2">
-           <property name="text">
-            <string>نام:</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLineEdit" name="LE_email"/>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="LE_user_2"/>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLineEdit" name="LE_phone"/>
-         </item>
-         <item row="6" column="1">
-          <widget class="QLineEdit" name="LE_address">
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="0">
-          <widget class="QLabel" name="label_7">
-           <property name="text">
-            <string>آدرس</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLineEdit" name="LE_name">
+         <property name="placeholderText">
+          <string>نام</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pb_getinfo">
-         <property name="text">
-          <string>ثبت نام</string>
+        <widget class="QLineEdit" name="LE_family">
+         <property name="placeholderText">
+          <string>نام خانوادگی</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="PB_back">
+     <widget class="QLineEdit" name="LE_email">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>250</y>
-        <width>75</width>
-        <height>23</height>
+        <x>100</x>
+        <y>90</y>
+        <width>261</width>
+        <height>21</height>
        </rect>
       </property>
+      <property name="placeholderText">
+       <string>پست الکترونیک</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>150</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="LE_pass_2">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>کلمه عبور</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="LE_pass_correct">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>تایید کلمه عبور</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="LE_user_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>120</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>نام کاربری</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>190</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="LE_phone">
+         <property name="placeholderText">
+          <string>  912 1234 478</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="LE_phone98">
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>+98</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="LE_address">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>230</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>نشانی کامل </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_person">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>50</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/stock.png);</string>
+      </property>
       <property name="text">
-       <string>بازگشت</string>
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_username">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>110</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/username.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Label_email">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>80</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/email.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_password">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>150</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/passwd.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="head">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>190</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/phoneicon.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_ad">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>230</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(../Images/home.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PB_back_to_login">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>270</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>ورود به سیستم </string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PB_register">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>270</y>
+        <width>91</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>ثبت اطلاعات </string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_head">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>0</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(8, 23, 120)</string>
+      </property>
+      <property name="text">
+       <string>ثبت اطلاعات </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="underline">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>291</width>
+        <height>2</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
       </property>
      </widget>
     </widget>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>577</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>LE_user</tabstop>
+  <tabstop>LE_pass</tabstop>
+  <tabstop>PB_login</tabstop>
+  <tabstop>pushButton_signup</tabstop>
+  <tabstop>LE_name</tabstop>
+  <tabstop>LE_family</tabstop>
+  <tabstop>LE_email</tabstop>
+  <tabstop>LE_user_2</tabstop>
+  <tabstop>LE_pass_2</tabstop>
+  <tabstop>LE_pass_correct</tabstop>
+  <tabstop>LE_phone98</tabstop>
+  <tabstop>LE_phone</tabstop>
+  <tabstop>LE_address</tabstop>
+  <tabstop>PB_register</tabstop>
+  <tabstop>PB_back_to_login</tabstop>
+  <tabstop>underline</tabstop>
+  <tabstop>lineEdit_12</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

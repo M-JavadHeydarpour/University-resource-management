@@ -10,7 +10,7 @@
 
 
 
-
+/*
 
 class Persons_database
 {
@@ -39,7 +39,7 @@ public:
     int get_counter();//counter for id
     int get_total();//number of lines
     User extarct_data(QString line);
-};
+};*/
 /*
 class User
 {
@@ -86,11 +86,11 @@ public:
 
 
 };
-*/
+*//*
 class Office_database:Persons_database
 {
     public:
         Office_database(Persons_database ref,QString Office_ID);
 };
-
+*/
 #endif // DATASET_H

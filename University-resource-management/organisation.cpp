@@ -1,4 +1,9 @@
 #include "organisation.h"
+organ::organ()
+{
+
+}
+
 void Unit::Set_cost(QString cost)
 {
     this->cost = cost;
@@ -47,6 +52,7 @@ int office::Get_COU()
 {
     return COU;
 }
+
 void organ::Set_ID(QString ID)
 {
     this->ID=ID;
@@ -82,4 +88,6 @@ int organ::Get_COO()
 {
     return COO;
 }
+
+
 

@@ -39,13 +39,15 @@ public:
     QString Search_Family(QString component);//find and return id of things that you search.
     QString Search_Office_ID(QString component);//find and return id of things that you search.
 
-
+    //QString Get_organ(int);
     int get_counter();//counter for id
     int get_total();//number of lines
+    int get_office_count(QString line);
 
     Unit extract_unit(QString content);
     office extract_office(QString content);
-    organ extarct_data(QString line);
+    organ extract_data(QString line);
+
 };
 
 #endif // OFFICE_DATABASE_H

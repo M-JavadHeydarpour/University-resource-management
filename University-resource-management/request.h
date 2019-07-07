@@ -10,21 +10,26 @@
 class content
 {
 private:
-    QString req_type;
+    QString Content;
+    int total_cost;
 
 public:
-    QString C_generate(int start_month,int start_day,int end_month,int end_day);
-    QString S_generate(int month,int day,int S_code);
-    QString H_generate(int month,int day,int start_hour,int end_hour);
+    QString Get_content();
+    int Get_mount();
+    void C_generate(int start_month,int start_day,int end_month,int end_day);
+    void S_generate(int month,int day,int S_code);
+    void H_generate(int month,int day,int start_hour,int end_hour);
 
 };
 
 
-class request:public content
+class request
 {
 private:
 
-    QString Req_ID;
+    int cost_unit;
+
+    QString Req_ID="new";
     QString App_ID;
     QString Organ_name;
     QString Office_name;
@@ -32,9 +37,11 @@ private:
     QString type;
     QString time_in_use;
     QString level;
-    QString req_content;//ramz
+    content req_content;//ramz
     QString ET_ID;
     QString log;
+    QString result;
+
 public:
 
     request();
@@ -46,10 +53,12 @@ public:
     void Set_Unit_name(QString  name);
     void Set_type(QString type);
     void Set_time_in_use(QString time);
-    void Set_content(QString content);
+    void Set_content(content content);
     void Set_ET_ID(QString ID);
-
     void Add_log(QString ET_ID , QString level);
+    void Set_cost_unit(int cost);
+    void Set_result(QString re);
+
 
     QString Get_Req_ID();
     QString Get_App_ID();
@@ -62,7 +71,8 @@ public:
     QString Get_content();
 
     QString Get_ET_ID();
-
+    int Get_total_cost();
+    QString Get_result();
 };
 
 #endif // REQUEST_H

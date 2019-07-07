@@ -88,6 +88,23 @@ QString Office_database::Select_office(QString organ,int column)
 
 }
 
+int Office_database::get_office_count(QString line)
+{
+    int cont=0;
+    int i=0;
+    while(line[i]!='\r\n')
+    {
+        if(line[i]=='{')
+            cont++;
+    }
+    return cont;
+}
+
+//QString Office_database::Get_organ(int i)
+//{
+//    return extarct_data( Select(i)).Get_name();
+//}
+
 office Office_database::extract_office(QString content)
 {
     office result;
@@ -108,6 +125,7 @@ office Office_database::extract_office(QString content)
     return result;
 
 }
+
 Unit Office_database::extract_unit(QString content)
 {
     Unit result;
@@ -132,5 +150,10 @@ Unit Office_database::extract_unit(QString content)
     return result;
 
 }
-
-
+organ Office_database::extract_data(QString line)
+{
+    organ result;
+    result.Set_ID(Select_obj(line,0));
+    result.Set_name(Select_obj(line,1));
+    return result;
+}

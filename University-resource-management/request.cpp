@@ -64,6 +64,11 @@ void request::Set_result(QString re)
     result=re;
 }
 
+void request::Set_cost(QString TC)
+{
+    T_cost=TC;
+}
+
 
 
 QString request::Get_Req_ID()
@@ -198,6 +203,11 @@ void content::H_generate(int month, int day, int start_hour, int end_hour)
 
     total_cost=mount;
     Content= generated;
+}
+
+void content::Set_content(QString con)
+{
+    Content=con;
 }
 
 

@@ -10,7 +10,7 @@ commit_request::commit_request(QWidget *parent) :
     ui(new Ui::commit_request)
 {
     ui->setupUi(this);
-
+    ui->stackedWidget->setCurrentIndex(0);
     brain bll;
     for(int i=0;i<bll.Number_of_organs();i++)
     //for(int i=0;i<2;i++)
@@ -28,7 +28,7 @@ commit_request::~commit_request()
 
 void commit_request::on_send_req_clicked()
 {
-    /*
+/*
     int start_month=ui->spinBox_month_from->value();
     int start_day=ui->spin_day_from->value();
     int end_month=ui->spinBox_month_to->value();
@@ -39,9 +39,8 @@ void commit_request::on_send_req_clicked()
 
 void commit_request::on_cmb_organ_currentIndexChanged(const QString &arg1)
 {
-    ui->cmb_office->clear();
-    ui->cmb_unit->clear();
 
+if(ui->cmb_organ->currentText()!=""){
     brain bll;
     organ organ_loaded;
 
@@ -55,13 +54,14 @@ void commit_request::on_cmb_organ_currentIndexChanged(const QString &arg1)
 
     }
 
-
+}
 }
 
 void commit_request::on_cmb_office_currentIndexChanged(const QString &arg1)
 {
-    ui->cmb_unit->clear();
-
+//    ui->cmb_unit->clear();
+    if(ui->cmb_organ->currentText()!="")
+{
        brain bll;
        organ organ_loaded;
        office office_loaded;
@@ -73,11 +73,16 @@ void commit_request::on_cmb_office_currentIndexChanged(const QString &arg1)
 
        for (int i=0;i<office_loaded.Get_COU();i++){
            ui->cmb_unit->addItem(office_loaded.Get_unit(i).Get_name());
-       }
+       }}
       //for(int i=0;i<organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_COU();i++){
   //        ui->cmb_unit->addItem( organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name());
 
-       /*}  ui->cmb_unit->addItem( "organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name()");
+        /*} ui->cmb_unit->addItem( "organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name()");
        ui->cmb_unit->addItem( "organ_loaded.Get_office(ui->cmb_office->currentIndex()).Get_unit(i).Get_name()");
-       */
+      */
+}
+
+void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }

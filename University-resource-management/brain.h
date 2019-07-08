@@ -4,12 +4,14 @@
 #include "office_database.h"
 #include "QString"
 #include "persons_database.h"
+#include "request_database.h"
 
 class brain
 {
 private:
     Office_database organs;
     Persons_database users;
+    request_database reqs;
     static QString ID;
 
 

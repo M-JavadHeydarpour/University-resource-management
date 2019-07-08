@@ -19,6 +19,7 @@ public:
     void C_generate(int start_month,int start_day,int end_month,int end_day);
     void S_generate(int month,int day,int S_code);
     void H_generate(int month,int day,int start_hour,int end_hour);
+    void Set_content(QString con);
 
 };
 
@@ -28,6 +29,7 @@ class request
 private:
 
     int cost_unit;
+    QString T_cost;
 
     QString Req_ID="new";
     QString App_ID;
@@ -58,6 +60,7 @@ public:
     void Add_log(QString ET_ID , QString level);
     void Set_cost_unit(int cost);
     void Set_result(QString re);
+    void Set_cost(QString TC);
 
 
     QString Get_Req_ID();

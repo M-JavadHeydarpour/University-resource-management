@@ -86,6 +86,21 @@ organ Office_database::Search_Organ_Name(QString component)
 
 }
 
+office Office_database::Search_Office_Name(QString component)
+{
+    organ result;
+
+    for (int i=0;i<Number_of_row();i++){
+
+            result=extract_data(Select(i));
+            for(int j=0;j<result.Get_COO();j++)
+            if(result.Get_office(j).Get_name()==component)
+                return result.Get_office(j);
+        }
+
+
+}
+
 int Office_database::get_office_count(QString line)
 {
     int cont=0;

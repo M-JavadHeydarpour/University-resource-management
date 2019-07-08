@@ -144,25 +144,25 @@ void content::C_generate(int start_month, int start_day, int end_month, int end_
     for (int i=start_day;i<=end_day;i++)
     {
         generated.append("_");
-        generated.append(start_month);
+        generated.append(QString::number( start_month));
         generated.append("*");
-        generated.append(i);
+        generated.append(QString::number( i));
         mount++;
     }
     else
         {
         for (int i=start_day;i<=30;i++){
             generated.append("_");
-            generated.append(start_month);
+            generated.append(QString::number( start_month));
             generated.append("*");
-            generated.append(i);
+            generated.append(QString::number( i));
             mount++;
         }
         for (int i=1;i<=end_day;i++){
         generated.append("_");
-        generated.append(end_month);
+        generated.append(QString::number( end_month));
         generated.append("*");
-        generated.append(i);
+        generated.append(QString::number( i));
         mount++;
         }
 
@@ -176,11 +176,11 @@ void content::S_generate(int month, int day, int S_code)
 {
     QString generated="";
     generated.append("+");
-    generated.append(month);
+    generated.append(QString::number( month));
     generated.append("/");
-    generated.append(day);
+    generated.append(QString::number( day));
     generated.append("_");
-    generated.append(S_code);
+    generated.append(QString::number( S_code));
 
     Content= generated;
 }
@@ -191,13 +191,13 @@ void content::H_generate(int month, int day, int start_hour, int end_hour)
     int mount=0;
 
     generated.append("+");
-    generated.append(month);
+    generated.append(QString::number(month));
     generated.append("/");
-    generated.append(day);
+    generated.append(QString::number(day));
 
     for(int i=start_hour;i<=end_hour;i++){
         generated.append("@");
-        generated.append(i);
+        generated.append(QString::number(i));
         mount++;
     }
 

@@ -232,7 +232,7 @@ background-color:rgb(171, 180, 255);
 background-image:url();</string>
     </property>
     <property name="text">
-     <string>سامانه توزیع خربزه دولتی</string>
+     <string>سامانه مدیریت منابع سرمد</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">

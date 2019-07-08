@@ -4,6 +4,7 @@
 #include "QComboBox"
 #include "brain.h"
 #include "userpanel.h"
+#include "QMessageBox"
 
 commit_request::commit_request(QWidget *parent) :
     QMainWindow(parent),
@@ -61,9 +62,16 @@ void commit_request::on_send_req_clicked()
     req.Set_cost(req.Get_total_cost());
     req.Set_ET_ID("1005");
     req.Set_result("F");
+    req.Set_reciver("E");
 
-    bll.Load_reqs().Insert(req);
-
+    bll.Set_CH(1);
+   // bll.Load_reqs().Insert(req);
+    QMessageBox msg;
+    msg.setText("درخواست شما با موفقیت ثبت شد");
+    msg.exec();
+    userpanel *m=new userpanel;
+    m->show();
+    this->close();
 
 
 /*

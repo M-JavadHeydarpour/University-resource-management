@@ -20,6 +20,10 @@ private slots:
 
     void on_PB_newreq_clicked();
 
+    //void on_req_check_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::userpanel *ui;
 };

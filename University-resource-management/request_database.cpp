@@ -20,6 +20,7 @@ void request_database::Insert(request row)
     out <<row.Get_total_cost()<<';';
     out<<"#"<<';';
     out<<row.Get_result()<<';';
+    out<<row.Get_reciver()<<';';
     out<<"\r\n";
 
 }

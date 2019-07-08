@@ -69,6 +69,21 @@ void request::Set_cost(int TC)
     T_cost=TC;
 }
 
+void request::Set_reciver(QString rec)
+{
+    reciver=rec;
+}
+
+void request::Set_level(QString i)
+{
+    level=i;
+}
+
+QString request::Get_reciver()
+{
+    return reciver;
+}
+
 
 
 QString request::Get_Req_ID()
@@ -93,7 +108,7 @@ QString request::Get_Office_name()
 
 QString request::Get_Unit_name()
 {
-    return  App_ID;
+    return Unit_name;
 }
 
 QString request::Get_type()

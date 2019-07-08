@@ -38,9 +38,9 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>440</x>
       <y>380</y>
-      <width>301</width>
+      <width>201</width>
       <height>41</height>
      </rect>
     </property>
@@ -53,22 +53,12 @@ background-image:url();</string>
      <string>بررسی وضعیت</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>611</width>
-      <height>271</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="PB_newreq">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>190</x>
       <y>380</y>
-      <width>291</width>
+      <width>191</width>
       <height>41</height>
      </rect>
     </property>
@@ -84,8 +74,8 @@ background-image:url();</string>
    <widget class="QPushButton" name="PB_editprof">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
+      <x>30</x>
+      <y>90</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -232,7 +222,7 @@ background-color:rgb(171, 180, 255);
 background-image:url();</string>
     </property>
     <property name="text">
-     <string>سامانه توزیع خربزه دولتی</string>
+     <string>سامانه ثبت درخواست</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -358,6 +348,148 @@ background-image:url();</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>430</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(105, 63, 153);
+background-color:rgb(171, 180, 255);
+background-image:url();</string>
+    </property>
+    <property name="text">
+     <string>نقش سازمانی</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>450</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(105, 63, 153);
+background-color:rgb(200, 200, 255);
+background-image:url();</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="boss_stacked">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>430</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(&quot;&quot;);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="ex_choose">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>0</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(105, 63, 153);
+background-color:rgb(200, 200, 255);
+background-image:url();</string>
+      </property>
+      <property name="text">
+       <string>انتخاب کارشناس</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QStackedWidget" name="Exp_stacked">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>430</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(&quot;&quot;);
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="req_check">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(105, 63, 153);
+background-color:rgb(200, 200, 255);
+background-image:url();</string>
+      </property>
+      <property name="text">
+       <string>بررسی درخواست</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4"/>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>90</y>
+      <width>451</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image:url(&quot;&quot;);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>خروج</string>
     </property>
    </widget>
   </widget>

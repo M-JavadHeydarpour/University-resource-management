@@ -14,15 +14,21 @@ private:
     request_database reqs;
     static QString ID;
     static QString role;
+    static int CH_index;
+    request req;
 
 
 public:
+
     brain();
     QString autenticate (QString user,QString pass);
     void signup(User add);
     User Load_user(QString ID);
+    request Get_request();
     QString Get_ID();
     QString Get_role();
+    int Get_CH();
+    void Set_CH(int);
     void Edit(User user);
  //   organ Get_organ(int line);
    // QString Get_organ_name(int i);

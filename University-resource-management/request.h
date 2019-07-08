@@ -43,6 +43,8 @@ private:
     QString ET_ID;
     QString log;
     QString result;
+    QString reciver;
+
 
 public:
 
@@ -61,8 +63,10 @@ public:
     void Set_cost_unit(int cost);
     void Set_result(QString re);
     void Set_cost(int TC);
+    void Set_reciver(QString);
+    void Set_level(QString);
 
-
+    QString Get_reciver();
     QString Get_Req_ID();
     QString Get_App_ID();
     QString Get_Organ_name();
@@ -72,7 +76,7 @@ public:
     QString Get_time_in_use();
 
     QString Get_content();
-
+    QString Get_level();
     QString Get_ET_ID();
     int Get_total_cost();
     QString Get_result();

@@ -220,7 +220,7 @@ void Login::on_PB_login_clicked()
         msg.setText("نام کاربری یا کلمه عبور صحیح نمی باشد ");
         msg.exec();
     }
-    else if(bll.autenticate(ui->LE_user->text(),ui->LE_pass->text())=="U"){
+    else{
         userpanel *up;
         up=new userpanel();
         up->show();

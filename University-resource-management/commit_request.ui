@@ -170,11 +170,6 @@
       <property name="frame">
        <bool>true</bool>
       </property>
-      <item>
-       <property name="text">
-        <string/>
-       </property>
-      </item>
      </widget>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
@@ -567,7 +562,7 @@
      <x>0</x>
      <y>0</y>
      <width>820</width>
-     <height>20</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

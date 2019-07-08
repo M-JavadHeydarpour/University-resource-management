@@ -119,7 +119,7 @@ Unit Office_database::Search_Unit_Name(QString component)
 int Office_database::get_office_count(QString line)
 {
     int cont=0;
-    for (int i=0;line[i]!='\x0';i++)
+    for (int i=0;line[i]!="\x0";i++)
         if(line[i]=='{')
             cont++;
 

@@ -6,6 +6,7 @@
 #include "office_database.h"
 #include "brain.h"
 #include "commit_request.h"
+#include "expertpanel_2.h"
 Login::Login(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::Login)
@@ -225,6 +226,8 @@ void Login::on_PB_login_clicked()
         up->show();
         this->close();
     }
+
+
     /*
     //create a Database obj for use moduls and Extraction data.
     Persons_database check;

@@ -2,6 +2,7 @@
 #include "dataset.h"
 
 QString brain::ID="";
+QString brain::role="";
 brain::brain()
 {
 
@@ -11,6 +12,7 @@ QString brain::autenticate(QString username, QString pass)
     User s=users.Search_ID(users.Search_UserName(username));
     if(s.Get_password()==pass){
         ID=s.Get_ID();
+        role=s.Get_role();
         return s.Get_role();}
     else {
         return "no";
@@ -31,6 +33,11 @@ User brain::Load_user(QString ID)
 QString brain::Get_ID()
 {
     return ID;
+}
+
+QString brain::Get_role()
+{
+    return role;
 }
 
 void brain::Edit(User user)

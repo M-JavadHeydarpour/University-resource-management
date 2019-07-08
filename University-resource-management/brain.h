@@ -13,6 +13,7 @@ private:
     Persons_database users;
     request_database reqs;
     static QString ID;
+    static QString role;
 
 
 public:
@@ -21,6 +22,7 @@ public:
     void signup(User add);
     User Load_user(QString ID);
     QString Get_ID();
+    QString Get_role();
     void Edit(User user);
  //   organ Get_organ(int line);
    // QString Get_organ_name(int i);

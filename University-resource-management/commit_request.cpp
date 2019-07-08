@@ -3,6 +3,7 @@
 #include "QTime"
 #include "QComboBox"
 #include "brain.h"
+#include "userpanel.h"
 
 
 commit_request::commit_request(QWidget *parent) :
@@ -40,9 +41,9 @@ void commit_request::on_send_req_clicked()
 void commit_request::on_cmb_organ_currentIndexChanged(const QString &arg1)
 {
 
-if(ui->cmb_organ->currentText()!=""){
-    brain bll;
-    organ organ_loaded;
+    if(ui->cmb_organ->currentText()!=""){
+        brain bll;
+        organ organ_loaded;
 
 
 
@@ -97,5 +98,20 @@ void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
         else if(unit_loaded.Get_reqtype()=='S')
             ui->stackedWidget->setCurrentIndex(3);
     }
+}
+
+
+void commit_request::on_pushButton_clicked()
+{
+    brain bll;
+
+    if(bll.Get_role()=='U'){
+        userpanel *U=new userpanel();
+        U->show();
+        this->close();
+
+    }
+
+
 }
 

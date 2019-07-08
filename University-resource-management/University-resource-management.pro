@@ -44,7 +44,8 @@ SOURCES += \
     edit_profile.cpp \
     commit_request.cpp \
     request.cpp \
-    request_database.cpp
+    request_database.cpp \
+    expertpanel_2.cpp
 
 HEADERS += \
         login.h \
@@ -61,14 +62,16 @@ HEADERS += \
     edit_profile.h \
     commit_request.h \
     request.h \
-    request_database.h
+    request_database.h \
+    expertpanel_2.h
 
 FORMS += \
         login.ui \
     userpanel.ui \
     expertspanel.ui \
     edit_profile.ui \
-    commit_request.ui
+    commit_request.ui \
+    expertpanel_2.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

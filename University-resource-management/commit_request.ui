@@ -188,7 +188,7 @@
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>60</y>
         <width>321</width>
         <height>211</height>
@@ -267,7 +267,7 @@
          <number>1</number>
         </property>
         <property name="maximum">
-         <number>31</number>
+         <number>30</number>
         </property>
        </widget>
        <widget class="QSpinBox" name="spinBox_day_to_2">
@@ -283,7 +283,7 @@
          <number>1</number>
         </property>
         <property name="maximum">
-         <number>31</number>
+         <number>30</number>
         </property>
        </widget>
        <widget class="QSpinBox" name="spinBox_month_to_2">
@@ -305,9 +305,9 @@
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>100</x>
           <y>90</y>
-          <width>61</width>
+          <width>31</width>
           <height>21</height>
          </rect>
         </property>
@@ -323,9 +323,9 @@
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>69</x>
+          <x>100</x>
           <y>30</y>
-          <width>47</width>
+          <width>21</width>
           <height>21</height>
          </rect>
         </property>
@@ -341,7 +341,7 @@
        <widget class="QLabel" name="label_6">
         <property name="geometry">
          <rect>
-          <x>180</x>
+          <x>200</x>
           <y>30</y>
           <width>31</width>
           <height>21</height>
@@ -362,10 +362,10 @@
        <widget class="QLabel" name="label_7">
         <property name="geometry">
          <rect>
-          <x>160</x>
+          <x>200</x>
           <y>90</y>
-          <width>51</width>
-          <height>16</height>
+          <width>31</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
@@ -510,6 +510,12 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="minimum">
+         <number>8</number>
+        </property>
+        <property name="maximum">
+         <number>17</number>
+        </property>
        </widget>
        <widget class="QSpinBox" name="spinBox_4">
         <property name="geometry">
@@ -521,10 +527,10 @@
          </rect>
         </property>
         <property name="minimum">
-         <number>1</number>
+         <number>9</number>
         </property>
         <property name="maximum">
-         <number>24</number>
+         <number>18</number>
         </property>
        </widget>
       </widget>
@@ -557,10 +563,10 @@
          </rect>
         </property>
         <property name="text">
-         <string/>
+         <string>0</string>
         </property>
        </widget>
-       <widget class="QRadioButton" name="radioButton_3">
+       <widget class="QRadioButton" name="s2_2">
         <property name="geometry">
          <rect>
           <x>120</x>
@@ -570,7 +576,7 @@
          </rect>
         </property>
         <property name="text">
-         <string/>
+         <string>1</string>
         </property>
        </widget>
        <widget class="QRadioButton" name="s3_2">
@@ -583,7 +589,7 @@
          </rect>
         </property>
         <property name="text">
-         <string/>
+         <string>2</string>
         </property>
        </widget>
        <widget class="QRadioButton" name="s4_2">
@@ -596,7 +602,7 @@
          </rect>
         </property>
         <property name="text">
-         <string/>
+         <string>3</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_21">
@@ -692,7 +698,7 @@
        <widget class="QSpinBox" name="spinBox_5">
         <property name="geometry">
          <rect>
-          <x>130</x>
+          <x>110</x>
           <y>30</y>
           <width>51</width>
           <height>22</height>
@@ -708,7 +714,7 @@
        <widget class="QSpinBox" name="spinBox_6">
         <property name="geometry">
          <rect>
-          <x>30</x>
+          <x>10</x>
           <y>30</y>
           <width>51</width>
           <height>21</height>
@@ -724,10 +730,10 @@
        <widget class="QLabel" name="label_14">
         <property name="geometry">
          <rect>
-          <x>140</x>
-          <y>20</y>
-          <width>61</width>
-          <height>41</height>
+          <x>170</x>
+          <y>30</y>
+          <width>31</width>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
@@ -836,7 +842,7 @@
      <x>0</x>
      <y>0</y>
      <width>820</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

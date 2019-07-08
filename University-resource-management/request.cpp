@@ -93,7 +93,7 @@ QString request::Get_Office_name()
 
 QString request::Get_Unit_name()
 {
-    return  App_ID;
+    return  Unit_name;
 }
 
 QString request::Get_type()
@@ -144,25 +144,25 @@ void content::C_generate(int start_month, int start_day, int end_month, int end_
     for (int i=start_day;i<=end_day;i++)
     {
         generated.append("_");
-        generated.append(start_month);
+        generated.append(QString::number(start_month));
         generated.append("*");
-        generated.append(i);
+        generated.append(QString::number( i));
         mount++;
     }
     else
         {
         for (int i=start_day;i<=30;i++){
             generated.append("_");
-            generated.append(start_month);
+            generated.append(QString::number( start_month));
             generated.append("*");
-            generated.append(i);
+            generated.append(QString::number( i));
             mount++;
         }
         for (int i=1;i<=end_day;i++){
         generated.append("_");
-        generated.append(end_month);
+        generated.append(QString::number( end_month));
         generated.append("*");
-        generated.append(i);
+        generated.append(QString::number( i));
         mount++;
         }
 
@@ -174,13 +174,19 @@ void content::C_generate(int start_month, int start_day, int end_month, int end_
 
 void content::S_generate(int month, int day, int S_code)
 {
+
     QString generated="";
+    QString Qs_month=QString::number(month);
+    QString Qs_day=QString::number(day);
+    QString Qs_S_code=QString::number(S_code);
+
     generated.append("+");
-    generated.append(month);
+    generated.append(Qs_month);
     generated.append("/");
-    generated.append(day);
+    generated.append(Qs_day);
     generated.append("_");
-    generated.append(S_code);
+    generated.append(Qs_S_code);
+
 
     Content= generated;
 }
@@ -189,15 +195,17 @@ void content::H_generate(int month, int day, int start_hour, int end_hour)
 {
     QString generated="";
     int mount=0;
+    QString Qs_month=QString::number(month);
+    QString Qs_day=QString::number(day);
 
     generated.append("+");
-    generated.append(month);
+    generated.append(Qs_month);
     generated.append("/");
-    generated.append(day);
+    generated.append(Qs_day);
 
     for(int i=start_hour;i<=end_hour;i++){
         generated.append("@");
-        generated.append(i);
+        generated.append(QString::number(i));
         mount++;
     }
 

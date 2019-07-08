@@ -35,23 +35,43 @@ void commit_request::on_send_req_clicked()
     Unit uni;
     content content;
 
+    uni=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
+    //qDebug()<<uni.Get_reqtype();
+
     if(uni.Get_reqtype()=="C")
     {
         content.C_generate(ui->spinBox_month_from_2->value(),ui->spin_day_from_2->value(),ui->spinBox_month_to_2->value(),ui->spinBox_day_to_2->value());
     }
     else if(uni.Get_reqtype()=="H")
     {
-     //   content.H_generate(ui->spinBox_month_from_2->value(),ui->spin_day_from_2->value(),ui->spinBox_month_to_2->value(),ui->spinBox_month_to_2->value());
+        content.H_generate(ui->spinBox->value(),ui->spinBox_2->value(),ui->spinBox_3->value(),ui->spinBox_4->value());
     }
     else if(uni.Get_reqtype()=="S")
     {
-      //  content.S_generate(ui->spinBox_month_from_2->value(),ui->spin_day_from_2->value(),ui->spinBox_month_to_2->value(),ui->spinBox_month_to_2->value());
+        if(ui->s1_2->isChecked()){
+
+        content.S_generate(ui->spinBox_6->value(),ui->spinBox_5->value(),0);
+        }
+        if(ui->s2_2->isChecked()){
+
+        content.S_generate(ui->spinBox_6->value(),ui->spinBox_5->value(),1);
+        }
+        if(ui->s3_2->isChecked()){
+
+        content.S_generate(ui->spinBox_6->value(),ui->spinBox_5->value(),2);
+        }
+        if(ui->s4_2->isChecked()){
+
+        content.S_generate(ui->spinBox_6->value(),ui->spinBox_5->value(),3);
+        }
+
     }
 
 
-    uni=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
+    //uni=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
 
     org=bll.Get_organs().Search_Organ_Name(ui->cmb_organ->currentText());
+
     req.Set_App_ID(bll.Get_ID());
     req.Set_Organ_name(ui->cmb_organ->currentText());
     req.Set_Office_name(ui->cmb_office->currentText());
@@ -59,7 +79,7 @@ void commit_request::on_send_req_clicked()
     req.Set_type(uni.Get_reqtype());
     req.Set_content(content);
     req.Set_cost(req.Get_total_cost());
-    req.Set_ET_ID("1005");
+    //req.Set_ET_ID("1005");
     req.Set_result("F");
 
     bll.Load_reqs().Insert(req);
@@ -124,7 +144,9 @@ void commit_request::on_cmb_unit_currentIndexChanged(const QString &arg1)
 {
     brain bll;
     Unit unit_loaded;
+
     unit_loaded=bll.Get_organs().Search_Unit_Name(ui->cmb_unit->currentText());
+
     ui->stackedWidget->setCurrentIndex(1);
     if(ui->cmb_unit->currentText()!="")
     {

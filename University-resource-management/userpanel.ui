@@ -232,7 +232,7 @@ background-color:rgb(171, 180, 255);
 background-image:url();</string>
     </property>
     <property name="text">
-     <string>سامانه توزیع خربزه دولتی</string>
+     <string>سامانه ثبت درخواست سرمد</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -390,7 +390,7 @@ background-image:url();</string>
      <enum>QFrame::Plain</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="pushButton_4">
@@ -429,7 +429,7 @@ background-image:url();</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_3">
      <widget class="QPushButton" name="pushButton_5">

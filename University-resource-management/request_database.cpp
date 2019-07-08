@@ -80,16 +80,23 @@ request request_database::Search_ID(QString ID)//dont have set log
     /*I'm Javad and edit this code just for run program */
 
     return result;
+
 }
 
 bool request_database::conflict_request(request req)
 {
+    content loaded_content;
 
     for(int i=0;i<Number_of_row();i++)
     {
+        loaded_content.Set_content( Select_obj(i,6));
+        if(Select_obj(i,2)==req.Get_Organ_name() && Select_obj(i,3)==req.Get_Office_name() && Select_obj(i,4)==req.Get_Unit_name()){
+            if (loaded_content.Get_content()==req.Get_content())
+                return true;
+        }
 
     }
-    return true;
+    return false;
 }
 
 

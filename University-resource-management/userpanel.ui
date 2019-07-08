@@ -363,9 +363,13 @@ background-image:url();</string>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
+
+
+
       <x>340</x>
       <y>440</y>
       <width>301</width>
+
       <height>41</height>
      </rect>
     </property>
@@ -446,8 +450,43 @@ background-image:url();</string>
         <pointsize>10</pointsize>
        </font>
       </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(105, 63, 153);
+
+      <property name="contextMenuPolicy">
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-10</y>
+          <width>291</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(105, 63, 153);
+
 background-color:rgb(200, 200, 255);
 background-image:url();</string>
       </property>

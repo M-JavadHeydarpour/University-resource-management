@@ -46,6 +46,7 @@ request request_database::extract_data(QString line)
     result.Set_ET_ID(Select_obj(line,8));
     result.Set_result(Select_obj(line,9));
 
+
     return result;
 }
 
@@ -74,6 +75,9 @@ request request_database::Search_ID(QString ID)//dont have set log
 
 
     }
+
+
+    /*I'm Javad and edit this code just for run program */
 
     return result;
 }
